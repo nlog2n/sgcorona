@@ -1,4 +1,12 @@
+# !/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+Created on January 25 09:48:12 2020
+@author: nlog2n
 
+ Data Visualization using Folium and GeoPandas
+
+"""
 
 import geopandas as gpd
 import mplleaflet
@@ -11,8 +19,8 @@ import folium
 
 
 # center of singapore map
-latitude = 1.359182
-longitude = 103.809187
+latitude = 1.360920
+longitude = 103.832512
 
 # Data Visualization using Folium and GeoPandas
 singapore_map = folium.Map(
@@ -23,14 +31,23 @@ places = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_corona.g
 for i in range(0, len(places)):
     geo = places.geometry[i]
     lat, lng = geo.y, geo.x
-    caseno = "#" + str(places.id[i])
+    caseno = "#" + str(int(places.id[i]))
     date = places.date[i]
     age = places.age[i]
     gender = places.gender[i]
     visited = places.visited[i]
     from_country = places.home[i]
+    related = places.related[i]
+    status = places.status[i]
     info = caseno +"," + date + " " + from_country + "\n" + str(age) + ", " + gender + "\n" + visited
-    if from_country == "Singapore": #red
+
+    if status == "recovered": # green
+        folium.Marker(
+            location=[lat, lng],
+            popup=info,
+            icon=folium.Icon(color='green', icon='info-sign')
+        ).add_to(singapore_map)
+    elif from_country == "Singapore": #red
         folium.Marker(
             location=[lat, lng],
             popup=info,

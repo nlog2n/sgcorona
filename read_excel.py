@@ -17,10 +17,10 @@ def read_excel_data():
 
     filepath = "Workbook2.xlsx"
     xlrd.Book.encoding = "utf8"
-    data = xlrd.open_workbook(filepath)
+    workbook = xlrd.open_workbook(filepath)
 
     # 取第1张工作簿
-    table = data.sheet_by_index(0)
+    table = workbook.sheet_by_index(0)
     rows_count = table.nrows  # 取总行数
     for i in range(rows_count):
         if i == 0:
@@ -36,11 +36,15 @@ def read_excel_data():
         staty_place = table.cell(i, 7).value
         visited_places = table.cell(i, 8).value
         related_cases = table.cell(i, 9).value
+        status = table.cell(i,10).value
 
-        caseno = caseno.strip('#')
         caseno = int(caseno)
         lat, lon = float(lat), float(lon)
         age = int(age)
+
+        workbook_datemode = workbook.datemode
+        y, m, d, h, m, s = xlrd.xldate_as_tuple(date, workbook_datemode)
+        date = "{0}-{1}".format(m, d)
 
         jsonObj = {
             "type": "Feature",
@@ -57,7 +61,8 @@ def read_excel_data():
                 "home": from_place,
                 "stay": staty_place,
                 "visited": visited_places,
-                "related": related_cases
+                "related": related_cases,
+                "status": status
             },
             "geometry": {
                 "type": "Point",
