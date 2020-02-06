@@ -47,9 +47,17 @@ def visualize():
         related = places.related[i]
         status = places.status[i]
 
-        label = caseno +", " + date + "<br>" + from_country + "<br>" \
-               + str(age) + ", " + gender + "<br>" + visited
-        popup = folium.Popup(IFrame(label, width=300, height=100))
+        # in html view
+        label = caseno +", " + date \
+                + "<br>" + "From: " + from_country \
+                + "<br>" + "Profile: " + str(age) + ", " + gender \
+                + "<br>" + "Visited: " + visited
+        if related != "" and related is not None:
+            label += "<br>" + "Linked to: " + related
+        if status != "" and status is not None:
+            label += "<br>" + "Status: " + status
+        iframe = IFrame(html=label, width=300, height=100)
+        popup = folium.Popup(iframe,  parse_html=True)
 
         if status == "recovered": # green
             color = 'green'

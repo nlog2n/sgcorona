@@ -11,10 +11,10 @@ ipython = "*"
 mplleaflet = "*"
 matplotlib = "*"
 descartes = "*"
-pandas-bokeh = "*"
 xlrd = "*"
 folium = "*"
 flask = "*"
+pandas-bokeh = "*"
 
 [requires]
 python_version = "3.7"
