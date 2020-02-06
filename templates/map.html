@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2186d46633604e698f295885f3efb8d3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2186d46633604e698f295885f3efb8d3" ></div>
+        
+</body>
+<script>    
+    
+            var map_2186d46633604e698f295885f3efb8d3 = L.map(
+                "map_2186d46633604e698f295885f3efb8d3",
+                {
+                    center: [1.359182, 103.809187],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5322058fc9184fefb5a21e3267979578 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var marker_74a45904be794bb6be8741854bc9a4ab = L.marker(
+                [1.2577323, 103.8097962],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_25bac543c8bb4451b52dd620b6507554 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_74a45904be794bb6be8741854bc9a4ab.setIcon(icon_25bac543c8bb4451b52dd620b6507554);
+        
+    
+        var popup_5d9d33eb1d064e42a2eee612efa316b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be76f47250e44c349fdb29000987bc10 = $(`<div id="html_be76f47250e44c349fdb29000987bc10" style="width: 100.0%; height: 100.0%;">#1, China, Wuhan 66, Male Singapore General Hospital</div>`)[0];
+            popup_5d9d33eb1d064e42a2eee612efa316b9.setContent(html_be76f47250e44c349fdb29000987bc10);
+        
+
+        marker_74a45904be794bb6be8741854bc9a4ab.bindPopup(popup_5d9d33eb1d064e42a2eee612efa316b9)
+        ;
+
+        
+    
+    
+            var marker_8660ac24e802460986f661efe2ef5237 = L.marker(
+                [1.3075996, 103.8585204],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_069d303a280c4ed1bcbf32f0dc9b2e4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8660ac24e802460986f661efe2ef5237.setIcon(icon_069d303a280c4ed1bcbf32f0dc9b2e4e);
+        
+    
+        var popup_d5ceedc9ddef46e2879daa4b29562b83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d075026eebb4dbd9c7b2f6dfcb1e38b = $(`<div id="html_5d075026eebb4dbd9c7b2f6dfcb1e38b" style="width: 100.0%; height: 100.0%;">#2, China, Wuhan 53, Female Tan Tock Seng Hospital, Raffles Hospital, Orchard Road, Marina Bay Sands, Gardens by the Bay</div>`)[0];
+            popup_d5ceedc9ddef46e2879daa4b29562b83.setContent(html_5d075026eebb4dbd9c7b2f6dfcb1e38b);
+        
+
+        marker_8660ac24e802460986f661efe2ef5237.bindPopup(popup_d5ceedc9ddef46e2879daa4b29562b83)
+        ;
+
+        
+    
+    
+            var marker_10b49d3a20c24051884052fb809218cc = L.marker(
+                [1.257763, 103.810018],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_673aefe19b01477da77f852bf2a9fde7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_10b49d3a20c24051884052fb809218cc.setIcon(icon_673aefe19b01477da77f852bf2a9fde7);
+        
+    
+        var popup_edb5124232504934b5e409773fc78599 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b0be225f25f4b64b7839f0f561610a4 = $(`<div id="html_3b0be225f25f4b64b7839f0f561610a4" style="width: 100.0%; height: 100.0%;">#3, China, Wuhan 36, Male Singapore General Hospital</div>`)[0];
+            popup_edb5124232504934b5e409773fc78599.setContent(html_3b0be225f25f4b64b7839f0f561610a4);
+        
+
+        marker_10b49d3a20c24051884052fb809218cc.bindPopup(popup_edb5124232504934b5e409773fc78599)
+        ;
+
+        
+    
+    
+            var marker_c22922019f5a4efca54024a49aeec509 = L.marker(
+                [1.25212715122, 103.820006847],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_57801608eb884c1a942debca0fee2b8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c22922019f5a4efca54024a49aeec509.setIcon(icon_57801608eb884c1a942debca0fee2b8f);
+        
+    
+        var popup_c52b686daec9420aaf648be8e9cce165 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f09f68c1fe2543f4b60d0780783648c7 = $(`<div id="html_f09f68c1fe2543f4b60d0780783648c7" style="width: 100.0%; height: 100.0%;">#4, China, Wuhan 36, Male Sengkang General Hospital, Universal Studios Singapore, Vivocity</div>`)[0];
+            popup_c52b686daec9420aaf648be8e9cce165.setContent(html_f09f68c1fe2543f4b60d0780783648c7);
+        
+
+        marker_c22922019f5a4efca54024a49aeec509.bindPopup(popup_c52b686daec9420aaf648be8e9cce165)
+        ;
+
+        
+    
+    
+            var marker_a4a533d9cf7a4a7295ea6c494762c4e0 = L.marker(
+                [1.30817132582, 103.900929093],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_f0957aa08864463d81fc42a4a5185157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a4a533d9cf7a4a7295ea6c494762c4e0.setIcon(icon_f0957aa08864463d81fc42a4a5185157);
+        
+    
+        var popup_1d14d9aa797046979bd2078546cef3a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f551cd9eea21490b9372c425bc1b7623 = $(`<div id="html_f551cd9eea21490b9372c425bc1b7623" style="width: 100.0%; height: 100.0%;">#5, China, Wuhan 56, Female Tan Tock Seng Hospital</div>`)[0];
+            popup_1d14d9aa797046979bd2078546cef3a7.setContent(html_f551cd9eea21490b9372c425bc1b7623);
+        
+
+        marker_a4a533d9cf7a4a7295ea6c494762c4e0.bindPopup(popup_1d14d9aa797046979bd2078546cef3a7)
+        ;
+
+        
+    
+    
+            var marker_dc0b9cd4102446deb75f8c702f25d07f = L.marker(
+                [1.37177592217, 103.944834173],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_adfdbb1e96ad4e7882245b6a27ab2a5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc0b9cd4102446deb75f8c702f25d07f.setIcon(icon_adfdbb1e96ad4e7882245b6a27ab2a5f);
+        
+    
+        var popup_8bbb4735793442a49a08d4bec6d53509 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9545701709cd42e5b8f4607c76c796a2 = $(`<div id="html_9545701709cd42e5b8f4607c76c796a2" style="width: 100.0%; height: 100.0%;">#6, China, Wuhan 56, Male Changi General Hospital</div>`)[0];
+            popup_8bbb4735793442a49a08d4bec6d53509.setContent(html_9545701709cd42e5b8f4607c76c796a2);
+        
+
+        marker_dc0b9cd4102446deb75f8c702f25d07f.bindPopup(popup_8bbb4735793442a49a08d4bec6d53509)
+        ;
+
+        
+    
+    
+            var marker_6419934ee07d47b79c9f9856f8715ce4 = L.marker(
+                [1.28330824331, 103.860577941],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_df3d0509c6b945d7b332c10e8b10e4c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6419934ee07d47b79c9f9856f8715ce4.setIcon(icon_df3d0509c6b945d7b332c10e8b10e4c8);
+        
+    
+        var popup_b753b32b1fa040dab29d9a517c166477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0075ad052f5d4c1d85db2dffe338969a = $(`<div id="html_0075ad052f5d4c1d85db2dffe338969a" style="width: 100.0%; height: 100.0%;">#7, China, Wuhan 35, Male Raffles Hospital</div>`)[0];
+            popup_b753b32b1fa040dab29d9a517c166477.setContent(html_0075ad052f5d4c1d85db2dffe338969a);
+        
+
+        marker_6419934ee07d47b79c9f9856f8715ce4.bindPopup(popup_b753b32b1fa040dab29d9a517c166477)
+        ;
+
+        
+    
+    
+            var marker_7cfbd6c3522d411faf59d9ac9077e829 = L.marker(
+                [1.350104424, 103.877644837],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_206f51d867fb491eb449279569fe1730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7cfbd6c3522d411faf59d9ac9077e829.setIcon(icon_206f51d867fb491eb449279569fe1730);
+        
+    
+        var popup_e0968726fa864bf4b7a2b7e6a6bc0faa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11b454a2a8534140823c7cf704d56807 = $(`<div id="html_11b454a2a8534140823c7cf704d56807" style="width: 100.0%; height: 100.0%;">#8, China, Wuhan 56, Male Tan Tock Seng Hospital</div>`)[0];
+            popup_e0968726fa864bf4b7a2b7e6a6bc0faa.setContent(html_11b454a2a8534140823c7cf704d56807);
+        
+
+        marker_7cfbd6c3522d411faf59d9ac9077e829.bindPopup(popup_e0968726fa864bf4b7a2b7e6a6bc0faa)
+        ;
+
+        
+    
+    
+            var marker_ba7b7d3a6bab4950bf15ae3d620ce233 = L.marker(
+                [1.35016073475, 103.877567053],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_f64287ec257f4930ac747de8a1d8014c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ba7b7d3a6bab4950bf15ae3d620ce233.setIcon(icon_f64287ec257f4930ac747de8a1d8014c);
+        
+    
+        var popup_8d206e99237f44369fc2b3b4140d1573 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eda626b83b5440b6b6c99ee9e6a1e257 = $(`<div id="html_eda626b83b5440b6b6c99ee9e6a1e257" style="width: 100.0%; height: 100.0%;">#9, China, Wuhan 56, Female Tan Tock Seng Hospital</div>`)[0];
+            popup_8d206e99237f44369fc2b3b4140d1573.setContent(html_eda626b83b5440b6b6c99ee9e6a1e257);
+        
+
+        marker_ba7b7d3a6bab4950bf15ae3d620ce233.bindPopup(popup_8d206e99237f44369fc2b3b4140d1573)
+        ;
+
+        
+    
+    
+            var marker_98cf7c50ab9944c6b5c019932391aa1d = L.marker(
+                [1.2707012, 103.8631688],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_e5d08721a3b14c7d8d17469e8e00e97f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_98cf7c50ab9944c6b5c019932391aa1d.setIcon(icon_e5d08721a3b14c7d8d17469e8e00e97f);
+        
+    
+        var popup_8cf9a9c1c9534ff3b012d24bb85a6be8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22ae1eca646042e0825f5210a2513d65 = $(`<div id="html_22ae1eca646042e0825f5210a2513d65" style="width: 100.0%; height: 100.0%;">#10, China, Wuhan 56, Male Marina South Pier</div>`)[0];
+            popup_8cf9a9c1c9534ff3b012d24bb85a6be8.setContent(html_22ae1eca646042e0825f5210a2513d65);
+        
+
+        marker_98cf7c50ab9944c6b5c019932391aa1d.bindPopup(popup_8cf9a9c1c9534ff3b012d24bb85a6be8)
+        ;
+
+        
+    
+    
+            var marker_a8156b012b4148e1b100d4d47f7f6660 = L.marker(
+                [1.25210033554, 103.820199966],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_fa53d6e41800447e88d434eedb976bd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a8156b012b4148e1b100d4d47f7f6660.setIcon(icon_fa53d6e41800447e88d434eedb976bd2);
+        
+    
+        var popup_6975d237730f4160bd3e85cf847b455c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49bc18e26c714b9597066e464acc4a9b = $(`<div id="html_49bc18e26c714b9597066e464acc4a9b" style="width: 100.0%; height: 100.0%;">#11, China, Wuhan 31, Female Sengkang General Hospital, Universal Studios Singapore, Vivocity</div>`)[0];
+            popup_6975d237730f4160bd3e85cf847b455c.setContent(html_49bc18e26c714b9597066e464acc4a9b);
+        
+
+        marker_a8156b012b4148e1b100d4d47f7f6660.bindPopup(popup_6975d237730f4160bd3e85cf847b455c)
+        ;
+
+        
+    
+    
+            var marker_50dc8424376a41d8959dcac60c136b36 = L.marker(
+                [1.25212715122, 103.819829822],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_cbe9608c44f44538b07fe17434e11605 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_50dc8424376a41d8959dcac60c136b36.setIcon(icon_cbe9608c44f44538b07fe17434e11605);
+        
+    
+        var popup_2fbdc73014314cdf9a3ec5026c981164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9076859d598846ccaaf794a4ba0fcbb7 = $(`<div id="html_9076859d598846ccaaf794a4ba0fcbb7" style="width: 100.0%; height: 100.0%;">#12, China, Wuhan 37, Female Orchard Road, Geylang</div>`)[0];
+            popup_2fbdc73014314cdf9a3ec5026c981164.setContent(html_9076859d598846ccaaf794a4ba0fcbb7);
+        
+
+        marker_50dc8424376a41d8959dcac60c136b36.bindPopup(popup_2fbdc73014314cdf9a3ec5026c981164)
+        ;
+
+        
+    
+    
+            var marker_84f2c1b90f5f479f855454189ac02a33 = L.marker(
+                [1.31094936857, 103.878650665],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_ac87a56870a042b7af0eb56bc73f7b49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_84f2c1b90f5f479f855454189ac02a33.setIcon(icon_ac87a56870a042b7af0eb56bc73f7b49);
+        
+    
+        var popup_1151a90878af461c8c3879599e3acdfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27d3da7dfe374b3dac189f5f51b0542d = $(`<div id="html_27d3da7dfe374b3dac189f5f51b0542d" style="width: 100.0%; height: 100.0%;">#12, China, Wuhan 37, Female Orchard Road, Geylang</div>`)[0];
+            popup_1151a90878af461c8c3879599e3acdfa.setContent(html_27d3da7dfe374b3dac189f5f51b0542d);
+        
+
+        marker_84f2c1b90f5f479f855454189ac02a33.bindPopup(popup_1151a90878af461c8c3879599e3acdfa)
+        ;
+
+        
+    
+    
+            var marker_5d9fc1e9495346a28778430296545521 = L.marker(
+                [1.3114104, 103.8780933],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_fa4589e255244d1d983a5a9b592d5da1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5d9fc1e9495346a28778430296545521.setIcon(icon_fa4589e255244d1d983a5a9b592d5da1);
+        
+    
+        var popup_0f71aab40d714b9d826b763e663d6fdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb94ad282de842138b2653c748e3fe03 = $(`<div id="html_bb94ad282de842138b2653c748e3fe03" style="width: 100.0%; height: 100.0%;">#12, China, Wuhan 37, Female Orchard Road, Geylang</div>`)[0];
+            popup_0f71aab40d714b9d826b763e663d6fdb.setContent(html_bb94ad282de842138b2653c748e3fe03);
+        
+
+        marker_5d9fc1e9495346a28778430296545521.bindPopup(popup_0f71aab40d714b9d826b763e663d6fdb)
+        ;
+
+        
+    
+    
+            var marker_3f87f8b6c57f40e0b561f7967b097d8e = L.marker(
+                [1.28549101288, 103.846496344],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_c3b967dc72d944d69f8a71f24ac8e1e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f87f8b6c57f40e0b561f7967b097d8e.setIcon(icon_c3b967dc72d944d69f8a71f24ac8e1e3);
+        
+    
+        var popup_00cf4d81c0f24e8f8cd7b492228fd3f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77cb3a6b51e64ba2981a1d82cc040b90 = $(`<div id="html_77cb3a6b51e64ba2981a1d82cc040b90" style="width: 100.0%; height: 100.0%;">#13, China, Wuhan 73, Female  Changi Airport, Jewel</div>`)[0];
+            popup_00cf4d81c0f24e8f8cd7b492228fd3f6.setContent(html_77cb3a6b51e64ba2981a1d82cc040b90);
+        
+
+        marker_3f87f8b6c57f40e0b561f7967b097d8e.bindPopup(popup_00cf4d81c0f24e8f8cd7b492228fd3f6)
+        ;
+
+        
+    
+    
+            var marker_121b550b77184b1e87072bdb7628894a = L.marker(
+                [1.27596618653, 103.844254017],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_12792ccdef314b8bbc5251789116aa7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_121b550b77184b1e87072bdb7628894a.setIcon(icon_12792ccdef314b8bbc5251789116aa7d);
+        
+    
+        var popup_b0b9534147af4b009133f4e865abfd73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e48b0f873c6473fbfb244c0970ecd6a = $(`<div id="html_9e48b0f873c6473fbfb244c0970ecd6a" style="width: 100.0%; height: 100.0%;">#13, China, Wuhan 73, Female  Changi Airport, Jewel</div>`)[0];
+            popup_b0b9534147af4b009133f4e865abfd73.setContent(html_9e48b0f873c6473fbfb244c0970ecd6a);
+        
+
+        marker_121b550b77184b1e87072bdb7628894a.bindPopup(popup_b0b9534147af4b009133f4e865abfd73)
+        ;
+
+        
+    
+    
+            var marker_3c634a6cfc5d49baa82312d6c9b70a00 = L.marker(
+                [1.33608300636, 103.737467229],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_0f402360cfd547dd91dffbdbfacd48d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3c634a6cfc5d49baa82312d6c9b70a00.setIcon(icon_0f402360cfd547dd91dffbdbfacd48d1);
+        
+    
+        var popup_170546a86e4b4c9ca610a3c3a997e4c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10128ddcad584fa2851b30e288bab160 = $(`<div id="html_10128ddcad584fa2851b30e288bab160" style="width: 100.0%; height: 100.0%;">#14, China, Hubei 31, Male GP Clinic</div>`)[0];
+            popup_170546a86e4b4c9ca610a3c3a997e4c5.setContent(html_10128ddcad584fa2851b30e288bab160);
+        
+
+        marker_3c634a6cfc5d49baa82312d6c9b70a00.bindPopup(popup_170546a86e4b4c9ca610a3c3a997e4c5)
+        ;
+
+        
+    
+    
+            var marker_330ccaace3c243eb853b50613488ee09 = L.marker(
+                [1.36281989482, 103.99087429],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_177e74dddb7544b8a2d43f7acbcec1d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_330ccaace3c243eb853b50613488ee09.setIcon(icon_177e74dddb7544b8a2d43f7acbcec1d0);
+        
+    
+        var popup_6b9fe86451a34665bf40bfa93a52275f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f9c9f698b8c4c4badf0aea461924046 = $(`<div id="html_3f9c9f698b8c4c4badf0aea461924046" style="width: 100.0%; height: 100.0%;">#15, Singapore 47, Female China, Wuhan</div>`)[0];
+            popup_6b9fe86451a34665bf40bfa93a52275f.setContent(html_3f9c9f698b8c4c4badf0aea461924046);
+        
+
+        marker_330ccaace3c243eb853b50613488ee09.bindPopup(popup_6b9fe86451a34665bf40bfa93a52275f)
+        ;
+
+        
+    
+    
+            var marker_6ac12ffc51d843f9a44e8111a8ae0a19 = L.marker(
+                [1.2962606, 103.8256719],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_6e77e29ed4054510b64c10291891ca5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6ac12ffc51d843f9a44e8111a8ae0a19.setIcon(icon_6e77e29ed4054510b64c10291891ca5b);
+        
+    
+        var popup_8175f342b3a841cdb96dae1d47f59a6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f64200050fb340af82442b16c834e4d8 = $(`<div id="html_f64200050fb340af82442b16c834e4d8" style="width: 100.0%; height: 100.0%;">#16, China, Hubei 38, Male Singapore General Hospital</div>`)[0];
+            popup_8175f342b3a841cdb96dae1d47f59a6b.setContent(html_f64200050fb340af82442b16c834e4d8);
+        
+
+        marker_6ac12ffc51d843f9a44e8111a8ae0a19.bindPopup(popup_8175f342b3a841cdb96dae1d47f59a6b)
+        ;
+
+        
+    
+    
+            var marker_edcbbceb434740e1a518d763d51910ed = L.marker(
+                [1.36270727391, 103.991131783],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_16428b397e13446780c17f6eecb04552 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_edcbbceb434740e1a518d763d51910ed.setIcon(icon_16428b397e13446780c17f6eecb04552);
+        
+    
+        var popup_1777c3db37d94179b2485347d1a74129 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daba317932d448feaf9d9dbeb86ea91c = $(`<div id="html_daba317932d448feaf9d9dbeb86ea91c" style="width: 100.0%; height: 100.0%;">#17, Singapore 47, Female China, Wuhan</div>`)[0];
+            popup_1777c3db37d94179b2485347d1a74129.setContent(html_daba317932d448feaf9d9dbeb86ea91c);
+        
+
+        marker_edcbbceb434740e1a518d763d51910ed.bindPopup(popup_1777c3db37d94179b2485347d1a74129)
+        ;
+
+        
+    
+    
+            var marker_9497339acb11472688e16bafeda4eb8d = L.marker(
+                [1.31126578637, 103.878130317],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_5d61486ada3442a2a7b7bb20ca894d31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9497339acb11472688e16bafeda4eb8d.setIcon(icon_5d61486ada3442a2a7b7bb20ca894d31);
+        
+    
+        var popup_dfee206f2f8e4c909e1970eb7bddabfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8826d95009ca470b8f979a9793eafffe = $(`<div id="html_8826d95009ca470b8f979a9793eafffe" style="width: 100.0%; height: 100.0%;">#18, China, Wuhan 31, Female </div>`)[0];
+            popup_dfee206f2f8e4c909e1970eb7bddabfd.setContent(html_8826d95009ca470b8f979a9793eafffe);
+        
+
+        marker_9497339acb11472688e16bafeda4eb8d.bindPopup(popup_dfee206f2f8e4c909e1970eb7bddabfd)
+        ;
+
+        
+    
+    
+            var marker_65ea3fb440934735bb25681749939e31 = L.marker(
+                [1.28475359094, 103.815278113],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_cb68ea33b5a649c69a3972847a3ddfdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65ea3fb440934735bb25681749939e31.setIcon(icon_cb68ea33b5a649c69a3972847a3ddfdf);
+        
+    
+        var popup_c5be5d5cbdee45a7a3ca033db5db0e27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb3f2a696c11440198ad289b6d84d3da = $(`<div id="html_eb3f2a696c11440198ad289b6d84d3da" style="width: 100.0%; height: 100.0%;">#19, Singapore 28, Female Singapore General Hospital, Tan Tock Seng Hospital, GP Clinic, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_c5be5d5cbdee45a7a3ca033db5db0e27.setContent(html_eb3f2a696c11440198ad289b6d84d3da);
+        
+
+        marker_65ea3fb440934735bb25681749939e31.bindPopup(popup_c5be5d5cbdee45a7a3ca033db5db0e27)
+        ;
+
+        
+    
+    
+            var marker_281d9587e61443828abee6a41be8f2cf = L.marker(
+                [1.37476572624, 103.885970414],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_97d405fb73de4aa284db89a4bf05ef13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_281d9587e61443828abee6a41be8f2cf.setIcon(icon_97d405fb73de4aa284db89a4bf05ef13);
+        
+    
+        var popup_2ba5e332025a4432a8152a95eb6e53af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e31a1f5c88604051a7b6e1c89de0501f = $(`<div id="html_e31a1f5c88604051a7b6e1c89de0501f" style="width: 100.0%; height: 100.0%;">#20, Singapore 48, Female Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_2ba5e332025a4432a8152a95eb6e53af.setContent(html_e31a1f5c88604051a7b6e1c89de0501f);
+        
+
+        marker_281d9587e61443828abee6a41be8f2cf.bindPopup(popup_2ba5e332025a4432a8152a95eb6e53af)
+        ;
+
+        
+    
+    
+            var marker_7bb099df4c5b46aea2a296eb4388aa83 = L.marker(
+                [1.28479917703, 103.815087676],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_ae9bb44653a6428f9c227636649dd135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bb099df4c5b46aea2a296eb4388aa83.setIcon(icon_ae9bb44653a6428f9c227636649dd135);
+        
+    
+        var popup_b4e9323635e2469a98f6ef876e2eeec9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ba98bdc68d64c9898c2b92854ee7656 = $(`<div id="html_2ba98bdc68d64c9898c2b92854ee7656" style="width: 100.0%; height: 100.0%;">#21, Singapore 44, Female Singapore General Hospital, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_b4e9323635e2469a98f6ef876e2eeec9.setContent(html_2ba98bdc68d64c9898c2b92854ee7656);
+        
+
+        marker_7bb099df4c5b46aea2a296eb4388aa83.bindPopup(popup_b4e9323635e2469a98f6ef876e2eeec9)
+        ;
+
+        
+    
+    
+            var marker_f72ba4eff77d48b9a290f76d3cffbd10 = L.marker(
+                [1.36292983428, 103.99122566],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_cd0ec08fa12d494ba71fbb53c1afd93f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f72ba4eff77d48b9a290f76d3cffbd10.setIcon(icon_cd0ec08fa12d494ba71fbb53c1afd93f);
+        
+    
+        var popup_0d43fb545a244ea394ab04478665029d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5ab21ded7ca4a2399d1ea6f654115cd = $(`<div id="html_e5ab21ded7ca4a2399d1ea6f654115cd" style="width: 100.0%; height: 100.0%;">#22, Singapore 41, Male China, Wuhan</div>`)[0];
+            popup_0d43fb545a244ea394ab04478665029d.setContent(html_e5ab21ded7ca4a2399d1ea6f654115cd);
+        
+
+        marker_f72ba4eff77d48b9a290f76d3cffbd10.bindPopup(popup_0d43fb545a244ea394ab04478665029d)
+        ;
+
+        
+    
+    
+            var marker_482b3843323646c09a6345531277132d = L.marker(
+                [1.36307195114, 103.990965486],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_b8772916694640369fc2f79e4003cb62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_482b3843323646c09a6345531277132d.setIcon(icon_b8772916694640369fc2f79e4003cb62);
+        
+    
+        var popup_6486d968c15f4d5e9fc7d6cef1afe32d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a72f28d796e541f49e5bd15125fc8e9a = $(`<div id="html_a72f28d796e541f49e5bd15125fc8e9a" style="width: 100.0%; height: 100.0%;">#23, Singapore 17, Male China, Wuhan</div>`)[0];
+            popup_6486d968c15f4d5e9fc7d6cef1afe32d.setContent(html_a72f28d796e541f49e5bd15125fc8e9a);
+        
+
+        marker_482b3843323646c09a6345531277132d.bindPopup(popup_6486d968c15f4d5e9fc7d6cef1afe32d)
+        ;
+
+        
+    
+    
+            var marker_3562025da2a44e3bbbaac0330c0b8952 = L.marker(
+                [1.3793195, 103.8826748],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_1a35272831a54f778d87cb26a2b64115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3562025da2a44e3bbbaac0330c0b8952.setIcon(icon_1a35272831a54f778d87cb26a2b64115);
+        
+    
+        var popup_5d0412477afe43fa91acf1031f811a4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9416e8b35e34fc6b0ed21143d67b10f = $(`<div id="html_a9416e8b35e34fc6b0ed21143d67b10f" style="width: 100.0%; height: 100.0%;">#24, Singapore 32, Female Yong Thai Hang, Jalan Besar, Hougang Polyclinic, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_5d0412477afe43fa91acf1031f811a4d.setContent(html_a9416e8b35e34fc6b0ed21143d67b10f);
+        
+
+        marker_3562025da2a44e3bbbaac0330c0b8952.bindPopup(popup_5d0412477afe43fa91acf1031f811a4d)
+        ;
+
+        
+    
+    
+            var marker_9e3fd61ac8934f15acd3833c0e731005 = L.marker(
+                [1.37916596021, 103.882692754],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_62ee1049cfdb4b5d84a6e3d70626f8af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e3fd61ac8934f15acd3833c0e731005.setIcon(icon_62ee1049cfdb4b5d84a6e3d70626f8af);
+        
+    
+        var popup_7b46d88b2ed84b8f80b40b60b0c2fb1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e79a92eab484f76b1d75d71de27a40f = $(`<div id="html_6e79a92eab484f76b1d75d71de27a40f" style="width: 100.0%; height: 100.0%;">#25, Singapore 40, Male Hougang Polyclinic, Pasir Panjang Hawker Centre, Diamond Industries Jewellery Company, Yong Thai Hang, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_7b46d88b2ed84b8f80b40b60b0c2fb1c.setContent(html_6e79a92eab484f76b1d75d71de27a40f);
+        
+
+        marker_9e3fd61ac8934f15acd3833c0e731005.bindPopup(popup_7b46d88b2ed84b8f80b40b60b0c2fb1c)
+        ;
+
+        
+    
+    
+            var marker_f546bd80c4e8420c88b72822c3923e37 = L.marker(
+                [1.32152520963, 103.847638965],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_fcc8eb33ba1d47e3bcb779210b5c12eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f546bd80c4e8420c88b72822c3923e37.setIcon(icon_fcc8eb33ba1d47e3bcb779210b5c12eb);
+        
+    
+        var popup_cd4d379074a948f7897eec419d1641d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ee395de0f4f42ab8032af3fa99ec98d = $(`<div id="html_7ee395de0f4f42ab8032af3fa99ec98d" style="width: 100.0%; height: 100.0%;">#26, China, Wuhan 42, Female </div>`)[0];
+            popup_cd4d379074a948f7897eec419d1641d7.setContent(html_7ee395de0f4f42ab8032af3fa99ec98d);
+        
+
+        marker_f546bd80c4e8420c88b72822c3923e37.bindPopup(popup_cd4d379074a948f7897eec419d1641d7)
+        ;
+
+        
+    
+    
+            var marker_ac6623fc40ec4132b92ec45dcf60bc58 = L.marker(
+                [1.28465705569, 103.815594614],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_21f38a88bfa0412f93b1d7b414d408b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac6623fc40ec4132b92ec45dcf60bc58.setIcon(icon_21f38a88bfa0412f93b1d7b414d408b9);
+        
+    
+        var popup_1f341bed136d405ba2eeccd3929409f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0e56a6e2e584a13905af70f7c2899e9 = $(`<div id="html_a0e56a6e2e584a13905af70f7c2899e9" style="width: 100.0%; height: 100.0%;">#27, Singapore 25, Male Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_1f341bed136d405ba2eeccd3929409f8.setContent(html_a0e56a6e2e584a13905af70f7c2899e9);
+        
+
+        marker_ac6623fc40ec4132b92ec45dcf60bc58.bindPopup(popup_1f341bed136d405ba2eeccd3929409f8)
+        ;
+
+        
+    
+    
+            var marker_a94658f952994712976fdb2a7514e402 = L.marker(
+                [1.28469996024, 103.815433681],
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+    
+            var icon_49b15d1087d7415ea4bcf5deb6693bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a94658f952994712976fdb2a7514e402.setIcon(icon_49b15d1087d7415ea4bcf5deb6693bc4);
+        
+    
+        var popup_19760d6e01ea489db333c18848ce158a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a1310dc65ae460f8aa8c9f446d18741 = $(`<div id="html_6a1310dc65ae460f8aa8c9f446d18741" style="width: 100.0%; height: 100.0%;">#28, Singapore 0, Male KK Womens and Childrens Hospital, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East</div>`)[0];
+            popup_19760d6e01ea489db333c18848ce158a.setContent(html_6a1310dc65ae460f8aa8c9f446d18741);
+        
+
+        marker_a94658f952994712976fdb2a7514e402.bindPopup(popup_19760d6e01ea489db333c18848ce158a)
+        ;
+
+        
+    
+    
+            var feature_group_a1a90c8ef13c4385a434ce2f7a6f92fb = L.featureGroup(
+                {}
+            ).addTo(map_2186d46633604e698f295885f3efb8d3);
+        
+</script>
