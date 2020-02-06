@@ -47,9 +47,9 @@ def visualize():
         related = places.related[i]
         status = places.status[i]
 
-        label = caseno +"," + date + "<br>" + from_country + "<br>" \
+        label = caseno +", " + date + "<br>" + from_country + "<br>" \
                + str(age) + ", " + gender + "<br>" + visited
-        popup = label # IFrame(label, width=300, height=100)
+        popup = folium.Popup(IFrame(label, width=300, height=100))
 
         if status == "recovered": # green
             color = 'green'
