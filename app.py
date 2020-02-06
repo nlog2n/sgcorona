@@ -1,36 +1,47 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+Created on June 26 09:48:12 2018
+@author: nlog2n
+
+  Flask server
+"""
+
+import os
+from flask import Flask, request, render_template, redirect, url_for
+from werkzeug.utils import secure_filename
+
+# UPLOAD_FOLDER = os.path.basename('uploads')
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+UPLOAD_FOLDER = './static/uploads/'
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+
+app = Flask(__name__)
 
 
-import geopandas as gpd
-import mplleaflet
-
-# import pandas_bokeh
-# print(pandas_bokeh.__version__)
-# pandas_bokeh.output_file("mapplot.html")
-
-# overlay map
-admin = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_admin.geojson')
-singapore = admin.iloc[0]
-print(singapore)
-
-# draw
-gpd.GeoSeries(singapore.geometry).plot()
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-# places of interest
-roads = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_corona.geojson')
+def get_pretty_json_str(result):
+    import json
+    return json.dumps(result, sort_keys=False, ensure_ascii=False, indent=4)
 
 
-# bounded inside the map
-roads = roads[roads.geometry.within(singapore.geometry)]
-print(roads)
+@app.route('/')
+def index_page():
+    return render_template('map.html')
 
-# draw places
-ax = roads.geometry.plot()
 
-#mplleaflet.display(fig=ax.figure) # To display it right at the notebook.
+@app.route('/hello')
+def home_page():
+    return 'Singapore Corona Virus Cases'
 
-#mplleaflet.show(fig=ax.figure) # To output _map.html file and display it in your browser.
 
-mplleaflet.save_html(fig=ax.figure, fileobj='map.html')
+if __name__ == '__main__':
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', debug=True, port=port)
 
-# TODO: output html file and rely on flask to render the web page?

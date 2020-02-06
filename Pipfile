@@ -9,11 +9,12 @@ verify_ssl = true
 geopandas = "*"
 ipython = "*"
 mplleaflet = "*"
-mplexporter = "*"
 matplotlib = "*"
 descartes = "*"
 pandas-bokeh = "*"
 xlrd = "*"
+folium = "*"
+flask = "*"
 
 [requires]
 python_version = "3.7"
