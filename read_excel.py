@@ -6,6 +6,8 @@ Created on January 25 09:48:12 2020
 
   预处理数据
 
+  python read_excel.py > singapore.imposm-geojson/singapore_corona.geojson
+
 """
 
 def read_excel_data():
@@ -41,10 +43,6 @@ def read_excel_data():
         caseno = int(caseno)
         lat, lon = float(lat), float(lon)
         age = int(age)
-
-        workbook_datemode = workbook.datemode
-        y, m, d, h, m, s = xlrd.xldate_as_tuple(date, workbook_datemode)
-        date = "{0}-{1}".format(m, d)
 
         jsonObj = {
             "type": "Feature",
