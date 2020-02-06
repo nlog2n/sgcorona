@@ -13,6 +13,7 @@ import mplleaflet
 
 import folium
 from folium import IFrame
+print(folium.__version__)
 
 # import pandas_bokeh
 # print(pandas_bokeh.__version__)
@@ -56,6 +57,8 @@ def visualize():
             label += "<br>" + "Linked to: " + related
         if status != "" and status is not None:
             label += "<br>" + "Status: " + status
+
+        test_html = folium.Html(label, script=True)
         iframe = IFrame(html=label, width=300, height=100)
         popup = folium.Popup(iframe,  parse_html=True)
 
