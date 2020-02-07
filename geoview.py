@@ -21,6 +21,30 @@ print(folium.__version__)
 # pandas_bokeh.output_file("mapplot.html")
 
 
+SINGAPORE_CORONA_GEOJSON_FILE = 'singapore.imposm-geojson/singapore_corona.geojson'
+
+
+def get_virus_data():
+    """
+    get geodataframe for singapore virus data
+    :return:
+    """
+    # ## read from the generated geojson file
+    # gdf = gpd.GeoDataFrame.from_file(SINGAPORE_CORONA_GEOJSON_FILE)
+    # return gdf
+
+    ## alternatively
+    ## read from my excel file and get geopandas GeoDataFrame
+    import read_excel
+    geojsonObj = read_excel.read_rawdata()
+
+    import convert_geojson
+    gdf = convert_geojson.geojson_to_gdf(geojsonObj)
+    print(gdf)
+    return gdf
+
+
+
 def draw_stats(m):
     cx, cy = (1.301268, 103.970763)
 
@@ -59,7 +83,7 @@ def visualize():
                     location=[latitude, longitude],
                     zoom_start=12)
 
-    gdf = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_corona.geojson')
+    gdf = get_virus_data()
     for i, row in gdf.iterrows():
         geo = row.geometry
         lat, lng = geo.y, geo.x
@@ -78,7 +102,7 @@ def visualize():
                 + "<br>" + "Profile: " + str(age) + ", " + gender \
                 + "<br>" + "Visited: " + visited
         if related != "" and related is not None:
-            label += "<br>" + "Linked to: " + related
+            label += "<br>" + "Linked to: #" + str(int(related))
         if status != "" and status is not None:
             label += "<br>" + "Status: " + status
 
