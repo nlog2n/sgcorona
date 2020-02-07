@@ -20,6 +20,10 @@ print(folium.__version__)
 # pandas_bokeh.output_file("mapplot.html")
 
 
+# output html file and rely on flask to render the web page
+OUTPUT_HTML_FILE = 'templates/map.html'
+
+
 def visualize():
     """
     visualize using folium
@@ -32,8 +36,8 @@ def visualize():
     # Data Visualization using Folium and GeoPandas
     singapore_map = folium.Map(
                     #tiles = "nlog2n",
-                    location = [latitude, longitude],
-                    zoom_start = 12)
+                    location=[latitude, longitude],
+                    zoom_start=12)
 
     places = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_corona.geojson')
     for i in range(0, len(places)):
@@ -78,7 +82,7 @@ def visualize():
     incidents_accident = folium.map.FeatureGroup()
     singapore_map.add_child(incidents_accident)
 
-    singapore_map.save('templates/map.html')
+    singapore_map.save(OUTPUT_HTML_FILE)
 
 
 def gen_map_html():
@@ -114,9 +118,7 @@ def gen_map_html():
 
     #mplleaflet.show(fig=ax.figure) # To output _map.html file and display it in your browser.
 
-    mplleaflet.save_html(fig=ax.figure, fileobj='map.html')
-
-    # TODO: output html file and rely on flask to render the web page?
+    mplleaflet.save_html(fig=ax.figure, fileobj=OUTPUT_HTML_FILE)
 
 
 if __name__ == '__main__':
