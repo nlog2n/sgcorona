@@ -22,7 +22,7 @@ pipenv install flask
 ```bash
 pipenv shell
 python read_excel.py > singapore.imposm-geojson/singapore_corona.geojson
-# python geoview.py
+python geoview.py
 python app.py
 ```
 

@@ -13,6 +13,7 @@ import mplleaflet
 
 import folium
 from folium import IFrame
+from folium.features import DivIcon
 print(folium.__version__)
 
 # import pandas_bokeh
@@ -20,15 +21,28 @@ print(folium.__version__)
 # pandas_bokeh.output_file("mapplot.html")
 
 
-
-
 def draw_stats(m):
-    cy, cx = (103.832512, 1.360920)
-    width, height = 0.1, 0.1
-    points = [(cx-width/2, cy-height/2), (cx+width/2, cy-height/2), (cx+width/2, cy+height/2), (cx-width/2, cy+height/2)]
-    color = 'yellow'
-    rect = folium.Rectangle(bounds=points, color='#ff7800', fill=True, fill_color='#ffff00', fill_opacity=0.2)
-    rect.add_to(m)
+    cx, cy = (1.301268, 103.970763)
+
+    width, height = 0.05/2, 0.05
+    # points = [(cx-width/2, cy-height/2), (cx+width/2, cy-height/2), (cx+width/2, cy+height/2), (cx-width/2, cy+height/2)]
+    # color = 'yellow'
+    # rect = folium.Rectangle(bounds=points, color='#ff7800', fill=True, fill_color='#ffff00', fill_opacity=0.9)
+    # rect.add_to(m)
+
+    #folium.Circle([cx, cy], 1200, color='#ff7800', fill=True, fill_color='#ffff00', fill_opacity=0.9).add_to(m)
+
+
+    text = '33'
+    folium.map.Marker(
+        [cx, cy],
+        icon=DivIcon(
+            icon_size=(36, 36),
+            icon_anchor=(0, 0),
+            html='<div style="font-family:Courier; color:Orange; font-size: 24px;">33 CASES</div>',
+        )
+    ).add_to(m)
+
 
 def visualize():
     """
@@ -93,6 +107,12 @@ def visualize():
     return singapore_map
 
 
+def save_folium_map(m):
+    # output html file and rely on flask to render the web page
+    OUTPUT_HTML_FILE = 'templates/map.html'
+
+    m.save(OUTPUT_HTML_FILE)
+
 
 def gen_map_html(OUTPUT_HTML_FILE):
     """
@@ -133,4 +153,5 @@ def gen_map_html(OUTPUT_HTML_FILE):
 
 
 if __name__ == '__main__':
-    visualize()
+    m = visualize()
+    save_folium_map(m)

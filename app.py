@@ -15,26 +15,19 @@ import geoview
 UPLOAD_FOLDER = './static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
-# output html file and rely on flask to render the web page
-OUTPUT_HTML_FILE = 'templates/map.html'
-
-
 app = Flask(__name__)
-
-# create folium map object
-folium_map = geoview.visualize()
-
-# folium_map.save(OUTPUT_HTML_FILE)
 
 
 @app.route('/')
 def index_page():
 
     ## save folium map to html file and then render
-    # return render_template('map.html')
+    return render_template('map.html')
 
     ## alternatively, call folium _repr_html_ directly
-    return folium_map._repr_html_()
+    # create folium map object
+    # folium_map = geoview.visualize()
+    # return folium_map._repr_html_()
 
 
 @app.route('/hello')
