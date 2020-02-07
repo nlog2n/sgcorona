@@ -20,9 +20,15 @@ print(folium.__version__)
 # pandas_bokeh.output_file("mapplot.html")
 
 
-# output html file and rely on flask to render the web page
-OUTPUT_HTML_FILE = 'templates/map.html'
 
+
+def draw_stats(m):
+    cy, cx = (103.832512, 1.360920)
+    width, height = 0.1, 0.1
+    points = [(cx-width/2, cy-height/2), (cx+width/2, cy-height/2), (cx+width/2, cy+height/2), (cx-width/2, cy+height/2)]
+    color = 'yellow'
+    rect = folium.Rectangle(bounds=points, color='#ff7800', fill=True, fill_color='#ffff00', fill_opacity=0.2)
+    rect.add_to(m)
 
 def visualize():
     """
@@ -39,18 +45,18 @@ def visualize():
                     location=[latitude, longitude],
                     zoom_start=12)
 
-    places = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_corona.geojson')
-    for i in range(0, len(places)):
-        geo = places.geometry[i]
+    gdf = gpd.GeoDataFrame.from_file('singapore.imposm-geojson/singapore_corona.geojson')
+    for i, row in gdf.iterrows():
+        geo = row.geometry
         lat, lng = geo.y, geo.x
-        caseno = "#" + str(int(places.id[i]))
-        date = places.date[i]
-        age = places.age[i]
-        gender = places.gender[i]
-        visited = places.visited[i]
-        from_country = places.home[i]
-        related = places.related[i]
-        status = places.status[i]
+        caseno = "#" + str(int(row.id))
+        date = row.date
+        age = row.age
+        gender = row.gender
+        visited = row.visited
+        from_country = row.home
+        related = row.related
+        status = row.status
 
         # in html view
         label = caseno +", " + date \
@@ -82,12 +88,17 @@ def visualize():
     incidents_accident = folium.map.FeatureGroup()
     singapore_map.add_child(incidents_accident)
 
-    singapore_map.save(OUTPUT_HTML_FILE)
+    #draw_stats(singapore_map)
+
+    return singapore_map
 
 
-def gen_map_html():
+
+def gen_map_html(OUTPUT_HTML_FILE):
     """
     visualize using mplleaflet
+    Map data can be downloaded at: mapzen/metro-extracts, https://www.interline.io/osm/extracts/
+    in imposm-geojson format.
     :return:
     """
     # overlay map

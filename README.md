@@ -4,6 +4,7 @@ Find out corona viruses in Singapore
 ## required
 ```bash
 pipenv --python 3
+pipenv install geojson
 pipenv install geopandas
 pipenv install mplleaflet
 # pipenv install mplexporter
@@ -21,7 +22,7 @@ pipenv install flask
 ```bash
 pipenv shell
 python read_excel.py > singapore.imposm-geojson/singapore_corona.geojson
-python geoview.py
+# python geoview.py
 python app.py
 ```
 

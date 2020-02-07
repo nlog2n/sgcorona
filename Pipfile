@@ -15,6 +15,7 @@ xlrd = "*"
 folium = "*"
 flask = "*"
 pandas-bokeh = "*"
+geojson = "*"
 
 [requires]
 python_version = "3.7"

@@ -8,31 +8,33 @@ Created on June 26 09:48:12 2018
 """
 
 import os
-from flask import Flask, request, render_template, redirect, url_for
-from werkzeug.utils import secure_filename
+from flask import Flask, request, render_template
 
-# UPLOAD_FOLDER = os.path.basename('uploads')
-# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+import geoview
 
 UPLOAD_FOLDER = './static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
+# output html file and rely on flask to render the web page
+OUTPUT_HTML_FILE = 'templates/map.html'
+
+
 app = Flask(__name__)
 
+# create folium map object
+folium_map = geoview.visualize()
 
-def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-
-def get_pretty_json_str(result):
-    import json
-    return json.dumps(result, sort_keys=False, ensure_ascii=False, indent=4)
+# folium_map.save(OUTPUT_HTML_FILE)
 
 
 @app.route('/')
 def index_page():
-    return render_template('map.html')
+
+    ## save folium map to html file and then render
+    # return render_template('map.html')
+
+    ## alternatively, call folium _repr_html_ directly
+    return folium_map._repr_html_()
 
 
 @app.route('/hello')
