@@ -54,7 +54,7 @@ def draw_base_map():
                     #tiles="nlog2n",
                     #attr="<a href=https://github.com/nlog2n>nlog2n</a>",
                     location=[latitude, longitude],
-                    zoom_start=12)
+                    zoom_start=11)
 
     return singapore_map
 
@@ -65,11 +65,14 @@ def draw_map_legend(m):
     """
     m.get_root().html.add_child(folium.Element(title_html))
 
+    from datetime import datetime
+    dt = datetime.now()
+    dtStr = dt.strftime("%Y %b %d")
     legend_html = """
      <div style="position: fixed; 
      bottom: 20px; right: 10px; width: 110px; height: 120px; 
      border:2px solid grey; z-index:9999; font-size:12px;">
-     &nbsp; Legend <br>
+     &nbsp; %s <br>
      &nbsp; <i class="fa fa-map-marker fa-2x"
                   style="color:orange"></i>&nbsp; imported<br>
      &nbsp; <i class="fa fa-map-marker fa-2x"
@@ -77,7 +80,8 @@ def draw_map_legend(m):
      &nbsp; <i class="fa fa-map-marker fa-2x"
                   style="color:green"></i>&nbsp; recovered
       </div>
-    """
+    """ % dtStr
+
     m.get_root().html.add_child(folium.Element(legend_html))
 
 
@@ -106,11 +110,9 @@ def draw_stats(m):
 
 def draw_virus_places(m, gdf):
 
-    group0 = folium.FeatureGroup(name='<span style=\\"color: red;\\">red -local infected</span>')
-
-    group1 = folium.FeatureGroup(name='<span style=\\"color: orange;\\">orange -imported</span>')
-
-    group2 = folium.FeatureGroup(name='<span style=\\"color: green;\\">green -recovered</span>')
+    group0 = folium.FeatureGroup(name='<span style="color: red;">red -local infected</span>')
+    group1 = folium.FeatureGroup(name='<span style="color: orange;">orange -imported</span>')
+    group2 = folium.FeatureGroup(name='<span style="color: green;">green -recovered</span>')
 
     for i, row in gdf.iterrows():
         geo = row.geometry
@@ -134,7 +136,7 @@ def draw_virus_places(m, gdf):
         if status != "" and status is not None:
             label += "<br>" + "Status: " + status
 
-        test_html = folium.Html(label, script=True)
+        test_html = folium.Html(label, script=False)
         iframe = IFrame(html=label, width=300, height=100)
         popup = folium.Popup(iframe,  parse_html=True)
 
