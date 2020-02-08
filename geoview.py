@@ -60,17 +60,26 @@ def draw_base_map():
 
 
 def draw_map_legend(m):
-    group0 = folium.FeatureGroup(name='<span style=\\"color: red;\\">red circles</span>')
-    for lat, lng in zip(range(500, 520), range(50, 70)):
-        folium.CircleMarker((lat / 10, lng / 10), color='red', radius=2).add_to(group0)
-    group0.add_to(m)
+    title_html = """
+        <title>Corona Viruses in Singapore</title>
+    """
+    m.get_root().html.add_child(folium.Element(title_html))
 
-    group1 = folium.FeatureGroup(name='<span style=\\"color: blue;\\">blue circles</span>')
-    for lat, lng in zip(range(500, 520), range(70, 50, -1)):
-        folium.CircleMarker((lat / 10, lng / 10), color='blue', radius=2).add_to(group1)
-    group1.add_to(m)
+    legend_html = """
+     <div style="position: fixed; 
+     bottom: 20px; right: 10px; width: 110px; height: 120px; 
+     border:2px solid grey; z-index:9999; font-size:12px;">
+     &nbsp; Legend <br>
+     &nbsp; <i class="fa fa-map-marker fa-2x"
+                  style="color:orange"></i>&nbsp; imported<br>
+     &nbsp; <i class="fa fa-map-marker fa-2x"
+                  style="color:red"></i>&nbsp; infected<br>
+     &nbsp; <i class="fa fa-map-marker fa-2x"
+                  style="color:green"></i>&nbsp; recovered
+      </div>
+    """
+    m.get_root().html.add_child(folium.Element(legend_html))
 
-    folium.map.LayerControl('topright', collapsed=False).add_to(m)
 
 def draw_stats(m):
     cx, cy = (1.301268, 103.970763)
@@ -97,11 +106,11 @@ def draw_stats(m):
 
 def draw_virus_places(m, gdf):
 
-    group0 = folium.FeatureGroup(name='<span style=\\"color: red;\\">red - local infected cases</span>')
+    group0 = folium.FeatureGroup(name='<span style=\\"color: red;\\">red -local infected</span>')
 
-    group1 = folium.FeatureGroup(name='<span style=\\"color: orange;\\">orange - imported cases</span>')
+    group1 = folium.FeatureGroup(name='<span style=\\"color: orange;\\">orange -imported</span>')
 
-    group2 = folium.FeatureGroup(name='<span style=\\"color: green;\\">green - recovered cases</span>')
+    group2 = folium.FeatureGroup(name='<span style=\\"color: green;\\">green -recovered</span>')
 
     for i, row in gdf.iterrows():
         geo = row.geometry
@@ -143,7 +152,7 @@ def draw_virus_places(m, gdf):
         marker = folium.Marker(
             location=[lat, lng],
             popup=popup,
-            icon=folium.Icon(color=color, icon='info-sign')
+            icon=folium.Icon(color=color, prefix='fa', icon='circle')
         )
         marker.add_to(grp)
 
@@ -151,7 +160,7 @@ def draw_virus_places(m, gdf):
     m.add_child(group1)
     m.add_child(group2)
 
-    folium.map.LayerControl('topright', collapsed=False).add_to(m)
+    folium.map.LayerControl('topright', collapsed=True).add_to(m)
 
 
 def visualize():
@@ -167,7 +176,7 @@ def visualize():
 
     #draw_stats(singapore_map)
 
-    #draw_map_legend(singapore_map)
+    draw_map_legend(singapore_map)
 
     return singapore_map
 

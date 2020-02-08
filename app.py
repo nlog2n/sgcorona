@@ -25,9 +25,11 @@ def index_page():
     return render_template('map.html')
 
     ## alternatively, call folium _repr_html_ directly
-    # create folium map object
+    # # create folium map object
     # folium_map = geoview.visualize()
     # return folium_map._repr_html_()
+
+    # TODO: not shown correctly in browser
 
 
 @app.route('/hello')
