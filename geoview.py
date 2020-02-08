@@ -20,7 +20,11 @@ print(folium.__version__)
 # print(pandas_bokeh.__version__)
 # pandas_bokeh.output_file("mapplot.html")
 
+# center of singapore map
+latitude = 1.360920
+longitude = 103.832512
 
+# generated geojson file
 SINGAPORE_CORONA_GEOJSON_FILE = 'singapore.imposm-geojson/singapore_corona.geojson'
 
 
@@ -44,6 +48,29 @@ def get_virus_data():
     return gdf
 
 
+def draw_base_map():
+    # Data Visualization using Folium and GeoPandas
+    singapore_map = folium.Map(
+                    #tiles="nlog2n",
+                    #attr="<a href=https://github.com/nlog2n>nlog2n</a>",
+                    location=[latitude, longitude],
+                    zoom_start=12)
+
+    return singapore_map
+
+
+def draw_map_legend(m):
+    group0 = folium.FeatureGroup(name='<span style=\\"color: red;\\">red circles</span>')
+    for lat, lng in zip(range(500, 520), range(50, 70)):
+        folium.CircleMarker((lat / 10, lng / 10), color='red', radius=2).add_to(group0)
+    group0.add_to(m)
+
+    group1 = folium.FeatureGroup(name='<span style=\\"color: blue;\\">blue circles</span>')
+    for lat, lng in zip(range(500, 520), range(70, 50, -1)):
+        folium.CircleMarker((lat / 10, lng / 10), color='blue', radius=2).add_to(group1)
+    group1.add_to(m)
+
+    folium.map.LayerControl('topright', collapsed=False).add_to(m)
 
 def draw_stats(m):
     cx, cy = (1.301268, 103.970763)
@@ -68,22 +95,14 @@ def draw_stats(m):
     ).add_to(m)
 
 
-def visualize():
-    """
-    visualize using folium
-    :return:
-    """
-    # center of singapore map
-    latitude = 1.360920
-    longitude = 103.832512
+def draw_virus_places(m, gdf):
 
-    # Data Visualization using Folium and GeoPandas
-    singapore_map = folium.Map(
-                    #tiles = "nlog2n",
-                    location=[latitude, longitude],
-                    zoom_start=12)
+    group0 = folium.FeatureGroup(name='<span style=\\"color: red;\\">red - local infected cases</span>')
 
-    gdf = get_virus_data()
+    group1 = folium.FeatureGroup(name='<span style=\\"color: orange;\\">orange - imported cases</span>')
+
+    group2 = folium.FeatureGroup(name='<span style=\\"color: green;\\">green - recovered cases</span>')
+
     for i, row in gdf.iterrows():
         geo = row.geometry
         lat, lng = geo.y, geo.x
@@ -110,23 +129,45 @@ def visualize():
         iframe = IFrame(html=label, width=300, height=100)
         popup = folium.Popup(iframe,  parse_html=True)
 
+        grp = None
         if status == "recovered": # green
             color = 'green'
+            grp = group2
         elif from_country == "Singapore": #red
             color = 'red'
+            grp = group0
         else:
             color = 'orange'
+            grp = group1
 
-        folium.Marker(
+        marker = folium.Marker(
             location=[lat, lng],
             popup=popup,
             icon=folium.Icon(color=color, icon='info-sign')
-        ).add_to(singapore_map)
+        )
+        marker.add_to(grp)
 
-    incidents_accident = folium.map.FeatureGroup()
-    singapore_map.add_child(incidents_accident)
+    m.add_child(group0)
+    m.add_child(group1)
+    m.add_child(group2)
+
+    folium.map.LayerControl('topright', collapsed=False).add_to(m)
+
+
+def visualize():
+    """
+    visualize using folium
+    :return:
+    """
+    singapore_map = draw_base_map()
+
+    gdf = get_virus_data()
+
+    draw_virus_places(singapore_map, gdf)
 
     #draw_stats(singapore_map)
+
+    #draw_map_legend(singapore_map)
 
     return singapore_map
 
