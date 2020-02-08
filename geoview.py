@@ -110,9 +110,11 @@ def draw_stats(m):
 
 def draw_virus_places(m, gdf):
 
-    group0 = folium.FeatureGroup(name='<span style="color: red;">red -local infected</span>')
-    group1 = folium.FeatureGroup(name='<span style="color: orange;">orange -imported</span>')
-    group2 = folium.FeatureGroup(name='<span style="color: green;">green -recovered</span>')
+    group0 = folium.FeatureGroup(name='<span style="color: red;">{} infected</span>')
+    group1 = folium.FeatureGroup(name='<span style="color: orange;">{} imported</span>')
+    group2 = folium.FeatureGroup(name='<span style="color: green;">{} recovered</span>')
+
+    cnt_red, cnt_orange, cnt_green = 0, 0, 0
 
     for i, row in gdf.iterrows():
         geo = row.geometry
@@ -136,20 +138,26 @@ def draw_virus_places(m, gdf):
         if status != "" and status is not None:
             label += "<br>" + "Status: " + status
 
-        test_html = folium.Html(label, script=False)
-        iframe = IFrame(html=label, width=300, height=100)
-        popup = folium.Popup(iframe,  parse_html=True)
+        test_html = folium.Html(label, script=True)
+        popup = folium.Popup(test_html, max_width=300)
+
+        # using iframe not supported inside Wechat app
+        # iframe = IFrame(html=label, width=300, height=100)
+        # popup = folium.Popup(iframe,  parse_html=True)
 
         grp = None
         if status == "recovered": # green
             color = 'green'
             grp = group2
+            cnt_green += 1
         elif from_country == "Singapore": #red
             color = 'red'
             grp = group0
+            cnt_red += 1
         else:
             color = 'orange'
             grp = group1
+            cnt_orange += 1
 
         marker = folium.Marker(
             location=[lat, lng],
@@ -157,6 +165,10 @@ def draw_virus_places(m, gdf):
             icon=folium.Icon(color=color, prefix='fa', icon='circle')
         )
         marker.add_to(grp)
+
+    group0.layer_name = group0.layer_name.format(cnt_red)
+    group1.layer_name = group1.layer_name.format(cnt_orange)
+    group2.layer_name = group2.layer_name.format(cnt_green)
 
     m.add_child(group0)
     m.add_child(group1)
