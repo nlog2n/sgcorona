@@ -134,7 +134,7 @@ def draw_virus_places(m, gdf):
                 + "<br>" + "Profile: " + str(age) + ", " + gender \
                 + "<br>" + "Visited: " + visited
         if related != "" and related is not None:
-            label += "<br>" + "Linked to: #" + str(int(related))
+            label += "<br>" + "Linked to: #" + str(related)
         if status != "" and status is not None:
             label += "<br>" + "Status: " + status
 
