@@ -146,7 +146,7 @@ def draw_virus_places(m, gdf):
         # popup = folium.Popup(iframe,  parse_html=True)
 
         grp = None
-        if status == "recovered": # green
+        if status == "Discharged": # green
             color = 'green'
             grp = group2
             cnt_green += 1
