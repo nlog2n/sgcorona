@@ -119,24 +119,34 @@ def draw_virus_places(m, gdf):
     for i, row in gdf.iterrows():
         geo = row.geometry
         lat, lng = geo.y, geo.x
+
         caseno = "#" + str(int(row.id))
         date = row.date
-        age = row.age
+        age = str(row.age)
         gender = row.gender
+        stay = row.stay
         visited = row.visited
-        from_country = row.home
+        from_place = row.infected
         related = row.related
         status = row.status
 
+        nationality = row.nationality
+        symptom_date = row.symptom_date
+        discharge_date = row.discharge_date
+        cluster = row.cluster
+
         # in html view
-        label = caseno +", " + date \
-                + "<br>" + "From: " + from_country \
-                + "<br>" + "Profile: " + str(age) + ", " + gender \
-                + "<br>" + "Visited: " + visited
-        if related != "" and related is not None:
-            label += "<br>" + "Linked to: #" + str(related)
+        label = "<b>" + caseno +"</b>, " + date \
+                + "<br>" + "<b>Profile:</b> " + age + ", " + gender + ", " + nationality \
+                + "<br>" + "<b>Stay:</b> " + stay \
+                + "<br>" + "<b>Visited:</b> " + visited \
+                + "<br>" + "<b>Symptom:</b> " + symptom_date
+        if cluster != "" and cluster is not None:
+            label += "<br>" + "<b>Cluster:</b> " + cluster
         if status != "" and status is not None:
-            label += "<br>" + "Status: " + status
+            label += "<br>" + "<b>Status:</b> " + status
+        if discharge_date != "" and discharge_date is not None:
+            label += "<br>" + "<b>Discharged:</b> " + discharge_date
 
         test_html = folium.Html(label, script=True)
         popup = folium.Popup(test_html, max_width=300)
@@ -150,7 +160,7 @@ def draw_virus_places(m, gdf):
             color = 'green'
             grp = group2
             cnt_green += 1
-        elif from_country == "Singapore": #red
+        elif from_place == "Singapore": #red
             color = 'red'
             grp = group0
             cnt_red += 1

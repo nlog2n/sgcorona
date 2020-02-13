@@ -45,6 +45,11 @@ def read_rawdata():
         related_cases = table.cell(i, 9).value
         status = table.cell(i,10).value
 
+        nationality = table.cell(i,11).value
+        symptom_date = table.cell(i,12).value
+        discharge_date = table.cell(i,13).value
+        cluster = table.cell(i,14).value
+
         caseno = int(caseno)
         lat, lon = float(lat), float(lon)
         age = int(age)
@@ -54,11 +59,15 @@ def read_rawdata():
                 "date": date,
                 "age": age,
                 "gender": gender,
-                "home": from_place,
+                "infected": from_place,
                 "stay": staty_place,
                 "visited": visited_places,
                 "related": related_cases,
-                "status": status
+                "status": status,
+                "nationality": nationality,
+                "symptom_date": symptom_date,
+                "discharge_date": discharge_date,
+                "cluster": cluster
         }
 
         geometry = {
