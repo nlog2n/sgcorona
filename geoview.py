@@ -124,10 +124,11 @@ def draw_virus_places(m, gdf):
         date = row.date
         age = str(row.age)
         gender = row.gender
+        occupation = row.occupation
         stay = row.stay
         visited = row.visited
         from_place = row.infected
-        related = row.related
+        linked_to = row.linked_to
         status = row.status
 
         nationality = row.nationality
@@ -136,17 +137,23 @@ def draw_virus_places(m, gdf):
         cluster = row.cluster
 
         # in html view
-        label = "<b>" + caseno +"</b>, " + date \
-                + "<br>" + "<b>Profile:</b> " + age + ", " + gender + ", " + nationality \
-                + "<br>" + "<b>Stay:</b> " + stay \
-                + "<br>" + "<b>Visited:</b> " + visited \
-                + "<br>" + "<b>Symptom:</b> " + symptom_date
+        label = "<b>" + caseno + "</b>, " + date \
+                + "<br>" + gender + " " + age + " " + nationality + " " + occupation
+        if stay != "" and stay is not None:
+            label += "<br>" + "<b>Stay:</b> " + stay
+        if visited != "" and visited is not None:
+            label += "<br>" + "<b>Visited:</b> " + visited
+        if linked_to != "" and linked_to is not None:
+            label += "<br>" + "<b>Linked to:</b> " + linked_to
         if cluster != "" and cluster is not None:
             label += "<br>" + "<b>Cluster:</b> " + cluster
+        if symptom_date != "" and symptom_date is not None:
+            label += "<br>" + "<b>Symptom:</b> " + symptom_date
         if status != "" and status is not None:
             label += "<br>" + "<b>Status:</b> " + status
-        if discharge_date != "" and discharge_date is not None:
-            label += "<br>" + "<b>Discharged:</b> " + discharge_date
+            if status == "Discharged":
+                if discharge_date != "" and discharge_date is not None:
+                    label += " on " + discharge_date
 
         test_html = folium.Html(label, script=True)
         popup = folium.Popup(test_html, max_width=300)

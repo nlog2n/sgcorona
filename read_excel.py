@@ -49,6 +49,7 @@ def read_rawdata():
         symptom_date = table.cell(i,12).value
         discharge_date = table.cell(i,13).value
         cluster = table.cell(i,14).value
+        occupation = table.cell(i,15).value
 
         caseno = int(caseno)
         lat, lon = float(lat), float(lon)
@@ -59,10 +60,11 @@ def read_rawdata():
                 "date": date,
                 "age": age,
                 "gender": gender,
+                "occupation": occupation,
                 "infected": from_place,
                 "stay": staty_place,
                 "visited": visited_places,
-                "related": related_cases,
+                "linked_to": related_cases,
                 "status": status,
                 "nationality": nationality,
                 "symptom_date": symptom_date,

@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9830f136f33f4a949117f5967538408e {
+                #map_a56f36188306447eb1bc73a617663884 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -41,7 +41,7 @@
      <div style="position: fixed; 
      bottom: 20px; right: 10px; width: 110px; height: 120px; 
      border:2px solid grey; z-index:9999; font-size:12px;">
-     &nbsp; 2020 Feb 14 <br>
+     &nbsp; 2020 Feb 16 <br>
      &nbsp; <i class="fa fa-map-marker fa-2x"
                   style="color:orange"></i>&nbsp; imported<br>
      &nbsp; <i class="fa fa-map-marker fa-2x"
@@ -51,13 +51,13 @@
       </div>
     
     
-            <div class="folium-map" id="map_9830f136f33f4a949117f5967538408e" ></div>
+            <div class="folium-map" id="map_a56f36188306447eb1bc73a617663884" ></div>
         
 </body>
 <script>    
     
-            var map_9830f136f33f4a949117f5967538408e = L.map(
-                "map_9830f136f33f4a949117f5967538408e",
+            var map_a56f36188306447eb1bc73a617663884 = L.map(
+                "map_a56f36188306447eb1bc73a617663884",
                 {
                     center: [1.36092, 103.832512],
                     crs: L.CRS.EPSG3857,
@@ -71,1716 +71,1841 @@
 
         
     
-            var tile_layer_a71c75cd1620404d815f8478f67e5e81 = L.tileLayer(
+            var tile_layer_f0af4074c5e74f5cb5f40edfdbfebf6b = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_9830f136f33f4a949117f5967538408e);
+            ).addTo(map_a56f36188306447eb1bc73a617663884);
         
     
-            var feature_group_f31313a0f1a0425a985a8d940aebf9b4 = L.featureGroup(
+            var feature_group_00ed20b08b374854a331bad70d8057b5 = L.featureGroup(
                 {}
-            ).addTo(map_9830f136f33f4a949117f5967538408e);
+            ).addTo(map_a56f36188306447eb1bc73a617663884);
         
     
-            var marker_c25cc467fbdc41be99277529627b2adc = L.marker(
+            var marker_f1e81be3b59a4ce6997ca674de93db6f = L.marker(
                 [1.36281989482, 103.99087429],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_cf13017ce1a8449c8533fd5f3e324773 = L.AwesomeMarkers.icon(
+            var icon_75894122c699465db8f661e4f635e406 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_c25cc467fbdc41be99277529627b2adc.setIcon(icon_cf13017ce1a8449c8533fd5f3e324773);
+            marker_f1e81be3b59a4ce6997ca674de93db6f.setIcon(icon_75894122c699465db8f661e4f635e406);
         
     
-        var popup_6775def8e64e46519ce52dc15369c5e5 = L.popup({"maxWidth": 300});
+        var popup_454e23d1850c41659d85002811f07b35 = L.popup({"maxWidth": 300});
 
         
-            var html_c0bc25c94ffd4d8d98fdeff89cc4078f = $(`<div id="html_c0bc25c94ffd4d8d98fdeff89cc4078f" style="width: 100.0%; height: 100.0%;"><b>#15</b>, Jan-31<br><b>Profile:</b> 47, Female, Singapore<br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30</div>`)[0];
-            popup_6775def8e64e46519ce52dc15369c5e5.setContent(html_c0bc25c94ffd4d8d98fdeff89cc4078f);
+            var html_5ad6a1836073483ba1956c156d76e03a = $(`<div id="html_5ad6a1836073483ba1956c156d76e03a" style="width: 100.0%; height: 100.0%;"><b>#15</b>, Jan-31<br>Female 47 Singaporean <br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30</div>`)[0];
+            popup_454e23d1850c41659d85002811f07b35.setContent(html_5ad6a1836073483ba1956c156d76e03a);
         
 
-        marker_c25cc467fbdc41be99277529627b2adc.bindPopup(popup_6775def8e64e46519ce52dc15369c5e5)
+        marker_f1e81be3b59a4ce6997ca674de93db6f.bindPopup(popup_454e23d1850c41659d85002811f07b35)
         ;
 
         
     
     
-            var marker_f53f8fc837c543cbb99e224b954887de = L.marker(
+            var marker_672a0e72d24c496e96a7c01a452b8f9e = L.marker(
                 [1.28475359094, 103.815278113],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_c7f54cf2bfac453e91ad8b7733084ba7 = L.AwesomeMarkers.icon(
+            var icon_9ac1d88c264b4c2cabcf1cf4cca384af = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_f53f8fc837c543cbb99e224b954887de.setIcon(icon_c7f54cf2bfac453e91ad8b7733084ba7);
+            marker_672a0e72d24c496e96a7c01a452b8f9e.setIcon(icon_9ac1d88c264b4c2cabcf1cf4cca384af);
         
     
-        var popup_f7cd22dbb03b4db0a5bc314208562c59 = L.popup({"maxWidth": 300});
+        var popup_2bf4dd22261148f398171b15bd1fc844 = L.popup({"maxWidth": 300});
 
         
-            var html_f2e4b3a61abd44e9a5ceded13100c3e2 = $(`<div id="html_f2e4b3a61abd44e9a5ceded13100c3e2" style="width: 100.0%; height: 100.0%;"><b>#19</b>, Feb-04<br><b>Profile:</b> 28, Female,  PR<br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> Singapore General Hospital, Tan Tock Seng Hospital, GP Clinic, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Jan-29<br><b>Cluster:</b> Yong Thai Hang</div>`)[0];
-            popup_f7cd22dbb03b4db0a5bc314208562c59.setContent(html_f2e4b3a61abd44e9a5ceded13100c3e2);
+            var html_dec4f559c64b45499fb90f31624e84e5 = $(`<div id="html_dec4f559c64b45499fb90f31624e84e5" style="width: 100.0%; height: 100.0%;"><b>#19</b>, Feb-04<br>Female 28  PR <br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> Singapore General Hospital, Tan Tock Seng Hospital, GP Clinic, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Jan-29</div>`)[0];
+            popup_2bf4dd22261148f398171b15bd1fc844.setContent(html_dec4f559c64b45499fb90f31624e84e5);
         
 
-        marker_f53f8fc837c543cbb99e224b954887de.bindPopup(popup_f7cd22dbb03b4db0a5bc314208562c59)
+        marker_672a0e72d24c496e96a7c01a452b8f9e.bindPopup(popup_2bf4dd22261148f398171b15bd1fc844)
         ;
 
         
     
     
-            var marker_e79da446f1c44fa5ac6fbf68eeb58c1e = L.marker(
+            var marker_5fc6ba76b1104d07b5afbcbd966f0c16 = L.marker(
                 [1.37476572624, 103.885970414],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_e1afb1274353460898f74606a9c553e1 = L.AwesomeMarkers.icon(
+            var icon_794494914412413fae87f484b5c53096 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_e79da446f1c44fa5ac6fbf68eeb58c1e.setIcon(icon_e1afb1274353460898f74606a9c553e1);
+            marker_5fc6ba76b1104d07b5afbcbd966f0c16.setIcon(icon_794494914412413fae87f484b5c53096);
         
     
-        var popup_7ae763a0596c400d922434aa7e6d6a7f = L.popup({"maxWidth": 300});
+        var popup_a3677d976c7f4b78b04b37a3136f0c63 = L.popup({"maxWidth": 300});
 
         
-            var html_82fd616384834ebbb7f63e983e27c9a1 = $(`<div id="html_82fd616384834ebbb7f63e983e27c9a1" style="width: 100.0%; height: 100.0%;"><b>#20</b>, Feb-04<br><b>Profile:</b> 48, Female, Singapore<br><b>Stay:</b> Hougang Street 61<br><b>Visited:</b> Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Jan-25<br><b>Cluster:</b> Yong Thai Hang</div>`)[0];
-            popup_7ae763a0596c400d922434aa7e6d6a7f.setContent(html_82fd616384834ebbb7f63e983e27c9a1);
+            var html_34fa443348a14e47ab9020044c2ba3d2 = $(`<div id="html_34fa443348a14e47ab9020044c2ba3d2" style="width: 100.0%; height: 100.0%;"><b>#20</b>, Feb-04<br>Female 48 Singaporean <br><b>Stay:</b> Hougang Street 61<br><b>Visited:</b> Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Linked to:</b> 19<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Jan-25</div>`)[0];
+            popup_a3677d976c7f4b78b04b37a3136f0c63.setContent(html_34fa443348a14e47ab9020044c2ba3d2);
         
 
-        marker_e79da446f1c44fa5ac6fbf68eeb58c1e.bindPopup(popup_7ae763a0596c400d922434aa7e6d6a7f)
+        marker_5fc6ba76b1104d07b5afbcbd966f0c16.bindPopup(popup_a3677d976c7f4b78b04b37a3136f0c63)
         ;
 
         
     
     
-            var marker_82d481d83e61491eac940fa86b164dcc = L.marker(
+            var marker_0f8aa3014f1c4d768f7a09e846273a8a = L.marker(
                 [1.28479917703, 103.815087676],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_df660f9adeba4af0a6a5edf65301ce92 = L.AwesomeMarkers.icon(
+            var icon_85d9694ff7384af182927a052ddb348e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_82d481d83e61491eac940fa86b164dcc.setIcon(icon_df660f9adeba4af0a6a5edf65301ce92);
+            marker_0f8aa3014f1c4d768f7a09e846273a8a.setIcon(icon_85d9694ff7384af182927a052ddb348e);
         
     
-        var popup_d4c2d5e8e09d47bd9374ab938f1144ea = L.popup({"maxWidth": 300});
+        var popup_ed0dc46d1afe442abeede938094496fc = L.popup({"maxWidth": 300});
 
         
-            var html_f96882a6da75456aa22da25f4ff0fa4a = $(`<div id="html_f96882a6da75456aa22da25f4ff0fa4a" style="width: 100.0%; height: 100.0%;"><b>#21</b>, Feb-04<br><b>Profile:</b> 44, Female, Indonesian<br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> Singapore General Hospital, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Feb-02<br><b>Cluster:</b> Yong Thai Hang</div>`)[0];
-            popup_d4c2d5e8e09d47bd9374ab938f1144ea.setContent(html_f96882a6da75456aa22da25f4ff0fa4a);
+            var html_b64eab420e394c5e91f8e51710206dda = $(`<div id="html_b64eab420e394c5e91f8e51710206dda" style="width: 100.0%; height: 100.0%;"><b>#21</b>, Feb-04<br>Female 44 Indonesian <br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> Singapore General Hospital, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Linked to:</b> 19<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Feb-02</div>`)[0];
+            popup_ed0dc46d1afe442abeede938094496fc.setContent(html_b64eab420e394c5e91f8e51710206dda);
         
 
-        marker_82d481d83e61491eac940fa86b164dcc.bindPopup(popup_d4c2d5e8e09d47bd9374ab938f1144ea)
+        marker_0f8aa3014f1c4d768f7a09e846273a8a.bindPopup(popup_ed0dc46d1afe442abeede938094496fc)
         ;
 
         
     
     
-            var marker_45f371cd839d4caabe36c1a7433d535d = L.marker(
+            var marker_d826f979a5234ef7af81ab2cbe0b8f85 = L.marker(
                 [1.36307195114, 103.990965486],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_8e8941f56b294869bd8921ac12f988f8 = L.AwesomeMarkers.icon(
+            var icon_fc5ae734ea8a4667a9ff18de5fa9dd00 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_45f371cd839d4caabe36c1a7433d535d.setIcon(icon_8e8941f56b294869bd8921ac12f988f8);
+            marker_d826f979a5234ef7af81ab2cbe0b8f85.setIcon(icon_fc5ae734ea8a4667a9ff18de5fa9dd00);
         
     
-        var popup_626a2c1c635e42f3a340f09d102d2ef9 = L.popup({"maxWidth": 300});
+        var popup_a8bec9fca0c44e7084b0e6fb35d6d28b = L.popup({"maxWidth": 300});
 
         
-            var html_c11edca519514e4a97542606b3bd9efe = $(`<div id="html_c11edca519514e4a97542606b3bd9efe" style="width: 100.0%; height: 100.0%;"><b>#23</b>, Feb-04<br><b>Profile:</b> 17, Male, Singapore<br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30</div>`)[0];
-            popup_626a2c1c635e42f3a340f09d102d2ef9.setContent(html_c11edca519514e4a97542606b3bd9efe);
+            var html_383bfe9f89804eda8bfed59c50e94b49 = $(`<div id="html_383bfe9f89804eda8bfed59c50e94b49" style="width: 100.0%; height: 100.0%;"><b>#23</b>, Feb-04<br>Male 17 Singaporean <br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30</div>`)[0];
+            popup_a8bec9fca0c44e7084b0e6fb35d6d28b.setContent(html_383bfe9f89804eda8bfed59c50e94b49);
         
 
-        marker_45f371cd839d4caabe36c1a7433d535d.bindPopup(popup_626a2c1c635e42f3a340f09d102d2ef9)
+        marker_d826f979a5234ef7af81ab2cbe0b8f85.bindPopup(popup_a8bec9fca0c44e7084b0e6fb35d6d28b)
         ;
 
         
     
     
-            var marker_9767157a595e491898707eb54b10d67f = L.marker(
-                [1.3793195, 103.8826748],
-                {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
-        
-    
-            var icon_990ed87bdfc44ecb9451ce076a1258ee = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_9767157a595e491898707eb54b10d67f.setIcon(icon_990ed87bdfc44ecb9451ce076a1258ee);
-        
-    
-        var popup_538bfa3cca00482e9886f35ff80556f5 = L.popup({"maxWidth": 300});
-
-        
-            var html_2258a89b123149fe912b58c97130d264 = $(`<div id="html_2258a89b123149fe912b58c97130d264" style="width: 100.0%; height: 100.0%;"><b>#24</b>, Feb-04<br><b>Profile:</b> 32, Female, Singapore<br><b>Stay:</b> Buangkok Green<br><b>Visited:</b> Yong Thai Hang, Jalan Besar, Hougang Polyclinic, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Jan-30<br><b>Cluster:</b> Yong Thai Hang</div>`)[0];
-            popup_538bfa3cca00482e9886f35ff80556f5.setContent(html_2258a89b123149fe912b58c97130d264);
-        
-
-        marker_9767157a595e491898707eb54b10d67f.bindPopup(popup_538bfa3cca00482e9886f35ff80556f5)
-        ;
-
-        
-    
-    
-            var marker_467ebe5f98224d278cac90ac49a6d80c = L.marker(
+            var marker_8cb45c858c904a4f9bf1f02cf8929e95 = L.marker(
                 [1.28465705569, 103.815594614],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_37dbac45d637474ba39f69b31d75413e = L.AwesomeMarkers.icon(
+            var icon_abd6130b30bc480881cb6f6ecebf247a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_467ebe5f98224d278cac90ac49a6d80c.setIcon(icon_37dbac45d637474ba39f69b31d75413e);
+            marker_8cb45c858c904a4f9bf1f02cf8929e95.setIcon(icon_abd6130b30bc480881cb6f6ecebf247a);
         
     
-        var popup_3be9d6d14811403187621ef5105e9796 = L.popup({"maxWidth": 300});
+        var popup_0a56024f883d405dbf94d36863fb68e9 = L.popup({"maxWidth": 300});
 
         
-            var html_209c1e50fa2f4ac6b5433910f1aa8736 = $(`<div id="html_209c1e50fa2f4ac6b5433910f1aa8736" style="width: 100.0%; height: 100.0%;"><b>#27</b>, Feb-05<br><b>Profile:</b> 45, Male, Singapore<br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Feb-02<br><b>Cluster:</b> Yong Thai Hang</div>`)[0];
-            popup_3be9d6d14811403187621ef5105e9796.setContent(html_209c1e50fa2f4ac6b5433910f1aa8736);
+            var html_9106132fa77a493bbc0fc95ee9de3b10 = $(`<div id="html_9106132fa77a493bbc0fc95ee9de3b10" style="width: 100.0%; height: 100.0%;"><b>#27</b>, Feb-05<br>Male 45 Singaporean Private-Hire Driver<br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Linked to:</b> 19<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Feb-02</div>`)[0];
+            popup_0a56024f883d405dbf94d36863fb68e9.setContent(html_9106132fa77a493bbc0fc95ee9de3b10);
         
 
-        marker_467ebe5f98224d278cac90ac49a6d80c.bindPopup(popup_3be9d6d14811403187621ef5105e9796)
+        marker_8cb45c858c904a4f9bf1f02cf8929e95.bindPopup(popup_0a56024f883d405dbf94d36863fb68e9)
         ;
 
         
     
     
-            var marker_ce48d211d44b4d17997a1858aef2d0f6 = L.marker(
+            var marker_6247d0ab85f14982a58bcfe2815d5bb4 = L.marker(
                 [1.28469996024, 103.815433681],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_bc624e82f5e44efebbee9c6b21c6521d = L.AwesomeMarkers.icon(
+            var icon_3257e35dd8934357bee1c89a72c82ef9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_ce48d211d44b4d17997a1858aef2d0f6.setIcon(icon_bc624e82f5e44efebbee9c6b21c6521d);
+            marker_6247d0ab85f14982a58bcfe2815d5bb4.setIcon(icon_3257e35dd8934357bee1c89a72c82ef9);
         
     
-        var popup_6b65376123b447d19ebb3bc171e30fc5 = L.popup({"maxWidth": 300});
+        var popup_63ef158b5f1c4991829a55d9bf09f36a = L.popup({"maxWidth": 300});
 
         
-            var html_40db80d9a6de4a1c8058927001d94085 = $(`<div id="html_40db80d9a6de4a1c8058927001d94085" style="width: 100.0%; height: 100.0%;"><b>#28</b>, Feb-05<br><b>Profile:</b> 0, Male, Singapore<br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> KK Womens and Childrens Hospital, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Feb-02<br><b>Cluster:</b> Yong Thai Hang</div>`)[0];
-            popup_6b65376123b447d19ebb3bc171e30fc5.setContent(html_40db80d9a6de4a1c8058927001d94085);
+            var html_c4b63c8d8475418e94e7d0cd3dd61944 = $(`<div id="html_c4b63c8d8475418e94e7d0cd3dd61944" style="width: 100.0%; height: 100.0%;"><b>#28</b>, Feb-05<br>Male 0 Singaporean <br><b>Stay:</b> Jalan Bukit Merah<br><b>Visited:</b> KK Womens and Childrens Hospital, Yong Thai Hang, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Linked to:</b> 27<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Feb-02</div>`)[0];
+            popup_63ef158b5f1c4991829a55d9bf09f36a.setContent(html_c4b63c8d8475418e94e7d0cd3dd61944);
         
 
-        marker_ce48d211d44b4d17997a1858aef2d0f6.bindPopup(popup_6b65376123b447d19ebb3bc171e30fc5)
+        marker_6247d0ab85f14982a58bcfe2815d5bb4.bindPopup(popup_63ef158b5f1c4991829a55d9bf09f36a)
         ;
 
         
     
     
-            var marker_1ccb89590cb94dd0ac8f8615b69f2a19 = L.marker(
+            var marker_621a01c969b146969cadce48018ecb2e = L.marker(
                 [1.355457, 103.951563],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_5b2dfa8af9ff473287a69f750e35c776 = L.AwesomeMarkers.icon(
+            var icon_8a4c2963c2e54499a93df852c7892e04 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_1ccb89590cb94dd0ac8f8615b69f2a19.setIcon(icon_5b2dfa8af9ff473287a69f750e35c776);
+            marker_621a01c969b146969cadce48018ecb2e.setIcon(icon_8a4c2963c2e54499a93df852c7892e04);
         
     
-        var popup_ae978899ddaf4e8084e223de4f0c7994 = L.popup({"maxWidth": 300});
+        var popup_114aa5eeef9f436ea41658a10d701f25 = L.popup({"maxWidth": 300});
 
         
-            var html_0a1e582460904364a9df1683af275123 = $(`<div id="html_0a1e582460904364a9df1683af275123" style="width: 100.0%; height: 100.0%;"><b>#31</b>, Feb-07<br><b>Profile:</b> 53, Male, Singapore<br><b>Stay:</b> Tampines Street 24<br><b>Visited:</b> The Life Church, Missions Singapore<br><b>Symptom:</b> Jan-23<br><b>Cluster:</b> The Life Church and Missions Singapore</div>`)[0];
-            popup_ae978899ddaf4e8084e223de4f0c7994.setContent(html_0a1e582460904364a9df1683af275123);
+            var html_1a08efd01b574ee7bd88735748e37bfb = $(`<div id="html_1a08efd01b574ee7bd88735748e37bfb" style="width: 100.0%; height: 100.0%;"><b>#31</b>, Feb-07<br>Male 53 Singaporean <br><b>Stay:</b> Tampines Street 24<br><b>Visited:</b> The Life Church, Missions Singapore<br><b>Cluster:</b> The Life Church and Missions Singapore<br><b>Symptom:</b> Jan-23</div>`)[0];
+            popup_114aa5eeef9f436ea41658a10d701f25.setContent(html_1a08efd01b574ee7bd88735748e37bfb);
         
 
-        marker_1ccb89590cb94dd0ac8f8615b69f2a19.bindPopup(popup_ae978899ddaf4e8084e223de4f0c7994)
+        marker_621a01c969b146969cadce48018ecb2e.bindPopup(popup_114aa5eeef9f436ea41658a10d701f25)
         ;
 
         
     
     
-            var marker_1624905bb7bf44e0b754c8a52309d5bd = L.marker(
+            var marker_aada9283d615432c81c4655275d5a6cc = L.marker(
                 [1.378105, 103.94172],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_fc01bb8671cf46b5a1d8ae224a091a4e = L.AwesomeMarkers.icon(
+            var icon_527bc21d880d435e97d7cec7bacbfb12 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_1624905bb7bf44e0b754c8a52309d5bd.setIcon(icon_fc01bb8671cf46b5a1d8ae224a091a4e);
+            marker_aada9283d615432c81c4655275d5a6cc.setIcon(icon_527bc21d880d435e97d7cec7bacbfb12);
         
     
-        var popup_849233198d7946e9ba8948cbcb229b3c = L.popup({"maxWidth": 300});
+        var popup_910fcfbdb0a04d6f9258213ed04baaac = L.popup({"maxWidth": 300});
 
         
-            var html_c1d31a1feb7d4bbc82f9f366123b05fe = $(`<div id="html_c1d31a1feb7d4bbc82f9f366123b05fe" style="width: 100.0%; height: 100.0%;"><b>#32</b>, Feb-07<br><b>Profile:</b> 42, Female, Singapore<br><b>Stay:</b> Elias Road<br><b>Visited:</b> Victoria Junior College, Parkway East Hospital, Changi Airport, Singapore Zoo<br><b>Symptom:</b> Feb-02</div>`)[0];
-            popup_849233198d7946e9ba8948cbcb229b3c.setContent(html_c1d31a1feb7d4bbc82f9f366123b05fe);
+            var html_8c5bfb291d6e44c6854916d1422f11a7 = $(`<div id="html_8c5bfb291d6e44c6854916d1422f11a7" style="width: 100.0%; height: 100.0%;"><b>#32</b>, Feb-07<br>Female 42 Singaporean <br><b>Stay:</b> Elias Road<br><b>Visited:</b> Victoria Junior College, Parkway East Hospital, Changi Airport, Singapore Zoo<br><b>Symptom:</b> Feb-02</div>`)[0];
+            popup_910fcfbdb0a04d6f9258213ed04baaac.setContent(html_8c5bfb291d6e44c6854916d1422f11a7);
         
 
-        marker_1624905bb7bf44e0b754c8a52309d5bd.bindPopup(popup_849233198d7946e9ba8948cbcb229b3c)
+        marker_aada9283d615432c81c4655275d5a6cc.bindPopup(popup_910fcfbdb0a04d6f9258213ed04baaac)
         ;
 
         
     
     
-            var marker_e6b47ead9e934e2ea176a0e3684f3b4a = L.marker(
+            var marker_5474a5f890404fab9ae40854e8770163 = L.marker(
                 [1.392699, 103.894414],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_3298066a9b094733933613e33831e37c = L.AwesomeMarkers.icon(
+            var icon_cbd754fbb14d4d61b80915cf45698275 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_e6b47ead9e934e2ea176a0e3684f3b4a.setIcon(icon_3298066a9b094733933613e33831e37c);
+            marker_5474a5f890404fab9ae40854e8770163.setIcon(icon_cbd754fbb14d4d61b80915cf45698275);
         
     
-        var popup_c3a268d9fb044fe8892feda0cecb1e3b = L.popup({"maxWidth": 300});
+        var popup_f7f9beacdd0d4e999eb2f4a507272c47 = L.popup({"maxWidth": 300});
 
         
-            var html_e2f3a57468e24756b78feb3ac4679b8c = $(`<div id="html_e2f3a57468e24756b78feb3ac4679b8c" style="width: 100.0%; height: 100.0%;"><b>#33</b>, Feb-07<br><b>Profile:</b> 39, Female, Singapore<br><b>Stay:</b> Sengkang<br><b>Visited:</b> Sengkang Polyclinic<br><b>Symptom:</b> Jan-30<br><b>Cluster:</b> The Life Church and Missions Singapore</div>`)[0];
-            popup_c3a268d9fb044fe8892feda0cecb1e3b.setContent(html_e2f3a57468e24756b78feb3ac4679b8c);
+            var html_44f0dad4a9764e0987bd6ff839e3679e = $(`<div id="html_44f0dad4a9764e0987bd6ff839e3679e" style="width: 100.0%; height: 100.0%;"><b>#33</b>, Feb-07<br>Female 39 Singaporean <br><b>Stay:</b> Sengkang<br><b>Visited:</b> Sengkang Polyclinic<br><b>Cluster:</b> The Life Church and Missions Singapore<br><b>Symptom:</b> Jan-30</div>`)[0];
+            popup_f7f9beacdd0d4e999eb2f4a507272c47.setContent(html_44f0dad4a9764e0987bd6ff839e3679e);
         
 
-        marker_e6b47ead9e934e2ea176a0e3684f3b4a.bindPopup(popup_c3a268d9fb044fe8892feda0cecb1e3b)
+        marker_5474a5f890404fab9ae40854e8770163.bindPopup(popup_f7f9beacdd0d4e999eb2f4a507272c47)
         ;
 
         
     
     
-            var marker_b0d753915dd347ff92a84f4c343e4f62 = L.marker(
+            var marker_e717ba80b3d44c89b45175c686f5237a = L.marker(
                 [1.288771, 103.821619],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_06e8648d57294c12aee8c9446276efbb = L.AwesomeMarkers.icon(
+            var icon_5ab4066cca2c489da0c37e17d348459c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_b0d753915dd347ff92a84f4c343e4f62.setIcon(icon_06e8648d57294c12aee8c9446276efbb);
+            marker_e717ba80b3d44c89b45175c686f5237a.setIcon(icon_5ab4066cca2c489da0c37e17d348459c);
         
     
-        var popup_b6f743d139eb46e5adedde37843b0971 = L.popup({"maxWidth": 300});
+        var popup_6a8e3622392549308882f8f2dec66aaa = L.popup({"maxWidth": 300});
 
         
-            var html_adc192ebfb5a484abd78613d7cfad3d2 = $(`<div id="html_adc192ebfb5a484abd78613d7cfad3d2" style="width: 100.0%; height: 100.0%;"><b>#35</b>, Feb-07<br><b>Profile:</b> 64, Male, Singapore<br><b>Stay:</b> Henderson Crescent<br><b>Visited:</b> Bukit Merah Polyclinic, SGH, Redhill Market, Hawker centre at Bukit Merah<br><b>Symptom:</b> Jan-31</div>`)[0];
-            popup_b6f743d139eb46e5adedde37843b0971.setContent(html_adc192ebfb5a484abd78613d7cfad3d2);
+            var html_0c04fd4377614ff7bf1146db81adec23 = $(`<div id="html_0c04fd4377614ff7bf1146db81adec23" style="width: 100.0%; height: 100.0%;"><b>#35</b>, Feb-07<br>Male 64 Singaporean <br><b>Stay:</b> Henderson Crescent<br><b>Visited:</b> Bukit Merah Polyclinic, SGH, Redhill Market, Hawker centre at Bukit Merah<br><b>Symptom:</b> Jan-31</div>`)[0];
+            popup_6a8e3622392549308882f8f2dec66aaa.setContent(html_0c04fd4377614ff7bf1146db81adec23);
         
 
-        marker_b0d753915dd347ff92a84f4c343e4f62.bindPopup(popup_b6f743d139eb46e5adedde37843b0971)
+        marker_e717ba80b3d44c89b45175c686f5237a.bindPopup(popup_6a8e3622392549308882f8f2dec66aaa)
         ;
 
         
     
     
-            var marker_e239988679c14de98d3da0249f96b89d = L.marker(
+            var marker_a1d604b8e8d44547a21fe174837356c0 = L.marker(
                 [1.347247, 103.733663],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_b64e3e91ab0e40199b221e6242a0dd03 = L.AwesomeMarkers.icon(
+            var icon_da11569ab1964344af8a7c256dc3524d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_e239988679c14de98d3da0249f96b89d.setIcon(icon_b64e3e91ab0e40199b221e6242a0dd03);
+            marker_a1d604b8e8d44547a21fe174837356c0.setIcon(icon_da11569ab1964344af8a7c256dc3524d);
         
     
-        var popup_415f08db4cb942f89b30feb35f13fd03 = L.popup({"maxWidth": 300});
+        var popup_cbd08f338f684e18994d9e02bc310311 = L.popup({"maxWidth": 300});
 
         
-            var html_9b0d2fb2c620478083db12bf8a7dc18a = $(`<div id="html_9b0d2fb2c620478083db12bf8a7dc18a" style="width: 100.0%; height: 100.0%;"><b>#37</b>, Feb-07<br><b>Profile:</b> 53, Male, Singapore<br><b>Stay:</b> Jurong East Street 32<br><b>Visited:</b> GP clinics, Ng Teng Fong General Hospital, NCID<br><b>Symptom:</b> Jan-30</div>`)[0];
-            popup_415f08db4cb942f89b30feb35f13fd03.setContent(html_9b0d2fb2c620478083db12bf8a7dc18a);
+            var html_eb400314bc4d4e61bf7aeefd04f23e77 = $(`<div id="html_eb400314bc4d4e61bf7aeefd04f23e77" style="width: 100.0%; height: 100.0%;"><b>#37</b>, Feb-07<br>Male 53 Singaporean <br><b>Stay:</b> Jurong East Street 32<br><b>Visited:</b> GP clinics, Ng Teng Fong General Hospital, NCID<br><b>Symptom:</b> Jan-30<br><b>Status:</b> NCID</div>`)[0];
+            popup_cbd08f338f684e18994d9e02bc310311.setContent(html_eb400314bc4d4e61bf7aeefd04f23e77);
         
 
-        marker_e239988679c14de98d3da0249f96b89d.bindPopup(popup_415f08db4cb942f89b30feb35f13fd03)
+        marker_a1d604b8e8d44547a21fe174837356c0.bindPopup(popup_cbd08f338f684e18994d9e02bc310311)
         ;
 
         
     
     
-            var marker_942fafc8d72d455085b28e14c5785eb9 = L.marker(
+            var marker_aaa445e39d6547e6b2f9516fde337b43 = L.marker(
                 [1.380107, 103.741224],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_92ea9e1099204698b7a01e5664d58cf9 = L.AwesomeMarkers.icon(
+            var icon_bd3d5c7037164e388bbc841ebb35dcd6 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_942fafc8d72d455085b28e14c5785eb9.setIcon(icon_92ea9e1099204698b7a01e5664d58cf9);
+            marker_aaa445e39d6547e6b2f9516fde337b43.setIcon(icon_bd3d5c7037164e388bbc841ebb35dcd6);
         
     
-        var popup_7974239aa7d04cd48e96cae76c146c1f = L.popup({"maxWidth": 300});
+        var popup_6d4894b74545461899959db5b973b5a1 = L.popup({"maxWidth": 300});
 
         
-            var html_8e915510c97c4ed99ce3de7bf3d33ad4 = $(`<div id="html_8e915510c97c4ed99ce3de7bf3d33ad4" style="width: 100.0%; height: 100.0%;"><b>#38</b>, Feb-08<br><b>Profile:</b> 52, Female, Singapore<br><b>Stay:</b> Choa Chu Kang Avenue 3<br><b>Visited:</b> Choa Chu Kang Polyclinic, The Life Church and Missions Singapore, Marina Bay Sands, Chinatown and Plaza Singapura<br><b>Symptom:</b> Feb-03<br><b>Cluster:</b> The Life Church and Missions Singapore</div>`)[0];
-            popup_7974239aa7d04cd48e96cae76c146c1f.setContent(html_8e915510c97c4ed99ce3de7bf3d33ad4);
+            var html_991efbf18eb949ac87c9164b70894364 = $(`<div id="html_991efbf18eb949ac87c9164b70894364" style="width: 100.0%; height: 100.0%;"><b>#38</b>, Feb-08<br>Female 52 Singaporean <br><b>Stay:</b> Choa Chu Kang Avenue 3<br><b>Visited:</b> Choa Chu Kang Polyclinic, The Life Church and Missions Singapore, Marina Bay Sands, Chinatown and Plaza Singapura<br><b>Cluster:</b> The Life Church and Missions Singapore<br><b>Symptom:</b> Feb-03</div>`)[0];
+            popup_6d4894b74545461899959db5b973b5a1.setContent(html_991efbf18eb949ac87c9164b70894364);
         
 
-        marker_942fafc8d72d455085b28e14c5785eb9.bindPopup(popup_7974239aa7d04cd48e96cae76c146c1f)
+        marker_aaa445e39d6547e6b2f9516fde337b43.bindPopup(popup_6d4894b74545461899959db5b973b5a1)
         ;
 
         
     
     
-            var marker_93b70344f5e94bba8894def64a40d7a7 = L.marker(
+            var marker_92af6d7a8c644b53884814531c6bdf14 = L.marker(
                 [1.342497, 103.705433],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_0fb5c9991934426f9c2b0bb71797b911 = L.AwesomeMarkers.icon(
+            var icon_e10f25af38cb410b811441f40aa80250 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_93b70344f5e94bba8894def64a40d7a7.setIcon(icon_0fb5c9991934426f9c2b0bb71797b911);
+            marker_92af6d7a8c644b53884814531c6bdf14.setIcon(icon_e10f25af38cb410b811441f40aa80250);
         
     
-        var popup_e53943133a53486d810f6083185319ef = L.popup({"maxWidth": 300});
+        var popup_e6ced973fda94f4e8f6f2056117b397c = L.popup({"maxWidth": 300});
 
         
-            var html_66ed3cc49ad14feaa8a828c551e133a4 = $(`<div id="html_66ed3cc49ad14feaa8a828c551e133a4" style="width: 100.0%; height: 100.0%;"><b>#39</b>, Feb-08<br><b>Profile:</b> 51, Male, Singapore<br><b>Stay:</b> Jurong West Central<br><b>Visited:</b> Malaysia, GP clinics, NCID, Grand Hyatt Singapore<br><b>Symptom:</b> Jan-29<br><b>Cluster:</b> Grand Hyatt Singapore</div>`)[0];
-            popup_e53943133a53486d810f6083185319ef.setContent(html_66ed3cc49ad14feaa8a828c551e133a4);
+            var html_98b421478e004663a2a5896af310ba55 = $(`<div id="html_98b421478e004663a2a5896af310ba55" style="width: 100.0%; height: 100.0%;"><b>#39</b>, Feb-08<br>Male 51 Singaporean <br><b>Stay:</b> Jurong West Central<br><b>Visited:</b> Malaysia, GP clinics, NCID, Grand Hyatt Singapore<br><b>Linked to:</b> 30<br><b>Cluster:</b> Grand Hyatt Singapore<br><b>Symptom:</b> Jan-29<br><b>Status:</b> NCID</div>`)[0];
+            popup_e6ced973fda94f4e8f6f2056117b397c.setContent(html_98b421478e004663a2a5896af310ba55);
         
 
-        marker_93b70344f5e94bba8894def64a40d7a7.bindPopup(popup_e53943133a53486d810f6083185319ef)
+        marker_92af6d7a8c644b53884814531c6bdf14.bindPopup(popup_e6ced973fda94f4e8f6f2056117b397c)
         ;
 
         
     
     
-            var marker_672312a7db6b486fa919fece462f5a86 = L.marker(
+            var marker_ac14dd9684b64da3b1fd0f11d5190033 = L.marker(
                 [1.354316, 103.878049],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_9b112c42f5a64b4e86d4eb6c86edebdc = L.AwesomeMarkers.icon(
+            var icon_107925919adc4471bed60ea6f14a35c3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_672312a7db6b486fa919fece462f5a86.setIcon(icon_9b112c42f5a64b4e86d4eb6c86edebdc);
+            marker_ac14dd9684b64da3b1fd0f11d5190033.setIcon(icon_107925919adc4471bed60ea6f14a35c3);
         
     
-        var popup_fb5d6b6051374697924218ddef65210f = L.popup({"maxWidth": 300});
+        var popup_75ef2cfd96cb4fe9ba1e2f456fcf1abf = L.popup({"maxWidth": 300});
 
         
-            var html_1fe7c96fea4d4c4f9444150a0528ff9c = $(`<div id="html_1fe7c96fea4d4c4f9444150a0528ff9c" style="width: 100.0%; height: 100.0%;"><b>#41</b>, Feb-08<br><b>Profile:</b> 71, Male, Singapore<br><b>Stay:</b> 755 Upper Serangoon Road<br><b>Visited:</b> GP Clinic, Hougang Polyclinic, Tan Tock Seng Hospital’s emergency department, Paya Lebar Methodist Church, Braddell Heights Residents, Pat’s Schoolhouse Kovan<br><b>Symptom:</b> Feb-01</div>`)[0];
-            popup_fb5d6b6051374697924218ddef65210f.setContent(html_1fe7c96fea4d4c4f9444150a0528ff9c);
+            var html_3086cf3273b448928256b1167998e74a = $(`<div id="html_3086cf3273b448928256b1167998e74a" style="width: 100.0%; height: 100.0%;"><b>#41</b>, Feb-08<br>Male 71 Singaporean <br><b>Stay:</b> 755 Upper Serangoon Road<br><b>Visited:</b> GP Clinic, Hougang Polyclinic, Tan Tock Seng Hospital’s emergency department, Paya Lebar Methodist Church, Braddell Heights Residents, Pat’s Schoolhouse Kovan<br><b>Symptom:</b> Feb-01</div>`)[0];
+            popup_75ef2cfd96cb4fe9ba1e2f456fcf1abf.setContent(html_3086cf3273b448928256b1167998e74a);
         
 
-        marker_672312a7db6b486fa919fece462f5a86.bindPopup(popup_fb5d6b6051374697924218ddef65210f)
+        marker_ac14dd9684b64da3b1fd0f11d5190033.bindPopup(popup_75ef2cfd96cb4fe9ba1e2f456fcf1abf)
         ;
 
         
     
     
-            var marker_29d5509caa844aaeb87ea6d27e4db099 = L.marker(
+            var marker_a5263b089cbf441fa0c94d0044394e09 = L.marker(
                 [1.339749, 103.910634],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_cdcd4287679f40fdb3789bb11d8f00bb = L.AwesomeMarkers.icon(
+            var icon_c221218150ec44e9921ca95a1332c688 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_29d5509caa844aaeb87ea6d27e4db099.setIcon(icon_cdcd4287679f40fdb3789bb11d8f00bb);
+            marker_a5263b089cbf441fa0c94d0044394e09.setIcon(icon_c221218150ec44e9921ca95a1332c688);
         
     
-        var popup_da8c00c08a4b464ea108b2364c628d99 = L.popup({"maxWidth": 300});
+        var popup_946a52d1b72f4653bd77b7a5017890cd = L.popup({"maxWidth": 300});
 
         
-            var html_89e8a233d57143898f7a1244c4a31c34 = $(`<div id="html_89e8a233d57143898f7a1244c4a31c34" style="width: 100.0%; height: 100.0%;"><b>#42</b>, Feb-08<br><b>Profile:</b> 39, Male, Bangladesh<br><b>Stay:</b> The Leo dormitory (25 Kaki Bukit Road)<br><b>Visited:</b> Changi General Hospital, Bedok Polyclinic, Mustafa Centre<br><b>Symptom:</b> Feb-01<br><b>Cluster:</b> Seletar Aerospace Heights construction site</div>`)[0];
-            popup_da8c00c08a4b464ea108b2364c628d99.setContent(html_89e8a233d57143898f7a1244c4a31c34);
+            var html_713c693c31dc46e2833bf03c5dcf00ac = $(`<div id="html_713c693c31dc46e2833bf03c5dcf00ac" style="width: 100.0%; height: 100.0%;"><b>#42</b>, Feb-08<br>Male 39 Bangladesh Singapore Work Pass holder<br><b>Stay:</b> The Leo dormitory (25 Kaki Bukit Road)<br><b>Visited:</b> Changi General Hospital, Bedok Polyclinic, Mustafa Centre<br><b>Cluster:</b> Seletar Aerospace Heights construction site<br><b>Symptom:</b> Feb-01</div>`)[0];
+            popup_946a52d1b72f4653bd77b7a5017890cd.setContent(html_713c693c31dc46e2833bf03c5dcf00ac);
         
 
-        marker_29d5509caa844aaeb87ea6d27e4db099.bindPopup(popup_da8c00c08a4b464ea108b2364c628d99)
+        marker_a5263b089cbf441fa0c94d0044394e09.bindPopup(popup_946a52d1b72f4653bd77b7a5017890cd)
         ;
 
         
     
     
-            var marker_8370a312d56b45259ffd77d0cba5dc18 = L.marker(
+            var marker_9204a79b4b764d3887327f6903dd158b = L.marker(
                 [1.394411, 103.880578],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_3a09baade9b243759f4454011b653922 = L.AwesomeMarkers.icon(
+            var icon_2b5e7806b9c54a7a985d9578862bb1df = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_8370a312d56b45259ffd77d0cba5dc18.setIcon(icon_3a09baade9b243759f4454011b653922);
+            marker_9204a79b4b764d3887327f6903dd158b.setIcon(icon_2b5e7806b9c54a7a985d9578862bb1df);
         
     
-        var popup_d314a6464bf74c839af2734be1302703 = L.popup({"maxWidth": 300});
+        var popup_2a831cd1bb104fc3a2ff4a214bfa2355 = L.popup({"maxWidth": 300});
 
         
-            var html_3df79879d52441d1a17ddb30bdf551b9 = $(`<div id="html_3df79879d52441d1a17ddb30bdf551b9" style="width: 100.0%; height: 100.0%;"><b>#43</b>, Feb-08<br><b>Profile:</b> 54, Male, Singapore<br><b>Stay:</b> Fernvale Close<br><b>Visited:</b> Malaysia, Sengkang General Hospital, Resorts World Sentosa<br><b>Symptom:</b> Jan-30</div>`)[0];
-            popup_d314a6464bf74c839af2734be1302703.setContent(html_3df79879d52441d1a17ddb30bdf551b9);
+            var html_17d67577069a4952add0b0826c966521 = $(`<div id="html_17d67577069a4952add0b0826c966521" style="width: 100.0%; height: 100.0%;"><b>#43</b>, Feb-08<br>Male 54 Singaporean <br><b>Stay:</b> Fernvale Close<br><b>Visited:</b> Malaysia, Sengkang General Hospital, Resorts World Sentosa<br><b>Symptom:</b> Jan-30</div>`)[0];
+            popup_2a831cd1bb104fc3a2ff4a214bfa2355.setContent(html_17d67577069a4952add0b0826c966521);
         
 
-        marker_8370a312d56b45259ffd77d0cba5dc18.bindPopup(popup_d314a6464bf74c839af2734be1302703)
+        marker_9204a79b4b764d3887327f6903dd158b.bindPopup(popup_2a831cd1bb104fc3a2ff4a214bfa2355)
         ;
 
         
     
     
-            var marker_c2040543fbb249da8aaec5fa4ddc9861 = L.marker(
+            var marker_59ff306ed92d42468242e9323ce7a23e = L.marker(
                 [1.452561, 103.816625],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_2d171137d38a4319a0b6a4f5643ecf5d = L.AwesomeMarkers.icon(
+            var icon_27a415a151ce47f2ad075f145a01cff8 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_c2040543fbb249da8aaec5fa4ddc9861.setIcon(icon_2d171137d38a4319a0b6a4f5643ecf5d);
+            marker_59ff306ed92d42468242e9323ce7a23e.setIcon(icon_27a415a151ce47f2ad075f145a01cff8);
         
     
-        var popup_d43e8ec854484c85956c1fbde4b0a254 = L.popup({"maxWidth": 300});
+        var popup_8f1c6df2fc5849e5a8eccffd7b1b682e = L.popup({"maxWidth": 300});
 
         
-            var html_38eb9bdd89634cb2a1dd8366c2f47622 = $(`<div id="html_38eb9bdd89634cb2a1dd8366c2f47622" style="width: 100.0%; height: 100.0%;"><b>#44</b>, Feb-09<br><b>Profile:</b> 37, Male, Singapore<br><b>Stay:</b> Sembawang Drive<br><b>Visited:</b> Certis Cisco Centre (20 Jalan Afifi), Chingay 2020, Khoo Teck Puat Hospital (KTPH)<br><b>Symptom:</b> Feb-02</div>`)[0];
-            popup_d43e8ec854484c85956c1fbde4b0a254.setContent(html_38eb9bdd89634cb2a1dd8366c2f47622);
+            var html_15a03ce804ed4d61bc9c0c6e8737ee6e = $(`<div id="html_15a03ce804ed4d61bc9c0c6e8737ee6e" style="width: 100.0%; height: 100.0%;"><b>#44</b>, Feb-09<br>Male 37 Singaporean <br><b>Stay:</b> Sembawang Drive<br><b>Visited:</b> Certis Cisco Centre (20 Jalan Afifi), Chingay 2020, Khoo Teck Puat Hospital (KTPH)<br><b>Linked to:</b> 26<br><b>Symptom:</b> Feb-02</div>`)[0];
+            popup_8f1c6df2fc5849e5a8eccffd7b1b682e.setContent(html_15a03ce804ed4d61bc9c0c6e8737ee6e);
         
 
-        marker_c2040543fbb249da8aaec5fa4ddc9861.bindPopup(popup_d43e8ec854484c85956c1fbde4b0a254)
+        marker_59ff306ed92d42468242e9323ce7a23e.bindPopup(popup_8f1c6df2fc5849e5a8eccffd7b1b682e)
         ;
 
         
     
     
-            var marker_82876a3405514dc39e3531a45e9b6c9c = L.marker(
+            var marker_f7d6759184d149c8b1826aa92d0ae39f = L.marker(
                 [1.255944, 103.820214],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_0d27a1692b984a17920bad923c44327d = L.AwesomeMarkers.icon(
+            var icon_55b23b4e2c80488c9ceacf62fb47101b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_82876a3405514dc39e3531a45e9b6c9c.setIcon(icon_0d27a1692b984a17920bad923c44327d);
+            marker_f7d6759184d149c8b1826aa92d0ae39f.setIcon(icon_55b23b4e2c80488c9ceacf62fb47101b);
         
     
-        var popup_aec73b0cac0448d391afea6d98f1e6bf = L.popup({"maxWidth": 300});
+        var popup_3ac675fcbc7b42b395ef379a740825c9 = L.popup({"maxWidth": 300});
 
         
-            var html_2554f870936e4088b6984936b95c13b2 = $(`<div id="html_2554f870936e4088b6984936b95c13b2" style="width: 100.0%; height: 100.0%;"><b>#46</b>, Feb-10<br><b>Profile:</b> 35, Male, PR<br><b>Stay:</b> Johor Bahru<br><b>Visited:</b> Johor Bahru, Resorts World Sentosa Casino, TTSH, NCID<br><b>Symptom:</b> Feb-05</div>`)[0];
-            popup_aec73b0cac0448d391afea6d98f1e6bf.setContent(html_2554f870936e4088b6984936b95c13b2);
+            var html_c724c85e43de444a8225bc773cbf43c5 = $(`<div id="html_c724c85e43de444a8225bc773cbf43c5" style="width: 100.0%; height: 100.0%;"><b>#46</b>, Feb-10<br>Male 35 PR <br><b>Stay:</b> Johor Bahru<br><b>Visited:</b> Johor Bahru, Resorts World Sentosa Casino, TTSH, NCID<br><b>Symptom:</b> Feb-05</div>`)[0];
+            popup_3ac675fcbc7b42b395ef379a740825c9.setContent(html_c724c85e43de444a8225bc773cbf43c5);
         
 
-        marker_82876a3405514dc39e3531a45e9b6c9c.bindPopup(popup_aec73b0cac0448d391afea6d98f1e6bf)
+        marker_f7d6759184d149c8b1826aa92d0ae39f.bindPopup(popup_3ac675fcbc7b42b395ef379a740825c9)
         ;
 
         
     
     
-            var marker_56624b29202a4e19997c9b65f7161809 = L.marker(
+            var marker_f75016eba1af42969b21919c71734f73 = L.marker(
                 [1.30736, 103.854623],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_20d7ad7a24a04f619f6f2de400eb6f2c = L.AwesomeMarkers.icon(
+            var icon_ff8d2b78fd3f49cbb285a70bde1e6691 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_56624b29202a4e19997c9b65f7161809.setIcon(icon_20d7ad7a24a04f619f6f2de400eb6f2c);
+            marker_f75016eba1af42969b21919c71734f73.setIcon(icon_ff8d2b78fd3f49cbb285a70bde1e6691);
         
     
-        var popup_4e03ebcb90b24bf59f827eb5ba43d3d6 = L.popup({"maxWidth": 300});
+        var popup_3b2385cb33be43eb865cc4aa09b743c1 = L.popup({"maxWidth": 300});
 
         
-            var html_5c21140725f24af7880cbbaf8c1980d5 = $(`<div id="html_5c21140725f24af7880cbbaf8c1980d5" style="width: 100.0%; height: 100.0%;"><b>#47</b>, Feb-10<br><b>Profile:</b> 39, Male, Bangladesh<br><b>Stay:</b> Veerasamy Road<br><b>Visited:</b> 10 Seletar Aerospace Heights<br><b>Symptom:</b> Feb-06<br><b>Cluster:</b> Seletar Aerospace Heights construction site</div>`)[0];
-            popup_4e03ebcb90b24bf59f827eb5ba43d3d6.setContent(html_5c21140725f24af7880cbbaf8c1980d5);
+            var html_f4685e09752d44c5ac70c6e7382944e2 = $(`<div id="html_f4685e09752d44c5ac70c6e7382944e2" style="width: 100.0%; height: 100.0%;"><b>#47</b>, Feb-10<br>Male 39 Bangladesh Singapore Work Pass holder<br><b>Stay:</b> Veerasamy Road<br><b>Visited:</b> 10 Seletar Aerospace Heights<br><b>Linked to:</b> 42<br><b>Cluster:</b> Seletar Aerospace Heights construction site<br><b>Symptom:</b> Feb-06</div>`)[0];
+            popup_3b2385cb33be43eb865cc4aa09b743c1.setContent(html_f4685e09752d44c5ac70c6e7382944e2);
         
 
-        marker_56624b29202a4e19997c9b65f7161809.bindPopup(popup_4e03ebcb90b24bf59f827eb5ba43d3d6)
+        marker_f75016eba1af42969b21919c71734f73.bindPopup(popup_3b2385cb33be43eb865cc4aa09b743c1)
         ;
 
         
     
     
-            var marker_bc2f622151904dcfb2a7e2d8a03261cb = L.marker(
+            var marker_aa7deefbe6584bab9cc311bf78aeb9a7 = L.marker(
                 [1.344174, 103.760718],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_bf76a3dd74d045309f6a5ca071416557 = L.AwesomeMarkers.icon(
+            var icon_7b8d854df9954aaa95d6c3a265c261b3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_bc2f622151904dcfb2a7e2d8a03261cb.setIcon(icon_bf76a3dd74d045309f6a5ca071416557);
+            marker_aa7deefbe6584bab9cc311bf78aeb9a7.setIcon(icon_7b8d854df9954aaa95d6c3a265c261b3);
         
     
-        var popup_16dc6e7eecc74de7ac5765e65fa2c220 = L.popup({"maxWidth": 300});
+        var popup_d4d2c1539d044271a8b0137e9f4cd880 = L.popup({"maxWidth": 300});
 
         
-            var html_7c0ce9f8688c4e4aa1bbd4a3337671c3 = $(`<div id="html_7c0ce9f8688c4e4aa1bbd4a3337671c3" style="width: 100.0%; height: 100.0%;"><b>#48</b>, Feb-11<br><b>Profile:</b> 34, Male, Singapore<br><b>Stay:</b> Bukit Batok Street 25<br><b>Visited:</b> Malaysia, Plaza Singapura, Star Vista, Fusionopolis, Grace Assembly of God (Tanglin), Grace Assembly of God (Bukit Batok), GP clinics, NCID<br><b>Symptom:</b> Feb-01<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_16dc6e7eecc74de7ac5765e65fa2c220.setContent(html_7c0ce9f8688c4e4aa1bbd4a3337671c3);
+            var html_52d8b8925ceb43c7b3f0a7ee64ac34c9 = $(`<div id="html_52d8b8925ceb43c7b3f0a7ee64ac34c9" style="width: 100.0%; height: 100.0%;"><b>#48</b>, Feb-11<br>Male 34 Singaporean <br><b>Stay:</b> Bukit Batok Street 25<br><b>Visited:</b> Malaysia, Plaza Singapura, Star Vista, Fusionopolis, Grace Assembly of God (Tanglin), Grace Assembly of God (Bukit Batok), GP clinics, NCID<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-01</div>`)[0];
+            popup_d4d2c1539d044271a8b0137e9f4cd880.setContent(html_52d8b8925ceb43c7b3f0a7ee64ac34c9);
         
 
-        marker_bc2f622151904dcfb2a7e2d8a03261cb.bindPopup(popup_16dc6e7eecc74de7ac5765e65fa2c220)
+        marker_aa7deefbe6584bab9cc311bf78aeb9a7.bindPopup(popup_d4d2c1539d044271a8b0137e9f4cd880)
         ;
 
         
     
     
-            var marker_25825e58a8ca40e7b3e24fa37e7e63be = L.marker(
+            var marker_4827a0fb337e44ceb1661aa780f05023 = L.marker(
                 [1.337041, 103.747627],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_b72c96cda03c4c1bb0d1787a5482fc52 = L.AwesomeMarkers.icon(
+            var icon_c48403aaf652459781cea328ecd4b660 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_25825e58a8ca40e7b3e24fa37e7e63be.setIcon(icon_b72c96cda03c4c1bb0d1787a5482fc52);
+            marker_4827a0fb337e44ceb1661aa780f05023.setIcon(icon_c48403aaf652459781cea328ecd4b660);
         
     
-        var popup_d00ed784093e41b09f141e474301eb06 = L.popup({"maxWidth": 300});
+        var popup_a7a2cc55999f489489c64878f269673c = L.popup({"maxWidth": 300});
 
         
-            var html_731ff0569ae14b9983b85e90a8ad00e0 = $(`<div id="html_731ff0569ae14b9983b85e90a8ad00e0" style="width: 100.0%; height: 100.0%;"><b>#49</b>, Feb-11<br><b>Profile:</b> 46, Male, Singapore<br><b>Stay:</b> Toh Guan Road<br><b>Visited:</b> Grace Assembly of God (Tanglin), Grace Assembly of God (Bukit Batok), GP clinic, NUH emergency department<br><b>Symptom:</b> Feb-03<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_d00ed784093e41b09f141e474301eb06.setContent(html_731ff0569ae14b9983b85e90a8ad00e0);
+            var html_818012e4b67f46a5b6ad329c2e123d1e = $(`<div id="html_818012e4b67f46a5b6ad329c2e123d1e" style="width: 100.0%; height: 100.0%;"><b>#49</b>, Feb-11<br>Male 46 Singaporean <br><b>Stay:</b> Toh Guan Road<br><b>Visited:</b> Grace Assembly of God (Tanglin), Grace Assembly of God (Bukit Batok), GP clinic, NUH emergency department<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-03</div>`)[0];
+            popup_a7a2cc55999f489489c64878f269673c.setContent(html_818012e4b67f46a5b6ad329c2e123d1e);
         
 
-        marker_25825e58a8ca40e7b3e24fa37e7e63be.bindPopup(popup_d00ed784093e41b09f141e474301eb06)
+        marker_4827a0fb337e44ceb1661aa780f05023.bindPopup(popup_a7a2cc55999f489489c64878f269673c)
         ;
 
         
     
     
-            var marker_93b2af8ba244420890b2b4cfac4c695f = L.marker(
+            var marker_383bb414d2fe43dc9b8dcd6f1d0a4c83 = L.marker(
                 [1.278713, 103.854582],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_b55dd9e0dfcd4d278cdbf7361d820b26 = L.AwesomeMarkers.icon(
+            var icon_e13725fa953d4c0782bc0f800313f4ab = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_93b2af8ba244420890b2b4cfac4c695f.setIcon(icon_b55dd9e0dfcd4d278cdbf7361d820b26);
+            marker_383bb414d2fe43dc9b8dcd6f1d0a4c83.setIcon(icon_e13725fa953d4c0782bc0f800313f4ab);
         
     
-        var popup_0e2cadd78bc04a77a9a495ecce4e1e68 = L.popup({"maxWidth": 300});
+        var popup_cb85da0f3497436e80d7522f2747174d = L.popup({"maxWidth": 300});
 
         
-            var html_e70243454ebf4bf09648ba56e8e2ecec = $(`<div id="html_e70243454ebf4bf09648ba56e8e2ecec" style="width: 100.0%; height: 100.0%;"><b>#50</b>, Feb-12<br><b>Profile:</b> 62, Male, Singapore<br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> DBS Asia Central at Marina Bay Financial Centre<br><b>Symptom:</b> Feb-07</div>`)[0];
-            popup_0e2cadd78bc04a77a9a495ecce4e1e68.setContent(html_e70243454ebf4bf09648ba56e8e2ecec);
+            var html_6df671d8a2a3497096c93223a51bd852 = $(`<div id="html_6df671d8a2a3497096c93223a51bd852" style="width: 100.0%; height: 100.0%;"><b>#50</b>, Feb-12<br>Male 62 Singaporean DBS employee<br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> DBS Asia Central at Marina Bay Financial Centre<br><b>Symptom:</b> Feb-07</div>`)[0];
+            popup_cb85da0f3497436e80d7522f2747174d.setContent(html_6df671d8a2a3497096c93223a51bd852);
         
 
-        marker_93b2af8ba244420890b2b4cfac4c695f.bindPopup(popup_0e2cadd78bc04a77a9a495ecce4e1e68)
+        marker_383bb414d2fe43dc9b8dcd6f1d0a4c83.bindPopup(popup_cb85da0f3497436e80d7522f2747174d)
         ;
 
         
     
     
-            var marker_64cc45c4fe0748e7a30347dc73c25923 = L.marker(
+            var marker_3bb0abe817ba4f63b153dc2c412c3c7a = L.marker(
                 [1.349558, 103.853721],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_b3604c436c654aae850b81067e32ec93 = L.AwesomeMarkers.icon(
+            var icon_8278e3ab07334f5098c30f958d3dfedc = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_64cc45c4fe0748e7a30347dc73c25923.setIcon(icon_b3604c436c654aae850b81067e32ec93);
+            marker_3bb0abe817ba4f63b153dc2c412c3c7a.setIcon(icon_8278e3ab07334f5098c30f958d3dfedc);
         
     
-        var popup_806a677114294c6f837a7f2c4aa3f1c5 = L.popup({"maxWidth": 300});
+        var popup_3562eedab79c499d9a31469099d17251 = L.popup({"maxWidth": 300});
 
         
-            var html_d43cf11c50fd403591e9b7ecd63107d2 = $(`<div id="html_d43cf11c50fd403591e9b7ecd63107d2" style="width: 100.0%; height: 100.0%;"><b>#51</b>, Feb-12<br><b>Profile:</b> 48, Male, Singapore<br><b>Stay:</b> Bishan Street 13<br><b>Visited:</b> Grace Assembly of God (Tanglin), Grace Assembly of God (Bukit Batok), GP clinic<br><b>Symptom:</b> Feb-04<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_806a677114294c6f837a7f2c4aa3f1c5.setContent(html_d43cf11c50fd403591e9b7ecd63107d2);
+            var html_357f5ce1995e482b8d7df91a91bbbd13 = $(`<div id="html_357f5ce1995e482b8d7df91a91bbbd13" style="width: 100.0%; height: 100.0%;"><b>#51</b>, Feb-12<br>Male 48 Singaporean <br><b>Stay:</b> Bishan Street 13<br><b>Visited:</b> Grace Assembly of God (Tanglin), Grace Assembly of God (Bukit Batok), GP clinic<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-04</div>`)[0];
+            popup_3562eedab79c499d9a31469099d17251.setContent(html_357f5ce1995e482b8d7df91a91bbbd13);
         
 
-        marker_64cc45c4fe0748e7a30347dc73c25923.bindPopup(popup_806a677114294c6f837a7f2c4aa3f1c5)
+        marker_3bb0abe817ba4f63b153dc2c412c3c7a.bindPopup(popup_3562eedab79c499d9a31469099d17251)
         ;
 
         
     
     
-            var marker_d86d5304ec414dc5982a314415bb227f = L.marker(
+            var marker_2a46129a096d43a28b252467c0200460 = L.marker(
                 [1.305567, 103.852207],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_bca90c636e57415dbc60a2c1adb8ad3d = L.AwesomeMarkers.icon(
+            var icon_e41b327d362f4644a34f5f716dcae2e8 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_d86d5304ec414dc5982a314415bb227f.setIcon(icon_bca90c636e57415dbc60a2c1adb8ad3d);
+            marker_2a46129a096d43a28b252467c0200460.setIcon(icon_e41b327d362f4644a34f5f716dcae2e8);
         
     
-        var popup_2672015b277a460b9dfe37f47f7276aa = L.popup({"maxWidth": 300});
+        var popup_f8d539dba679413398aa3d7b262f0bd8 = L.popup({"maxWidth": 300});
 
         
-            var html_876fc7324a6b4fb69e994aa2262c47d8 = $(`<div id="html_876fc7324a6b4fb69e994aa2262c47d8" style="width: 100.0%; height: 100.0%;"><b>#52</b>, Feb-12<br><b>Profile:</b> 37, Male, Bangladesh<br><b>Stay:</b> Campbell Lane<br><b>Visited:</b> Seletar Aerospace Heights construction site, Tan Tock Seng Hospital<br><b>Symptom:</b> Feb-07<br><b>Cluster:</b> Seletar Aerospace Heights construction site</div>`)[0];
-            popup_2672015b277a460b9dfe37f47f7276aa.setContent(html_876fc7324a6b4fb69e994aa2262c47d8);
+            var html_45a7634678834dcabd430958de4e016c = $(`<div id="html_45a7634678834dcabd430958de4e016c" style="width: 100.0%; height: 100.0%;"><b>#52</b>, Feb-12<br>Male 37 Bangladesh Singapore Work Pass holder<br><b>Stay:</b> Campbell Lane<br><b>Visited:</b> Seletar Aerospace Heights construction site, Tan Tock Seng Hospital<br><b>Linked to:</b> 47<br><b>Cluster:</b> Seletar Aerospace Heights construction site<br><b>Symptom:</b> Feb-07</div>`)[0];
+            popup_f8d539dba679413398aa3d7b262f0bd8.setContent(html_45a7634678834dcabd430958de4e016c);
         
 
-        marker_d86d5304ec414dc5982a314415bb227f.bindPopup(popup_2672015b277a460b9dfe37f47f7276aa)
+        marker_2a46129a096d43a28b252467c0200460.bindPopup(popup_f8d539dba679413398aa3d7b262f0bd8)
         ;
 
         
     
     
-            var marker_8119d3a42b6c4ae38ce4365a86031526 = L.marker(
+            var marker_4874075a754741aca4a59151cd0bc444 = L.marker(
                 [1.359778, 103.764552],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_d3c338186e964324b7c35f776fa175e9 = L.AwesomeMarkers.icon(
+            var icon_e994df82a7a04ec4be0db390757173ee = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_8119d3a42b6c4ae38ce4365a86031526.setIcon(icon_d3c338186e964324b7c35f776fa175e9);
+            marker_4874075a754741aca4a59151cd0bc444.setIcon(icon_e994df82a7a04ec4be0db390757173ee);
         
     
-        var popup_89a5ac64295e4c408147be7e172e3efc = L.popup({"maxWidth": 300});
+        var popup_815c46f3f0ab4b77bb38b727b947dadb = L.popup({"maxWidth": 300});
 
         
-            var html_06613fedc0ee46e0a0654963e5366f65 = $(`<div id="html_06613fedc0ee46e0a0654963e5366f65" style="width: 100.0%; height: 100.0%;"><b>#53</b>, Feb-12<br><b>Profile:</b> 54, Male, Singapore<br><b>Stay:</b> Hillionton Green<br><b>Visited:</b> National University of Singapore, Grace Assembly of God, NCID<br><b>Symptom:</b> Feb-10<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_89a5ac64295e4c408147be7e172e3efc.setContent(html_06613fedc0ee46e0a0654963e5366f65);
+            var html_841cacc9d1194db7bfc8b2132ce86410 = $(`<div id="html_841cacc9d1194db7bfc8b2132ce86410" style="width: 100.0%; height: 100.0%;"><b>#53</b>, Feb-12<br>Male 54 Singaporean NUS Professor<br><b>Stay:</b> Hillionton Green<br><b>Visited:</b> National University of Singapore, Grace Assembly of God, NCID<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-10</div>`)[0];
+            popup_815c46f3f0ab4b77bb38b727b947dadb.setContent(html_841cacc9d1194db7bfc8b2132ce86410);
         
 
-        marker_8119d3a42b6c4ae38ce4365a86031526.bindPopup(popup_89a5ac64295e4c408147be7e172e3efc)
+        marker_4874075a754741aca4a59151cd0bc444.bindPopup(popup_815c46f3f0ab4b77bb38b727b947dadb)
         ;
 
         
     
     
-            var marker_5aecd11f3b9040509df0a36be2c8970f = L.marker(
+            var marker_1d54f01c5c4d438b8cd3133870edc8c6 = L.marker(
                 [1.375907, 103.854193],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_09993ce1aa564252b8b9296d368db25a = L.AwesomeMarkers.icon(
+            var icon_0e2a910d14c443f5b3c7e0335b3e2509 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_5aecd11f3b9040509df0a36be2c8970f.setIcon(icon_09993ce1aa564252b8b9296d368db25a);
+            marker_1d54f01c5c4d438b8cd3133870edc8c6.setIcon(icon_0e2a910d14c443f5b3c7e0335b3e2509);
         
     
-        var popup_ef87163303e24cbca3aa6b3d2b402201 = L.popup({"maxWidth": 300});
+        var popup_3ba659b9b27d43c88dc0ff3c2bcd8b9f = L.popup({"maxWidth": 300});
 
         
-            var html_f3e13a1c9e4f46cd8abb7726175ee6e5 = $(`<div id="html_f3e13a1c9e4f46cd8abb7726175ee6e5" style="width: 100.0%; height: 100.0%;"><b>#54</b>, Feb-13<br><b>Profile:</b> 55, Female, Singapore<br><b>Stay:</b> Ang Mo Kio Avenue 5<br><b>Visited:</b> Grace Assembly of God (Tanglin)<br><b>Symptom:</b> Feb-10<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_ef87163303e24cbca3aa6b3d2b402201.setContent(html_f3e13a1c9e4f46cd8abb7726175ee6e5);
+            var html_fdb53394fe824e808ead8a96d0efa86b = $(`<div id="html_fdb53394fe824e808ead8a96d0efa86b" style="width: 100.0%; height: 100.0%;"><b>#54</b>, Feb-13<br>Female 55 Singaporean <br><b>Stay:</b> Ang Mo Kio Avenue 5<br><b>Visited:</b> Grace Assembly of God (Tanglin)<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-10</div>`)[0];
+            popup_3ba659b9b27d43c88dc0ff3c2bcd8b9f.setContent(html_fdb53394fe824e808ead8a96d0efa86b);
         
 
-        marker_5aecd11f3b9040509df0a36be2c8970f.bindPopup(popup_ef87163303e24cbca3aa6b3d2b402201)
+        marker_1d54f01c5c4d438b8cd3133870edc8c6.bindPopup(popup_3ba659b9b27d43c88dc0ff3c2bcd8b9f)
         ;
 
         
     
     
-            var marker_1a65d74e0dca43ac858e9a4dc31ef40c = L.marker(
+            var marker_9216a928e04a4737b7bccd9b102b04e3 = L.marker(
                 [1.353814, 103.860564],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_ce8e64b5ca1748e98f2e7f8663901c5b = L.AwesomeMarkers.icon(
+            var icon_daa49217fc5a49a78eafc50fea4565db = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_1a65d74e0dca43ac858e9a4dc31ef40c.setIcon(icon_ce8e64b5ca1748e98f2e7f8663901c5b);
+            marker_9216a928e04a4737b7bccd9b102b04e3.setIcon(icon_daa49217fc5a49a78eafc50fea4565db);
         
     
-        var popup_59b813596c3e4da2b484f0bc7290de85 = L.popup({"maxWidth": 300});
+        var popup_81b6502ef990467eadb764d4d55fa53f = L.popup({"maxWidth": 300});
 
         
-            var html_1715e2fb6c86417484097f49f413cb9e = $(`<div id="html_1715e2fb6c86417484097f49f413cb9e" style="width: 100.0%; height: 100.0%;"><b>#55</b>, Feb-13<br><b>Profile:</b> 30, Male, Singapore<br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> Pulau Bukom, Church of Christ the King (2221 Ang Mo Kio Avenue 8), GP Clinic<br><b>Symptom:</b> Jan-30</div>`)[0];
-            popup_59b813596c3e4da2b484f0bc7290de85.setContent(html_1715e2fb6c86417484097f49f413cb9e);
+            var html_02628d72300e41579d885f0bcb425d8d = $(`<div id="html_02628d72300e41579d885f0bcb425d8d" style="width: 100.0%; height: 100.0%;"><b>#55</b>, Feb-13<br>Male 30 Singaporean <br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> Pulau Bukom, Church of Christ the King (2221 Ang Mo Kio Avenue 8), GP Clinic<br><b>Linked to:</b> 50<br><b>Symptom:</b> Jan-30</div>`)[0];
+            popup_81b6502ef990467eadb764d4d55fa53f.setContent(html_02628d72300e41579d885f0bcb425d8d);
         
 
-        marker_1a65d74e0dca43ac858e9a4dc31ef40c.bindPopup(popup_59b813596c3e4da2b484f0bc7290de85)
+        marker_9216a928e04a4737b7bccd9b102b04e3.bindPopup(popup_81b6502ef990467eadb764d4d55fa53f)
         ;
 
         
     
     
-            var marker_14f63869459c4caf962cada27da8f73b = L.marker(
+            var marker_c99925e463014162b3e6ac1c0bd737ff = L.marker(
                 [1.405839, 103.865823],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_a3d10e4ed9e643739c17611a70e79930 = L.AwesomeMarkers.icon(
+            var icon_5e01f714765a426ca83d8f0cee7f1cc6 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_14f63869459c4caf962cada27da8f73b.setIcon(icon_a3d10e4ed9e643739c17611a70e79930);
+            marker_c99925e463014162b3e6ac1c0bd737ff.setIcon(icon_5e01f714765a426ca83d8f0cee7f1cc6);
         
     
-        var popup_6b083fafac26480d960cc18da95b54fa = L.popup({"maxWidth": 300});
+        var popup_8c06b3cad6bf40f98e325c60bf61bf3d = L.popup({"maxWidth": 300});
 
         
-            var html_6fe78bd6c0cb456db6f82c3cc48ed08d = $(`<div id="html_6fe78bd6c0cb456db6f82c3cc48ed08d" style="width: 100.0%; height: 100.0%;"><b>#56</b>, Feb-13<br><b>Profile:</b> 30, Male, Bangladesh<br><b>Stay:</b> Seletar Aerospace Heights construction site<br><b>Visited:</b> Seletar Aerospace Heights construction site, Tan Tock Seng Hospital<br><b>Symptom:</b> Feb-12<br><b>Cluster:</b> Seletar Aerospace Heights construction site</div>`)[0];
-            popup_6b083fafac26480d960cc18da95b54fa.setContent(html_6fe78bd6c0cb456db6f82c3cc48ed08d);
+            var html_5dba52110c324e61bdc023541462eb83 = $(`<div id="html_5dba52110c324e61bdc023541462eb83" style="width: 100.0%; height: 100.0%;"><b>#56</b>, Feb-13<br>Male 30 Bangladesh Singapore Work Pass holder<br><b>Stay:</b> Seletar Aerospace Heights construction site<br><b>Visited:</b> Seletar Aerospace Heights construction site, Tan Tock Seng Hospital<br><b>Linked to:</b> 47<br><b>Cluster:</b> Seletar Aerospace Heights construction site<br><b>Symptom:</b> Feb-12</div>`)[0];
+            popup_8c06b3cad6bf40f98e325c60bf61bf3d.setContent(html_5dba52110c324e61bdc023541462eb83);
         
 
-        marker_14f63869459c4caf962cada27da8f73b.bindPopup(popup_6b083fafac26480d960cc18da95b54fa)
+        marker_c99925e463014162b3e6ac1c0bd737ff.bindPopup(popup_8c06b3cad6bf40f98e325c60bf61bf3d)
         ;
 
         
     
     
-            var marker_86bd50c6c41b4c5eb1f7fd603b0c6692 = L.marker(
+            var marker_d0503fb928e842da938df739c6b8ef6e = L.marker(
                 [1.386829, 103.761758],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_bc9b14da5ce3473b8e32e7352dd9a8d0 = L.AwesomeMarkers.icon(
+            var icon_19edb1d6675348689dffa3d9998ecf31 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_86bd50c6c41b4c5eb1f7fd603b0c6692.setIcon(icon_bc9b14da5ce3473b8e32e7352dd9a8d0);
+            marker_d0503fb928e842da938df739c6b8ef6e.setIcon(icon_19edb1d6675348689dffa3d9998ecf31);
         
     
-        var popup_d2af3ee2b7da4d089cac191efa68287f = L.popup({"maxWidth": 300});
+        var popup_da7d62f4656b44129bb2b4e946de2ee8 = L.popup({"maxWidth": 300});
 
         
-            var html_87f7bd8837be413082f35dd0ad586b1d = $(`<div id="html_87f7bd8837be413082f35dd0ad586b1d" style="width: 100.0%; height: 100.0%;"><b>#57</b>, Feb-13<br><b>Profile:</b> 26, Male, Singapore<br><b>Stay:</b> Senja Road<br><b>Visited:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-11<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_d2af3ee2b7da4d089cac191efa68287f.setContent(html_87f7bd8837be413082f35dd0ad586b1d);
+            var html_9b72fba1e75c407b9b6ce2e638fe26c7 = $(`<div id="html_9b72fba1e75c407b9b6ce2e638fe26c7" style="width: 100.0%; height: 100.0%;"><b>#57</b>, Feb-13<br>Male 26 Singaporean <br><b>Stay:</b> Senja Road<br><b>Visited:</b> Grace Assembly of God<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-11</div>`)[0];
+            popup_da7d62f4656b44129bb2b4e946de2ee8.setContent(html_9b72fba1e75c407b9b6ce2e638fe26c7);
         
 
-        marker_86bd50c6c41b4c5eb1f7fd603b0c6692.bindPopup(popup_d2af3ee2b7da4d089cac191efa68287f)
+        marker_d0503fb928e842da938df739c6b8ef6e.bindPopup(popup_da7d62f4656b44129bb2b4e946de2ee8)
         ;
 
         
     
     
-            var marker_b9c1043d821a4f6d8cc0679aa24e9a11 = L.marker(
+            var marker_d03654d07a5747fc9160241959ced002 = L.marker(
                 [1.346712, 103.881419],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_c5449d3a238f45d18596e4117002e24d = L.AwesomeMarkers.icon(
+            var icon_b32567ae916b4492b1304cc3e1c0152e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_b9c1043d821a4f6d8cc0679aa24e9a11.setIcon(icon_c5449d3a238f45d18596e4117002e24d);
+            marker_d03654d07a5747fc9160241959ced002.setIcon(icon_b32567ae916b4492b1304cc3e1c0152e);
         
     
-        var popup_343cac3876784316a5099f505921cbc7 = L.popup({"maxWidth": 300});
+        var popup_701305331d5b42f98081b92051fc230f = L.popup({"maxWidth": 300});
 
         
-            var html_71b37b3051d64c8b812a9426529e842c = $(`<div id="html_71b37b3051d64c8b812a9426529e842c" style="width: 100.0%; height: 100.0%;"><b>#58</b>, Feb-13<br><b>Profile:</b> 55, Male, Singapore<br><b>Stay:</b> Jalan Kelichap<br><b>Visited:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-10<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_343cac3876784316a5099f505921cbc7.setContent(html_71b37b3051d64c8b812a9426529e842c);
+            var html_805410e96bcf4243967541a22defffdc = $(`<div id="html_805410e96bcf4243967541a22defffdc" style="width: 100.0%; height: 100.0%;"><b>#58</b>, Feb-13<br>Male 55 Singaporean <br><b>Stay:</b> Jalan Kelichap<br><b>Visited:</b> Grace Assembly of God<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-10</div>`)[0];
+            popup_701305331d5b42f98081b92051fc230f.setContent(html_805410e96bcf4243967541a22defffdc);
         
 
-        marker_b9c1043d821a4f6d8cc0679aa24e9a11.bindPopup(popup_343cac3876784316a5099f505921cbc7)
+        marker_d03654d07a5747fc9160241959ced002.bindPopup(popup_701305331d5b42f98081b92051fc230f)
         ;
 
         
     
     
-            var marker_92ca93fc8f3a42e8b17351b445e146b4 = L.marker(
+            var marker_0538432e4c6d48f8ac49b06ce653e4a2 = L.marker(
                 [1.302775, 103.891108],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_b66f9ff18058409d844a2545b2c6bc9d = L.AwesomeMarkers.icon(
+            var icon_f7d4afe110f449c78f715faafa7f4bad = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_92ca93fc8f3a42e8b17351b445e146b4.setIcon(icon_b66f9ff18058409d844a2545b2c6bc9d);
+            marker_0538432e4c6d48f8ac49b06ce653e4a2.setIcon(icon_f7d4afe110f449c78f715faafa7f4bad);
         
     
-        var popup_060421c0241e4953ac9a48c14d7fec90 = L.popup({"maxWidth": 300});
+        var popup_461f226b81904671b988b1b5b6322f04 = L.popup({"maxWidth": 300});
 
         
-            var html_57264695ac9e446aa2752f95c4863911 = $(`<div id="html_57264695ac9e446aa2752f95c4863911" style="width: 100.0%; height: 100.0%;"><b>#59</b>, Feb-13<br><b>Profile:</b> 61, Male, Singapore<br><b>Stay:</b> Wilkinson Road<br><b>Visited:</b> Farrer Park Hospital’s emergency care clinic, Mount Elizabeth Hospital emergency department<br><b>Symptom:</b> Feb-07</div>`)[0];
-            popup_060421c0241e4953ac9a48c14d7fec90.setContent(html_57264695ac9e446aa2752f95c4863911);
+            var html_3ada53b2c6c441ecbb7c8fa6bee4897f = $(`<div id="html_3ada53b2c6c441ecbb7c8fa6bee4897f" style="width: 100.0%; height: 100.0%;"><b>#59</b>, Feb-13<br>Male 61 Singaporean Anaesthesiologist<br><b>Stay:</b> Wilkinson Road<br><b>Visited:</b> Farrer Park Hospital’s emergency care clinic, Mount Elizabeth Hospital emergency department<br><b>Linked to:</b> 72<br><b>Symptom:</b> Feb-07</div>`)[0];
+            popup_461f226b81904671b988b1b5b6322f04.setContent(html_3ada53b2c6c441ecbb7c8fa6bee4897f);
         
 
-        marker_92ca93fc8f3a42e8b17351b445e146b4.bindPopup(popup_060421c0241e4953ac9a48c14d7fec90)
+        marker_0538432e4c6d48f8ac49b06ce653e4a2.bindPopup(popup_461f226b81904671b988b1b5b6322f04)
         ;
 
         
     
     
-            var marker_d52ade9b38104a30a195b768cfd3fe5f = L.marker(
+            var marker_39512b301cc046eb8ead73fd44e4e9da = L.marker(
                 [1.369327, 103.856276],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_ec7b5da789cc4544a132907a6fd4cc82 = L.AwesomeMarkers.icon(
+            var icon_2a4c02a052354501a2f31584c05d11ee = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_d52ade9b38104a30a195b768cfd3fe5f.setIcon(icon_ec7b5da789cc4544a132907a6fd4cc82);
+            marker_39512b301cc046eb8ead73fd44e4e9da.setIcon(icon_2a4c02a052354501a2f31584c05d11ee);
         
     
-        var popup_bc11051ff40840b88051feebe9dd299b = L.popup({"maxWidth": 300});
+        var popup_526c18d26fc64a2b8b5786cc1b81458f = L.popup({"maxWidth": 300});
 
         
-            var html_2be97fed262c4520838507fab0298696 = $(`<div id="html_2be97fed262c4520838507fab0298696" style="width: 100.0%; height: 100.0%;"><b>#60</b>, Feb-13<br><b>Profile:</b> 51, Female, Singapore<br><b>Stay:</b> Ang Mo Kio Avenue 3<br><b>Visited:</b> Grace Assembly of God (Tanglin), GP Clinic<br><b>Symptom:</b> Feb-08<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_bc11051ff40840b88051feebe9dd299b.setContent(html_2be97fed262c4520838507fab0298696);
+            var html_ff4eea43972c4adbbc39bb9b4ed64ec8 = $(`<div id="html_ff4eea43972c4adbbc39bb9b4ed64ec8" style="width: 100.0%; height: 100.0%;"><b>#60</b>, Feb-13<br>Female 51 Singaporean <br><b>Stay:</b> Ang Mo Kio Avenue 3<br><b>Visited:</b> Grace Assembly of God (Tanglin), GP Clinic<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-08</div>`)[0];
+            popup_526c18d26fc64a2b8b5786cc1b81458f.setContent(html_ff4eea43972c4adbbc39bb9b4ed64ec8);
         
 
-        marker_d52ade9b38104a30a195b768cfd3fe5f.bindPopup(popup_bc11051ff40840b88051feebe9dd299b)
+        marker_39512b301cc046eb8ead73fd44e4e9da.bindPopup(popup_526c18d26fc64a2b8b5786cc1b81458f)
         ;
 
         
     
     
-            var marker_915c024201944a84b76bb918249bf125 = L.marker(
+            var marker_b6ac8721d60e44d9b3f1e9bc36e77438 = L.marker(
                 [1.341642, 103.703787],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_2c478deda77c41af8ed33782d3f23068 = L.AwesomeMarkers.icon(
+            var icon_920042293f614a72a2a267ac36e162c3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_915c024201944a84b76bb918249bf125.setIcon(icon_2c478deda77c41af8ed33782d3f23068);
+            marker_b6ac8721d60e44d9b3f1e9bc36e77438.setIcon(icon_920042293f614a72a2a267ac36e162c3);
         
     
-        var popup_c5a3e6bdee904587af8c456452f60716 = L.popup({"maxWidth": 300});
+        var popup_b3407621b0d34c729894f71def046bd5 = L.popup({"maxWidth": 300});
 
         
-            var html_4b49df7601114242b7b9c02ec10029f1 = $(`<div id="html_4b49df7601114242b7b9c02ec10029f1" style="width: 100.0%; height: 100.0%;"><b>#61</b>, Feb-13<br><b>Profile:</b> 57, Male, Singapore<br><b>Stay:</b> Jurong West Street 64<br><b>Visited:</b> Grace Assembly of God, Legacy Office Supplies Pte Ltd (56 Senang Crescent), GP clinic, Ng Teng Fong General Hospital, Pioneer Polyclinic, National University Hospital<br><b>Symptom:</b> Feb-06<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_c5a3e6bdee904587af8c456452f60716.setContent(html_4b49df7601114242b7b9c02ec10029f1);
+            var html_cb683aca39fc43ae951b0be6f9ec7119 = $(`<div id="html_cb683aca39fc43ae951b0be6f9ec7119" style="width: 100.0%; height: 100.0%;"><b>#61</b>, Feb-13<br>Male 57 Singaporean <br><b>Stay:</b> Jurong West Street 64<br><b>Visited:</b> Grace Assembly of God, Legacy Office Supplies Pte Ltd (56 Senang Crescent), GP clinic, Ng Teng Fong General Hospital, Pioneer Polyclinic, National University Hospital<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-06</div>`)[0];
+            popup_b3407621b0d34c729894f71def046bd5.setContent(html_cb683aca39fc43ae951b0be6f9ec7119);
         
 
-        marker_915c024201944a84b76bb918249bf125.bindPopup(popup_c5a3e6bdee904587af8c456452f60716)
+        marker_b6ac8721d60e44d9b3f1e9bc36e77438.bindPopup(popup_b3407621b0d34c729894f71def046bd5)
         ;
 
         
     
     
-            var marker_fb05c5828908427880966fb4a5f0d4c1 = L.marker(
+            var marker_5db5d4a8e77e4592abcd3ec461a749e9 = L.marker(
                 [1.276333, 103.843384],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_7fd48aca209b435086fb083ec8439057 = L.AwesomeMarkers.icon(
+            var icon_e381ab3e1cc94250b60147e2d36959f5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_fb05c5828908427880966fb4a5f0d4c1.setIcon(icon_7fd48aca209b435086fb083ec8439057);
+            marker_5db5d4a8e77e4592abcd3ec461a749e9.setIcon(icon_e381ab3e1cc94250b60147e2d36959f5);
         
     
-        var popup_057ccc7b1d124be08af31be301d06802 = L.popup({"maxWidth": 300});
+        var popup_567ebcc905414e8e834a532c7b57a757 = L.popup({"maxWidth": 300});
 
         
-            var html_c43c83a3565d448385513ac0237e0dda = $(`<div id="html_c43c83a3565d448385513ac0237e0dda" style="width: 100.0%; height: 100.0%;"><b>#62</b>, Feb-13<br><b>Profile:</b> 44, Female, Singapore<br><b>Stay:</b> Tanjong Pagar Road<br><b>Visited:</b> Grace Assembly of God, GP clinic, Singapore General Hospital <br><b>Symptom:</b> Feb-09<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_057ccc7b1d124be08af31be301d06802.setContent(html_c43c83a3565d448385513ac0237e0dda);
+            var html_61ae661c818449149f47267ef959b2ac = $(`<div id="html_61ae661c818449149f47267ef959b2ac" style="width: 100.0%; height: 100.0%;"><b>#62</b>, Feb-13<br>Female 44 Singaporean <br><b>Stay:</b> Tanjong Pagar Road<br><b>Visited:</b> Grace Assembly of God, GP clinic, Singapore General Hospital <br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-09</div>`)[0];
+            popup_567ebcc905414e8e834a532c7b57a757.setContent(html_61ae661c818449149f47267ef959b2ac);
         
 
-        marker_fb05c5828908427880966fb4a5f0d4c1.bindPopup(popup_057ccc7b1d124be08af31be301d06802)
+        marker_5db5d4a8e77e4592abcd3ec461a749e9.bindPopup(popup_567ebcc905414e8e834a532c7b57a757)
         ;
 
         
     
     
-            var marker_f30611e36a4640a9a2d429d4a606c95b = L.marker(
-                [1.29429, 103.816549],
+            var marker_19b66f37af364a45905c176ce0f52d22 = L.marker(
+                [1.33355, 103.86522],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_1113a0edeb5b4dee9f4d339c2c9b1c6a = L.AwesomeMarkers.icon(
+            var icon_5e94201e7ce14132852cc760088f4715 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_f30611e36a4640a9a2d429d4a606c95b.setIcon(icon_1113a0edeb5b4dee9f4d339c2c9b1c6a);
+            marker_19b66f37af364a45905c176ce0f52d22.setIcon(icon_5e94201e7ce14132852cc760088f4715);
         
     
-        var popup_683ea095a6a24e1e80293df01c964de2 = L.popup({"maxWidth": 300});
+        var popup_19b605782d3346ae94c97ee3ed4a0ab5 = L.popup({"maxWidth": 300});
 
         
-            var html_ca75d28152104758ab5f66eb654bdf85 = $(`<div id="html_ca75d28152104758ab5f66eb654bdf85" style="width: 100.0%; height: 100.0%;"><b>#63</b>, Feb-14<br><b>Profile:</b> 54, Female, Singapore<br><b>Stay:</b> <br><b>Visited:</b> Grace Assembly of God<br><b>Symptom:</b> <br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_683ea095a6a24e1e80293df01c964de2.setContent(html_ca75d28152104758ab5f66eb654bdf85);
+            var html_ceb4e696d9db4cea97420b03e54ab586 = $(`<div id="html_ceb4e696d9db4cea97420b03e54ab586" style="width: 100.0%; height: 100.0%;"><b>#63</b>, Feb-14<br>Female 54 Singaporean <br><b>Stay:</b> Potong Pasir Avenue 3<br><b>Visited:</b> Grace Assembly of God, PUB, Marisson Hotel Bugis (103 Beach Road)<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-10<br><b>Status:</b> NCID</div>`)[0];
+            popup_19b605782d3346ae94c97ee3ed4a0ab5.setContent(html_ceb4e696d9db4cea97420b03e54ab586);
         
 
-        marker_f30611e36a4640a9a2d429d4a606c95b.bindPopup(popup_683ea095a6a24e1e80293df01c964de2)
+        marker_19b66f37af364a45905c176ce0f52d22.bindPopup(popup_19b605782d3346ae94c97ee3ed4a0ab5)
         ;
 
         
     
     
-            var marker_7e20d9253e924ee089706598d1f4f304 = L.marker(
-                [1.322097, 103.847273],
+            var marker_b18203e225b348f78b01b9f406dae185 = L.marker(
+                [1.347225, 103.694941],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_3e69638b30044b06a3344ee4ec8b991b = L.AwesomeMarkers.icon(
+            var icon_3f84555524d5468aa32de558cc747858 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_7e20d9253e924ee089706598d1f4f304.setIcon(icon_3e69638b30044b06a3344ee4ec8b991b);
+            marker_b18203e225b348f78b01b9f406dae185.setIcon(icon_3f84555524d5468aa32de558cc747858);
         
     
-        var popup_e2a160c3c46f43c6950b553dcb01f8a3 = L.popup({"maxWidth": 300});
+        var popup_e1fc866bbba1409287b392a19e7d39d2 = L.popup({"maxWidth": 300});
 
         
-            var html_b44ee1de558b4d98b36739c70f144e19 = $(`<div id="html_b44ee1de558b4d98b36739c70f144e19" style="width: 100.0%; height: 100.0%;"><b>#64</b>, Feb-14<br><b>Profile:</b> 50, Male, Singapore<br><b>Stay:</b> <br><b>Visited:</b> <br><b>Symptom:</b> </div>`)[0];
-            popup_e2a160c3c46f43c6950b553dcb01f8a3.setContent(html_b44ee1de558b4d98b36739c70f144e19);
+            var html_b89c558b3f1041c0a9d3cff209d4599f = $(`<div id="html_b89c558b3f1041c0a9d3cff209d4599f" style="width: 100.0%; height: 100.0%;"><b>#64</b>, Feb-14<br>Male 50 Singaporean Taxi Driver<br><b>Stay:</b> Jurong West Street 81<br><b>Visited:</b> GP clinics, NUH<br><b>Symptom:</b> Feb-03<br><b>Status:</b> NUH</div>`)[0];
+            popup_e1fc866bbba1409287b392a19e7d39d2.setContent(html_b89c558b3f1041c0a9d3cff209d4599f);
         
 
-        marker_7e20d9253e924ee089706598d1f4f304.bindPopup(popup_e2a160c3c46f43c6950b553dcb01f8a3)
+        marker_b18203e225b348f78b01b9f406dae185.bindPopup(popup_e1fc866bbba1409287b392a19e7d39d2)
         ;
 
         
     
     
-            var marker_c42f7b6d8fc24ab9a46c87a54f94fed5 = L.marker(
+            var marker_32319f2b99f242fb886034c6080c7142 = L.marker(
                 [1.353793, 103.86065],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_e562008f86b0489b9ab96ef88331c0a7 = L.AwesomeMarkers.icon(
+            var icon_6febe88f83114ce5b70b2008ba0d69c6 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_c42f7b6d8fc24ab9a46c87a54f94fed5.setIcon(icon_e562008f86b0489b9ab96ef88331c0a7);
+            marker_32319f2b99f242fb886034c6080c7142.setIcon(icon_6febe88f83114ce5b70b2008ba0d69c6);
         
     
-        var popup_75720813f7c943e2a1c42a2808e237b0 = L.popup({"maxWidth": 300});
+        var popup_e30e1b97c9bd4ea09137668048e7d02e = L.popup({"maxWidth": 300});
 
         
-            var html_b5d45519f6634d8eb51b4acffd6a1b7f = $(`<div id="html_b5d45519f6634d8eb51b4acffd6a1b7f" style="width: 100.0%; height: 100.0%;"><b>#65</b>, Feb-14<br><b>Profile:</b> 61, Female, Singapore<br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> <br><b>Symptom:</b> </div>`)[0];
-            popup_75720813f7c943e2a1c42a2808e237b0.setContent(html_b5d45519f6634d8eb51b4acffd6a1b7f);
+            var html_9415bc4ba18e4d53b8e3f0673041e5e8 = $(`<div id="html_9415bc4ba18e4d53b8e3f0673041e5e8" style="width: 100.0%; height: 100.0%;"><b>#65</b>, Feb-14<br>Female 61 Singaporean <br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> Church of Christ the King (2221 Ang Mo Kio Avenue 8)<br><b>Linked to:</b> 50, 55<br><b>Symptom:</b> Feb-12<br><b>Status:</b> NCID</div>`)[0];
+            popup_e30e1b97c9bd4ea09137668048e7d02e.setContent(html_9415bc4ba18e4d53b8e3f0673041e5e8);
         
 
-        marker_c42f7b6d8fc24ab9a46c87a54f94fed5.bindPopup(popup_75720813f7c943e2a1c42a2808e237b0)
+        marker_32319f2b99f242fb886034c6080c7142.bindPopup(popup_e30e1b97c9bd4ea09137668048e7d02e)
         ;
 
         
     
     
-            var marker_523f157b1e2b4296ad160499c65525e1 = L.marker(
-                [1.294427, 103.816418],
+            var marker_86b1e5a156574f90b7dbfa5b12de2fb7 = L.marker(
+                [1.353804, 103.86051],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_a6a18030f77345ae99fed5253241fb6e = L.AwesomeMarkers.icon(
+            var icon_fcbdb3ff9d354478a5525a7f08c90eed = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_523f157b1e2b4296ad160499c65525e1.setIcon(icon_a6a18030f77345ae99fed5253241fb6e);
+            marker_86b1e5a156574f90b7dbfa5b12de2fb7.setIcon(icon_fcbdb3ff9d354478a5525a7f08c90eed);
         
     
-        var popup_f0ffd872817844adbc90672211e8e8ce = L.popup({"maxWidth": 300});
+        var popup_be9fe0972b5a49dba71731c1fd0ce46d = L.popup({"maxWidth": 300});
 
         
-            var html_f5a84d7ee0f34582b1b3497e650f8a5b = $(`<div id="html_f5a84d7ee0f34582b1b3497e650f8a5b" style="width: 100.0%; height: 100.0%;"><b>#66</b>, Feb-14<br><b>Profile:</b> 28, Male, Singapore<br><b>Stay:</b> <br><b>Visited:</b> Grace Assembly of God<br><b>Symptom:</b> <br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_f0ffd872817844adbc90672211e8e8ce.setContent(html_f5a84d7ee0f34582b1b3497e650f8a5b);
+            var html_6aa650e8ab614bb28cd600b14025fa8a = $(`<div id="html_6aa650e8ab614bb28cd600b14025fa8a" style="width: 100.0%; height: 100.0%;"><b>#66</b>, Feb-14<br>Male 28 Singaporean <br><b>Stay:</b> Mei Hwan Drive<br><b>Visited:</b> Grace Assembly of God, God’s Kingdom Bread of Life Church (37 Jalan Permimpin)<br><b>Linked to:</b> 68, 70<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Jan-29<br><b>Status:</b> NCID</div>`)[0];
+            popup_be9fe0972b5a49dba71731c1fd0ce46d.setContent(html_6aa650e8ab614bb28cd600b14025fa8a);
         
 
-        marker_523f157b1e2b4296ad160499c65525e1.bindPopup(popup_f0ffd872817844adbc90672211e8e8ce)
+        marker_86b1e5a156574f90b7dbfa5b12de2fb7.bindPopup(popup_be9fe0972b5a49dba71731c1fd0ce46d)
         ;
 
         
     
     
-            var marker_567ca0814f024857810048298affeea7 = L.marker(
+            var marker_5d7b0de678ba41b2981556f87c1b5ccc = L.marker(
                 [1.340591, 103.703937],
                 {}
-            ).addTo(feature_group_f31313a0f1a0425a985a8d940aebf9b4);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var icon_7348680909744c7c933d0cb8d4f24415 = L.AwesomeMarkers.icon(
+            var icon_cbb4edac15414986b7986117a50de9e2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_567ca0814f024857810048298affeea7.setIcon(icon_7348680909744c7c933d0cb8d4f24415);
+            marker_5d7b0de678ba41b2981556f87c1b5ccc.setIcon(icon_cbb4edac15414986b7986117a50de9e2);
         
     
-        var popup_db7bfd875671438199dfe3e358e220bf = L.popup({"maxWidth": 300});
+        var popup_3a0cf047424c45cbb393e738eb789055 = L.popup({"maxWidth": 300});
 
         
-            var html_77e453b13d4d45efa1b562ba154d804f = $(`<div id="html_77e453b13d4d45efa1b562ba154d804f" style="width: 100.0%; height: 100.0%;"><b>#67</b>, Feb-14<br><b>Profile:</b> 56, Female, Singapore<br><b>Stay:</b> Jurong West Street 64<br><b>Visited:</b> Grace Assembly of God<br><b>Symptom:</b> <br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
-            popup_db7bfd875671438199dfe3e358e220bf.setContent(html_77e453b13d4d45efa1b562ba154d804f);
+            var html_d5d5a175cb3842b7a3de1da053a95266 = $(`<div id="html_d5d5a175cb3842b7a3de1da053a95266" style="width: 100.0%; height: 100.0%;"><b>#67</b>, Feb-14<br>Female 56 Singaporean <br><b>Stay:</b> Jurong West Street 64<br><b>Visited:</b> Grace Assembly of God (Bukit Batok), Ng Teng Fong General Hospital, NUH<br><b>Linked to:</b> 61<br><b>Cluster:</b> Grace Assembly of God<br><b>Symptom:</b> Feb-09<br><b>Status:</b> NCID</div>`)[0];
+            popup_3a0cf047424c45cbb393e738eb789055.setContent(html_d5d5a175cb3842b7a3de1da053a95266);
         
 
-        marker_567ca0814f024857810048298affeea7.bindPopup(popup_db7bfd875671438199dfe3e358e220bf)
+        marker_5d7b0de678ba41b2981556f87c1b5ccc.bindPopup(popup_3a0cf047424c45cbb393e738eb789055)
         ;
 
         
     
     
-            var feature_group_e6567fa652e0469498274a0a3546b651 = L.featureGroup(
+            var marker_d9ee32ee1dc54488b82980ddf406a010 = L.marker(
+                [1.294283, 103.81647],
                 {}
-            ).addTo(map_9830f136f33f4a949117f5967538408e);
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
         
     
-            var marker_971bafd6e96a4458978e6310ba32e31f = L.marker(
+            var icon_5a1f3f00bcf9416cad9ace28126624a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d9ee32ee1dc54488b82980ddf406a010.setIcon(icon_5a1f3f00bcf9416cad9ace28126624a7);
+        
+    
+        var popup_31975275ffe546b0a451034734fd022d = L.popup({"maxWidth": 300});
+
+        
+            var html_fb3790e6f77440caaea9e92c8ca3e1e6 = $(`<div id="html_fb3790e6f77440caaea9e92c8ca3e1e6" style="width: 100.0%; height: 100.0%;"><b>#68</b>, Feb-15<br>Female 79 Singaporean <br><b>Visited:</b> Grace Assembly of God<br><b>Linked to:</b> 66, 70<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
+            popup_31975275ffe546b0a451034734fd022d.setContent(html_fb3790e6f77440caaea9e92c8ca3e1e6);
+        
+
+        marker_d9ee32ee1dc54488b82980ddf406a010.bindPopup(popup_31975275ffe546b0a451034734fd022d)
+        ;
+
+        
+    
+    
+            var marker_f6aa945911264ed28a9c3bffc7ff667c = L.marker(
+                [1.405814, 103.865775],
+                {}
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
+        
+    
+            var icon_2957032369ab493b932b01538ccfe47e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f6aa945911264ed28a9c3bffc7ff667c.setIcon(icon_2957032369ab493b932b01538ccfe47e);
+        
+    
+        var popup_56f0801381c2401486ff68858976a4af = L.popup({"maxWidth": 300});
+
+        
+            var html_86b03d91a5234dee87db1aa7b658e7c0 = $(`<div id="html_86b03d91a5234dee87db1aa7b658e7c0" style="width: 100.0%; height: 100.0%;"><b>#69</b>, Feb-15<br>Male 26 Bangladesh Singapore Work Pass holder<br><b>Visited:</b> Seletar Aerospace Heights construction site<br><b>Cluster:</b> Seletar Aerospace Heights construction site</div>`)[0];
+            popup_56f0801381c2401486ff68858976a4af.setContent(html_86b03d91a5234dee87db1aa7b658e7c0);
+        
+
+        marker_f6aa945911264ed28a9c3bffc7ff667c.bindPopup(popup_56f0801381c2401486ff68858976a4af)
+        ;
+
+        
+    
+    
+            var marker_4b997e75612d4f99b5f38f7a24712aaa = L.marker(
+                [1.294286, 103.816588],
+                {}
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
+        
+    
+            var icon_a32381048fd84c13aecd3ffee3bf3bb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4b997e75612d4f99b5f38f7a24712aaa.setIcon(icon_a32381048fd84c13aecd3ffee3bf3bb6);
+        
+    
+        var popup_4bea88787fd8411cad632d144522c3cb = L.popup({"maxWidth": 300});
+
+        
+            var html_6220dc45c7ef4271a087f5b454b51c54 = $(`<div id="html_6220dc45c7ef4271a087f5b454b51c54" style="width: 100.0%; height: 100.0%;"><b>#70</b>, Feb-15<br>Female 27 Singaporean <br><b>Visited:</b> Grace Assembly of God<br><b>Linked to:</b> 66, 68<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
+            popup_4bea88787fd8411cad632d144522c3cb.setContent(html_6220dc45c7ef4271a087f5b454b51c54);
+        
+
+        marker_4b997e75612d4f99b5f38f7a24712aaa.bindPopup(popup_4bea88787fd8411cad632d144522c3cb)
+        ;
+
+        
+    
+    
+            var marker_32b19958eb3d495da00302e6de7f0fbd = L.marker(
+                [1.294283, 103.816231],
+                {}
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
+        
+    
+            var icon_45b49f89683542a996cf6f8ebb90e7a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_32b19958eb3d495da00302e6de7f0fbd.setIcon(icon_45b49f89683542a996cf6f8ebb90e7a5);
+        
+    
+        var popup_51875f70ea1f41739d4a7100842ec6d4 = L.popup({"maxWidth": 300});
+
+        
+            var html_3170b12640fb4612a10f64a9e87b84b1 = $(`<div id="html_3170b12640fb4612a10f64a9e87b84b1" style="width: 100.0%; height: 100.0%;"><b>#71</b>, Feb-15<br>Male 25 Singaporean <br><b>Visited:</b> Grace Assembly of God<br><b>Linked to:</b> 66<br><b>Cluster:</b> Grace Assembly of God</div>`)[0];
+            popup_51875f70ea1f41739d4a7100842ec6d4.setContent(html_3170b12640fb4612a10f64a9e87b84b1);
+        
+
+        marker_32b19958eb3d495da00302e6de7f0fbd.bindPopup(popup_51875f70ea1f41739d4a7100842ec6d4)
+        ;
+
+        
+    
+    
+            var marker_7c81fed735a641ea92552eaea15f6ad5 = L.marker(
+                [1.31307, 103.854325],
+                {}
+            ).addTo(feature_group_00ed20b08b374854a331bad70d8057b5);
+        
+    
+            var icon_a5801331f7ee47f1ac4fbb031c349f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7c81fed735a641ea92552eaea15f6ad5.setIcon(icon_a5801331f7ee47f1ac4fbb031c349f04);
+        
+    
+        var popup_f1b81ba75937489b91717a44860c3821 = L.popup({"maxWidth": 300});
+
+        
+            var html_2a7a683cc990438a95759f52249c4b00 = $(`<div id="html_2a7a683cc990438a95759f52249c4b00" style="width: 100.0%; height: 100.0%;"><b>#72</b>, Feb-15<br>Male 40 Chinese Singapore Work Pass holder<br><b>Linked to:</b> 59</div>`)[0];
+            popup_f1b81ba75937489b91717a44860c3821.setContent(html_2a7a683cc990438a95759f52249c4b00);
+        
+
+        marker_7c81fed735a641ea92552eaea15f6ad5.bindPopup(popup_f1b81ba75937489b91717a44860c3821)
+        ;
+
+        
+    
+    
+            var feature_group_4d0eaa021a0f4d64b43098ddea03ed97 = L.featureGroup(
+                {}
+            ).addTo(map_a56f36188306447eb1bc73a617663884);
+        
+    
+            var marker_db194288b2b04233bd1505aabff597c7 = L.marker(
                 [1.2577323, 103.8097962],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_a2b122ff1fd7443d83888a5cca2296a9 = L.AwesomeMarkers.icon(
+            var icon_5b67b11d21f2494cb6c08fcd6d37a0c4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_971bafd6e96a4458978e6310ba32e31f.setIcon(icon_a2b122ff1fd7443d83888a5cca2296a9);
+            marker_db194288b2b04233bd1505aabff597c7.setIcon(icon_5b67b11d21f2494cb6c08fcd6d37a0c4);
         
     
-        var popup_7c465b59df264968819e0405d6c1bc54 = L.popup({"maxWidth": 300});
+        var popup_3b35a4ca9163422fb5559ea734c8c5d0 = L.popup({"maxWidth": 300});
 
         
-            var html_6ebd06f4266347d680dcb7d0a1c7322f = $(`<div id="html_6ebd06f4266347d680dcb7d0a1c7322f" style="width: 100.0%; height: 100.0%;"><b>#1</b>, Jan-23<br><b>Profile:</b> 66, Male, Chinese<br><b>Stay:</b> Shangri-La's Rasa Sentosa Resort and Spa<br><b>Visited:</b> Singapore General Hospital<br><b>Symptom:</b> Jan-22</div>`)[0];
-            popup_7c465b59df264968819e0405d6c1bc54.setContent(html_6ebd06f4266347d680dcb7d0a1c7322f);
+            var html_cf851cee9cf842c2b84e947518cedfeb = $(`<div id="html_cf851cee9cf842c2b84e947518cedfeb" style="width: 100.0%; height: 100.0%;"><b>#1</b>, Jan-23<br>Male 66 Chinese <br><b>Stay:</b> Shangri-La's Rasa Sentosa Resort and Spa<br><b>Visited:</b> Singapore General Hospital<br><b>Symptom:</b> Jan-22</div>`)[0];
+            popup_3b35a4ca9163422fb5559ea734c8c5d0.setContent(html_cf851cee9cf842c2b84e947518cedfeb);
         
 
-        marker_971bafd6e96a4458978e6310ba32e31f.bindPopup(popup_7c465b59df264968819e0405d6c1bc54)
+        marker_db194288b2b04233bd1505aabff597c7.bindPopup(popup_3b35a4ca9163422fb5559ea734c8c5d0)
         ;
 
         
     
     
-            var marker_c07f9e10877a4288b09da46492d0345d = L.marker(
+            var marker_03ef305a696d430fb41e99d3ac0b2835 = L.marker(
                 [1.257763, 103.810018],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_4c63a0247d3e414487ae4269bdc042f3 = L.AwesomeMarkers.icon(
+            var icon_cf41cfa251ef4c1292335e34718041ef = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_c07f9e10877a4288b09da46492d0345d.setIcon(icon_4c63a0247d3e414487ae4269bdc042f3);
+            marker_03ef305a696d430fb41e99d3ac0b2835.setIcon(icon_cf41cfa251ef4c1292335e34718041ef);
         
     
-        var popup_4cc534a6ee724ae5b5e46cf5b1496689 = L.popup({"maxWidth": 300});
+        var popup_fba3183569f3486d958761d3203c32d1 = L.popup({"maxWidth": 300});
 
         
-            var html_7a33bc966af046a98b6f2c2f8cc412f6 = $(`<div id="html_7a33bc966af046a98b6f2c2f8cc412f6" style="width: 100.0%; height: 100.0%;"><b>#3</b>, Jan-24<br><b>Profile:</b> 37, Male, Chinese<br><b>Stay:</b> Shangri-La's Rasa Sentosa Resort and Spa<br><b>Visited:</b> Singapore General Hospital<br><b>Symptom:</b> Jan-22</div>`)[0];
-            popup_4cc534a6ee724ae5b5e46cf5b1496689.setContent(html_7a33bc966af046a98b6f2c2f8cc412f6);
+            var html_21d76bf75b2f40d39707b72cdb71b764 = $(`<div id="html_21d76bf75b2f40d39707b72cdb71b764" style="width: 100.0%; height: 100.0%;"><b>#3</b>, Jan-24<br>Male 37 Chinese <br><b>Stay:</b> Shangri-La's Rasa Sentosa Resort and Spa<br><b>Visited:</b> Singapore General Hospital<br><b>Linked to:</b> 1<br><b>Symptom:</b> Jan-22</div>`)[0];
+            popup_fba3183569f3486d958761d3203c32d1.setContent(html_21d76bf75b2f40d39707b72cdb71b764);
         
 
-        marker_c07f9e10877a4288b09da46492d0345d.bindPopup(popup_4cc534a6ee724ae5b5e46cf5b1496689)
+        marker_03ef305a696d430fb41e99d3ac0b2835.bindPopup(popup_fba3183569f3486d958761d3203c32d1)
         ;
 
         
     
     
-            var marker_6878331f45724f588bc3c835c930ed19 = L.marker(
+            var marker_ef3b289aad6d49bdb34b123f907ad91c = L.marker(
                 [1.30817132582, 103.900929093],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_e94dab4af8a348c6805f01b211bfdc16 = L.AwesomeMarkers.icon(
+            var icon_b26f359e2a874f7db01b372a06004d4e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_6878331f45724f588bc3c835c930ed19.setIcon(icon_e94dab4af8a348c6805f01b211bfdc16);
+            marker_ef3b289aad6d49bdb34b123f907ad91c.setIcon(icon_b26f359e2a874f7db01b372a06004d4e);
         
     
-        var popup_f3e497394acb47af92c8e1b93f8012b1 = L.popup({"maxWidth": 300});
+        var popup_fb6fe1ff967c4ba5a7b69858a95d7426 = L.popup({"maxWidth": 300});
 
         
-            var html_360490a217574a22a12b24b1f8e46730 = $(`<div id="html_360490a217574a22a12b24b1f8e46730" style="width: 100.0%; height: 100.0%;"><b>#5</b>, Jan-27<br><b>Profile:</b> 56, Female, Chinese<br><b>Stay:</b> Ceylon Road<br><b>Visited:</b> Tan Tock Seng Hospital<br><b>Symptom:</b> Jan-24</div>`)[0];
-            popup_f3e497394acb47af92c8e1b93f8012b1.setContent(html_360490a217574a22a12b24b1f8e46730);
+            var html_10019fcfd2cb4dba874775f910b32eb7 = $(`<div id="html_10019fcfd2cb4dba874775f910b32eb7" style="width: 100.0%; height: 100.0%;"><b>#5</b>, Jan-27<br>Female 56 Chinese <br><b>Stay:</b> Ceylon Road<br><b>Visited:</b> Tan Tock Seng Hospital<br><b>Symptom:</b> Jan-24</div>`)[0];
+            popup_fb6fe1ff967c4ba5a7b69858a95d7426.setContent(html_10019fcfd2cb4dba874775f910b32eb7);
         
 
-        marker_6878331f45724f588bc3c835c930ed19.bindPopup(popup_f3e497394acb47af92c8e1b93f8012b1)
+        marker_ef3b289aad6d49bdb34b123f907ad91c.bindPopup(popup_fb6fe1ff967c4ba5a7b69858a95d7426)
         ;
 
         
     
     
-            var marker_0470633c32b84a9285231ca59fe79a98 = L.marker(
+            var marker_57f103a2916f46af8596586b68436e2a = L.marker(
                 [1.37177592217, 103.944834173],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_ec7a552db1ee4bab8c4b7216e2d4bcea = L.AwesomeMarkers.icon(
+            var icon_6557e4d18e8b4e5ab4a451535e94309b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_0470633c32b84a9285231ca59fe79a98.setIcon(icon_ec7a552db1ee4bab8c4b7216e2d4bcea);
+            marker_57f103a2916f46af8596586b68436e2a.setIcon(icon_6557e4d18e8b4e5ab4a451535e94309b);
         
     
-        var popup_708d26b50b354db799258f586ba3aae1 = L.popup({"maxWidth": 300});
+        var popup_caa5da05a209440685ece868fac6a845 = L.popup({"maxWidth": 300});
 
         
-            var html_733a32aeb3f047cb989b2811e64acd95 = $(`<div id="html_733a32aeb3f047cb989b2811e64acd95" style="width: 100.0%; height: 100.0%;"><b>#6</b>, Jan-27<br><b>Profile:</b> 56, Male, Chinese<br><b>Stay:</b> Pasir Ris Grove<br><b>Visited:</b> Changi General Hospital<br><b>Symptom:</b> Jan-25</div>`)[0];
-            popup_708d26b50b354db799258f586ba3aae1.setContent(html_733a32aeb3f047cb989b2811e64acd95);
+            var html_ed61e73cdf154e90a4e6c0a79f5a6b87 = $(`<div id="html_ed61e73cdf154e90a4e6c0a79f5a6b87" style="width: 100.0%; height: 100.0%;"><b>#6</b>, Jan-27<br>Male 56 Chinese <br><b>Stay:</b> Pasir Ris Grove<br><b>Visited:</b> Changi General Hospital<br><b>Symptom:</b> Jan-25</div>`)[0];
+            popup_caa5da05a209440685ece868fac6a845.setContent(html_ed61e73cdf154e90a4e6c0a79f5a6b87);
         
 
-        marker_0470633c32b84a9285231ca59fe79a98.bindPopup(popup_708d26b50b354db799258f586ba3aae1)
+        marker_57f103a2916f46af8596586b68436e2a.bindPopup(popup_caa5da05a209440685ece868fac6a845)
         ;
 
         
     
     
-            var marker_681ccaa94d174683a3469220c92fcaf1 = L.marker(
+            var marker_7d3715b2f36f476fb83134f2ac0d05a1 = L.marker(
                 [1.350104424, 103.877644837],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_08d4ec05e74d4996861874331d7e9da1 = L.AwesomeMarkers.icon(
+            var icon_fd7cb7e0428248af97d6ed55a0fbc256 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_681ccaa94d174683a3469220c92fcaf1.setIcon(icon_08d4ec05e74d4996861874331d7e9da1);
+            marker_7d3715b2f36f476fb83134f2ac0d05a1.setIcon(icon_fd7cb7e0428248af97d6ed55a0fbc256);
         
     
-        var popup_dab0c57e5a874686a2ee93960c44c3c6 = L.popup({"maxWidth": 300});
+        var popup_44f37ccf44544a8dbbfe6eb81d921f97 = L.popup({"maxWidth": 300});
 
         
-            var html_7caa388fc52148688ef1116f741cf419 = $(`<div id="html_7caa388fc52148688ef1116f741cf419" style="width: 100.0%; height: 100.0%;"><b>#8</b>, Jan-28<br><b>Profile:</b> 56, Male, Chinese<br><b>Stay:</b> Lorong Lew Lian<br><b>Visited:</b> Tan Tock Seng Hospital<br><b>Symptom:</b> Jan-19<br><b>Cluster:</b> The Life Church and Missions Singapore</div>`)[0];
-            popup_dab0c57e5a874686a2ee93960c44c3c6.setContent(html_7caa388fc52148688ef1116f741cf419);
+            var html_a94afaa033ed484ea39a1ae721c27374 = $(`<div id="html_a94afaa033ed484ea39a1ae721c27374" style="width: 100.0%; height: 100.0%;"><b>#8</b>, Jan-28<br>Male 56 Chinese <br><b>Stay:</b> Lorong Lew Lian<br><b>Visited:</b> Tan Tock Seng Hospital<br><b>Cluster:</b> The Life Church and Missions Singapore<br><b>Symptom:</b> Jan-19</div>`)[0];
+            popup_44f37ccf44544a8dbbfe6eb81d921f97.setContent(html_a94afaa033ed484ea39a1ae721c27374);
         
 
-        marker_681ccaa94d174683a3469220c92fcaf1.bindPopup(popup_dab0c57e5a874686a2ee93960c44c3c6)
+        marker_7d3715b2f36f476fb83134f2ac0d05a1.bindPopup(popup_44f37ccf44544a8dbbfe6eb81d921f97)
         ;
 
         
     
     
-            var marker_da04363dc5d947239820eb0f42e78c76 = L.marker(
+            var marker_746d3d941ce74a108b044b88a3caca80 = L.marker(
                 [1.35016073475, 103.877567053],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_17d8b989292a406ca0abd3800700a313 = L.AwesomeMarkers.icon(
+            var icon_321985d5fbce41c18eccb785a30c0fa2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_da04363dc5d947239820eb0f42e78c76.setIcon(icon_17d8b989292a406ca0abd3800700a313);
+            marker_746d3d941ce74a108b044b88a3caca80.setIcon(icon_321985d5fbce41c18eccb785a30c0fa2);
         
     
-        var popup_3a09eae4fd484eb6bb3484301e3d158a = L.popup({"maxWidth": 300});
+        var popup_814d92c01a5a43ea80edd824ce5352d4 = L.popup({"maxWidth": 300});
 
         
-            var html_46894e8d2ed14af1b332a3580aea178f = $(`<div id="html_46894e8d2ed14af1b332a3580aea178f" style="width: 100.0%; height: 100.0%;"><b>#9</b>, Jan-29<br><b>Profile:</b> 56, Female, Chinese<br><b>Stay:</b> Lorong Lew Lian<br><b>Visited:</b> Tan Tock Seng Hospital<br><b>Symptom:</b> Jan-19<br><b>Cluster:</b> The Life Church and Missions Singapore</div>`)[0];
-            popup_3a09eae4fd484eb6bb3484301e3d158a.setContent(html_46894e8d2ed14af1b332a3580aea178f);
+            var html_75976c213b2945bf908a52357da3ef60 = $(`<div id="html_75976c213b2945bf908a52357da3ef60" style="width: 100.0%; height: 100.0%;"><b>#9</b>, Jan-29<br>Female 56 Chinese <br><b>Stay:</b> Lorong Lew Lian<br><b>Visited:</b> Tan Tock Seng Hospital<br><b>Cluster:</b> The Life Church and Missions Singapore<br><b>Symptom:</b> Jan-19</div>`)[0];
+            popup_814d92c01a5a43ea80edd824ce5352d4.setContent(html_75976c213b2945bf908a52357da3ef60);
         
 
-        marker_da04363dc5d947239820eb0f42e78c76.bindPopup(popup_3a09eae4fd484eb6bb3484301e3d158a)
+        marker_746d3d941ce74a108b044b88a3caca80.bindPopup(popup_814d92c01a5a43ea80edd824ce5352d4)
         ;
 
         
     
     
-            var marker_94d7e808dbf74e099eaa061d720a3fb9 = L.marker(
+            var marker_70ec9e6b51d04ebb8da6daef9cfe1ad3 = L.marker(
                 [1.33608300636, 103.737467229],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_d95b97746bbe462ea543b79a43f08f0c = L.AwesomeMarkers.icon(
+            var icon_4f18b45ced6941a0afd1f29140894fbb = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_94d7e808dbf74e099eaa061d720a3fb9.setIcon(icon_d95b97746bbe462ea543b79a43f08f0c);
+            marker_70ec9e6b51d04ebb8da6daef9cfe1ad3.setIcon(icon_4f18b45ced6941a0afd1f29140894fbb);
         
     
-        var popup_c497cef34523439898db8d5c96a9e484 = L.popup({"maxWidth": 300});
+        var popup_00d45fbd5c61478182cbfed431115ed2 = L.popup({"maxWidth": 300});
 
         
-            var html_d3d9013bf1004c84b5a46d352550504f = $(`<div id="html_d3d9013bf1004c84b5a46d352550504f" style="width: 100.0%; height: 100.0%;"><b>#14</b>, Jan-30<br><b>Profile:</b> 31, Male, Chinese<br><b>Stay:</b> Jurong East Street 13<br><b>Visited:</b> GP Clinic<br><b>Symptom:</b> Jan-28</div>`)[0];
-            popup_c497cef34523439898db8d5c96a9e484.setContent(html_d3d9013bf1004c84b5a46d352550504f);
+            var html_80ea55636c354b50a5b215a0ca39c8f8 = $(`<div id="html_80ea55636c354b50a5b215a0ca39c8f8" style="width: 100.0%; height: 100.0%;"><b>#14</b>, Jan-30<br>Male 31 Chinese <br><b>Stay:</b> Jurong East Street 13<br><b>Visited:</b> GP Clinic<br><b>Symptom:</b> Jan-28</div>`)[0];
+            popup_00d45fbd5c61478182cbfed431115ed2.setContent(html_80ea55636c354b50a5b215a0ca39c8f8);
         
 
-        marker_94d7e808dbf74e099eaa061d720a3fb9.bindPopup(popup_c497cef34523439898db8d5c96a9e484)
+        marker_70ec9e6b51d04ebb8da6daef9cfe1ad3.bindPopup(popup_00d45fbd5c61478182cbfed431115ed2)
         ;
 
         
     
     
-            var marker_ec0652a075214b52b972acec4bf59470 = L.marker(
+            var marker_30e6fc4ca31446bc89a7a84fe70e4d3d = L.marker(
                 [1.2962606, 103.8256719],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_7e700092985e4044a1626ba199d43391 = L.AwesomeMarkers.icon(
+            var icon_6233b1f89e4c4509aaa32bf4d52f81f4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_ec0652a075214b52b972acec4bf59470.setIcon(icon_7e700092985e4044a1626ba199d43391);
+            marker_30e6fc4ca31446bc89a7a84fe70e4d3d.setIcon(icon_6233b1f89e4c4509aaa32bf4d52f81f4);
         
     
-        var popup_3cbeefc95bab486eb8762ed63af6c7a6 = L.popup({"maxWidth": 300});
+        var popup_28433b1609a54c4898031e48c33cd23f = L.popup({"maxWidth": 300});
 
         
-            var html_55ae143821514b0faff94588e4558470 = $(`<div id="html_55ae143821514b0faff94588e4558470" style="width: 100.0%; height: 100.0%;"><b>#16</b>, Jan-31<br><b>Profile:</b> 38, Male, Chinese<br><b>Stay:</b> Nathan Road<br><b>Visited:</b> Singapore General Hospital<br><b>Symptom:</b> Jan-22</div>`)[0];
-            popup_3cbeefc95bab486eb8762ed63af6c7a6.setContent(html_55ae143821514b0faff94588e4558470);
+            var html_1a6e4a2d58474b5eae6352278fe3fd83 = $(`<div id="html_1a6e4a2d58474b5eae6352278fe3fd83" style="width: 100.0%; height: 100.0%;"><b>#16</b>, Jan-31<br>Male 38 Chinese <br><b>Stay:</b> Nathan Road<br><b>Visited:</b> Singapore General Hospital<br><b>Symptom:</b> Jan-22</div>`)[0];
+            popup_28433b1609a54c4898031e48c33cd23f.setContent(html_1a6e4a2d58474b5eae6352278fe3fd83);
         
 
-        marker_ec0652a075214b52b972acec4bf59470.bindPopup(popup_3cbeefc95bab486eb8762ed63af6c7a6)
+        marker_30e6fc4ca31446bc89a7a84fe70e4d3d.bindPopup(popup_28433b1609a54c4898031e48c33cd23f)
         ;
 
         
     
     
-            var marker_f8501b9e029847c8a95c04201cd701ba = L.marker(
+            var marker_07d768d718e04b27be270449c5b409d6 = L.marker(
                 [1.31126578637, 103.878130317],
                 {}
-            ).addTo(feature_group_e6567fa652e0469498274a0a3546b651);
+            ).addTo(feature_group_4d0eaa021a0f4d64b43098ddea03ed97);
         
     
-            var icon_80c95d7118a54407a7370efc9733e74a = L.AwesomeMarkers.icon(
+            var icon_914efce89877428d9a812a3595d2fdbe = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
             );
-            marker_f8501b9e029847c8a95c04201cd701ba.setIcon(icon_80c95d7118a54407a7370efc9733e74a);
+            marker_07d768d718e04b27be270449c5b409d6.setIcon(icon_914efce89877428d9a812a3595d2fdbe);
         
     
-        var popup_0a5b2cc89ee84ea9a4245c88c7ec0039 = L.popup({"maxWidth": 300});
+        var popup_61c89025f45a434cae21f798272265d2 = L.popup({"maxWidth": 300});
 
         
-            var html_df99b1eb9bae444e8a0745128af84e37 = $(`<div id="html_df99b1eb9bae444e8a0745128af84e37" style="width: 100.0%; height: 100.0%;"><b>#18</b>, Feb-01<br><b>Profile:</b> 31, Female, Chinese<br><b>Stay:</b> Home Suite View Hotel<br><b>Visited:</b> Home Suite View Hotel<br><b>Symptom:</b> Feb-01</div>`)[0];
-            popup_0a5b2cc89ee84ea9a4245c88c7ec0039.setContent(html_df99b1eb9bae444e8a0745128af84e37);
+            var html_1b91c9e1e01948a5ad82dd9afeb63b6e = $(`<div id="html_1b91c9e1e01948a5ad82dd9afeb63b6e" style="width: 100.0%; height: 100.0%;"><b>#18</b>, Feb-01<br>Female 31 Chinese <br><b>Stay:</b> Home Suite View Hotel<br><b>Visited:</b> Home Suite View Hotel<br><b>Symptom:</b> Feb-01</div>`)[0];
+            popup_61c89025f45a434cae21f798272265d2.setContent(html_1b91c9e1e01948a5ad82dd9afeb63b6e);
         
 
-        marker_f8501b9e029847c8a95c04201cd701ba.bindPopup(popup_0a5b2cc89ee84ea9a4245c88c7ec0039)
+        marker_07d768d718e04b27be270449c5b409d6.bindPopup(popup_61c89025f45a434cae21f798272265d2)
         ;
 
         
     
     
-            var feature_group_ba3a4ec545524670a33ae83bd26850f0 = L.featureGroup(
+            var feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0 = L.featureGroup(
                 {}
-            ).addTo(map_9830f136f33f4a949117f5967538408e);
+            ).addTo(map_a56f36188306447eb1bc73a617663884);
         
     
-            var marker_cad1585073644e4e8e3698258f11623d = L.marker(
+            var marker_afecc7373bc44eb1a0dd5f22753bda04 = L.marker(
                 [1.3075996, 103.8585204],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_602e5a1f029041f4851064d05daa46cc = L.AwesomeMarkers.icon(
+            var icon_8ad3ab1128da4d609149c7d2ecc18371 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_cad1585073644e4e8e3698258f11623d.setIcon(icon_602e5a1f029041f4851064d05daa46cc);
+            marker_afecc7373bc44eb1a0dd5f22753bda04.setIcon(icon_8ad3ab1128da4d609149c7d2ecc18371);
         
     
-        var popup_cfa6ac73b6b8443bbec7add6a754d945 = L.popup({"maxWidth": 300});
+        var popup_1b59c94988c2457e936ad408b9766c27 = L.popup({"maxWidth": 300});
 
         
-            var html_07e3169a75ed4a1da7a2031df091723e = $(`<div id="html_07e3169a75ed4a1da7a2031df091723e" style="width: 100.0%; height: 100.0%;"><b>#2</b>, Jan-24<br><b>Profile:</b> 53, Female, Chinese<br><b>Stay:</b> J8 Hotel<br><b>Visited:</b> Tan Tock Seng Hospital, Raffles Hospital, Orchard Road, Marina Bay Sands, Gardens by the Bay<br><b>Symptom:</b> Jan-21<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-07</div>`)[0];
-            popup_cfa6ac73b6b8443bbec7add6a754d945.setContent(html_07e3169a75ed4a1da7a2031df091723e);
+            var html_0ab93dc64751400d8eab09e6e8e8e3fa = $(`<div id="html_0ab93dc64751400d8eab09e6e8e8e3fa" style="width: 100.0%; height: 100.0%;"><b>#2</b>, Jan-24<br>Female 53 Chinese <br><b>Stay:</b> J8 Hotel<br><b>Visited:</b> Tan Tock Seng Hospital, Raffles Hospital, Orchard Road, Marina Bay Sands, Gardens by the Bay<br><b>Symptom:</b> Jan-21<br><b>Status:</b> Discharged on Feb-07</div>`)[0];
+            popup_1b59c94988c2457e936ad408b9766c27.setContent(html_0ab93dc64751400d8eab09e6e8e8e3fa);
         
 
-        marker_cad1585073644e4e8e3698258f11623d.bindPopup(popup_cfa6ac73b6b8443bbec7add6a754d945)
+        marker_afecc7373bc44eb1a0dd5f22753bda04.bindPopup(popup_1b59c94988c2457e936ad408b9766c27)
         ;
 
         
     
     
-            var marker_6c29c0298d0548e5b979680391f3f0fc = L.marker(
+            var marker_3f219de336cb4f278a8f708085f49478 = L.marker(
                 [1.25212715122, 103.820006847],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_634e2f28ee5a4ab292634145a1949aac = L.AwesomeMarkers.icon(
+            var icon_2b383cab1ae04c2d8b3caa5a914cb1f3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_6c29c0298d0548e5b979680391f3f0fc.setIcon(icon_634e2f28ee5a4ab292634145a1949aac);
+            marker_3f219de336cb4f278a8f708085f49478.setIcon(icon_2b383cab1ae04c2d8b3caa5a914cb1f3);
         
     
-        var popup_3c1a32d4d34d4718a29a43df541e40ef = L.popup({"maxWidth": 300});
+        var popup_9e5d33a03dd94e6d99a3fec9120a07c9 = L.popup({"maxWidth": 300});
 
         
-            var html_eebaaf89690f45df82a62b7c4a95236a = $(`<div id="html_eebaaf89690f45df82a62b7c4a95236a" style="width: 100.0%; height: 100.0%;"><b>#4</b>, Jan-25<br><b>Profile:</b> 36, Male, Chinese<br><b>Stay:</b> Village Hotel Sentosa<br><b>Visited:</b> Sengkang General Hospital, Universal Studios Singapore, Vivocity<br><b>Symptom:</b> Jan-22<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-12</div>`)[0];
-            popup_3c1a32d4d34d4718a29a43df541e40ef.setContent(html_eebaaf89690f45df82a62b7c4a95236a);
+            var html_b87a48009c374bb0b1286b3531a94941 = $(`<div id="html_b87a48009c374bb0b1286b3531a94941" style="width: 100.0%; height: 100.0%;"><b>#4</b>, Jan-25<br>Male 36 Chinese <br><b>Stay:</b> Village Hotel Sentosa<br><b>Visited:</b> Sengkang General Hospital, Universal Studios Singapore, Vivocity<br><b>Symptom:</b> Jan-22<br><b>Status:</b> Discharged on Feb-12</div>`)[0];
+            popup_9e5d33a03dd94e6d99a3fec9120a07c9.setContent(html_b87a48009c374bb0b1286b3531a94941);
         
 
-        marker_6c29c0298d0548e5b979680391f3f0fc.bindPopup(popup_3c1a32d4d34d4718a29a43df541e40ef)
+        marker_3f219de336cb4f278a8f708085f49478.bindPopup(popup_9e5d33a03dd94e6d99a3fec9120a07c9)
         ;
 
         
     
     
-            var marker_95773adbf16e426d8ccd5caf2fdbb6af = L.marker(
+            var marker_a7a04ff218264606bbb858ccc634a473 = L.marker(
                 [1.28330824331, 103.860577941],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_c5a32b950ae64867a78c945d62803480 = L.AwesomeMarkers.icon(
+            var icon_29a191f1bf5f42e8bd63ff736eb5f150 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_95773adbf16e426d8ccd5caf2fdbb6af.setIcon(icon_c5a32b950ae64867a78c945d62803480);
+            marker_a7a04ff218264606bbb858ccc634a473.setIcon(icon_29a191f1bf5f42e8bd63ff736eb5f150);
         
     
-        var popup_13d90a00ec2445e091e8528d964c7a77 = L.popup({"maxWidth": 300});
+        var popup_92d9be5aecb54ee584b63ee4844728c8 = L.popup({"maxWidth": 300});
 
         
-            var html_81aae88d10d8446a9385c28e76e4fc9b = $(`<div id="html_81aae88d10d8446a9385c28e76e4fc9b" style="width: 100.0%; height: 100.0%;"><b>#7</b>, Jan-27<br><b>Profile:</b> 35, Male, Chinese<br><b>Stay:</b> Marina Bay Sands<br><b>Visited:</b> Raffles Hospital<br><b>Symptom:</b> Jan-24<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-04</div>`)[0];
-            popup_13d90a00ec2445e091e8528d964c7a77.setContent(html_81aae88d10d8446a9385c28e76e4fc9b);
+            var html_600b8970a4174a18b81f7e31c4753458 = $(`<div id="html_600b8970a4174a18b81f7e31c4753458" style="width: 100.0%; height: 100.0%;"><b>#7</b>, Jan-27<br>Male 35 Chinese <br><b>Stay:</b> Marina Bay Sands<br><b>Visited:</b> Raffles Hospital<br><b>Symptom:</b> Jan-24<br><b>Status:</b> Discharged on Feb-04</div>`)[0];
+            popup_92d9be5aecb54ee584b63ee4844728c8.setContent(html_600b8970a4174a18b81f7e31c4753458);
         
 
-        marker_95773adbf16e426d8ccd5caf2fdbb6af.bindPopup(popup_13d90a00ec2445e091e8528d964c7a77)
+        marker_a7a04ff218264606bbb858ccc634a473.bindPopup(popup_92d9be5aecb54ee584b63ee4844728c8)
         ;
 
         
     
     
-            var marker_f9690372a00a4337a73ce2f39a700dd0 = L.marker(
+            var marker_3ae8924d3db64b388498c60403e8a9b0 = L.marker(
                 [1.2707012, 103.8631688],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_917f7ae88d3b425e9bf559f25046622f = L.AwesomeMarkers.icon(
+            var icon_72ec64bd226e4c26883336db6e8c37bd = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_f9690372a00a4337a73ce2f39a700dd0.setIcon(icon_917f7ae88d3b425e9bf559f25046622f);
+            marker_3ae8924d3db64b388498c60403e8a9b0.setIcon(icon_72ec64bd226e4c26883336db6e8c37bd);
         
     
-        var popup_d6c82a317c6648a29ec4a556aa91985b = L.popup({"maxWidth": 300});
+        var popup_bca060d50e85467d95ad9c4be8b4fa78 = L.popup({"maxWidth": 300});
 
         
-            var html_ad785919491f4721bb2ad208a447e044 = $(`<div id="html_ad785919491f4721bb2ad208a447e044" style="width: 100.0%; height: 100.0%;"><b>#10</b>, Jan-29<br><b>Profile:</b> 56, Male, Chinese<br><b>Stay:</b> Cargo vessel<br><b>Visited:</b> Marina South Pier<br><b>Symptom:</b> Jan-21<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-09</div>`)[0];
-            popup_d6c82a317c6648a29ec4a556aa91985b.setContent(html_ad785919491f4721bb2ad208a447e044);
+            var html_585089d6bbb04e21b54559363536c0b9 = $(`<div id="html_585089d6bbb04e21b54559363536c0b9" style="width: 100.0%; height: 100.0%;"><b>#10</b>, Jan-29<br>Male 56 Chinese <br><b>Stay:</b> Cargo vessel<br><b>Visited:</b> Marina South Pier<br><b>Linked to:</b> 4<br><b>Symptom:</b> Jan-21<br><b>Status:</b> Discharged on Feb-09</div>`)[0];
+            popup_bca060d50e85467d95ad9c4be8b4fa78.setContent(html_585089d6bbb04e21b54559363536c0b9);
         
 
-        marker_f9690372a00a4337a73ce2f39a700dd0.bindPopup(popup_d6c82a317c6648a29ec4a556aa91985b)
+        marker_3ae8924d3db64b388498c60403e8a9b0.bindPopup(popup_bca060d50e85467d95ad9c4be8b4fa78)
         ;
 
         
     
     
-            var marker_da5814e07e0845ed92cc8e716185b0a3 = L.marker(
+            var marker_2de52d6734d349c589c3ceb9e340683a = L.marker(
                 [1.25210033554, 103.820199966],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_4fe6e65948574b148ff3c2cc4a6a7368 = L.AwesomeMarkers.icon(
+            var icon_e7ddbc05d2e0410dbb952607501d9ba8 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_da5814e07e0845ed92cc8e716185b0a3.setIcon(icon_4fe6e65948574b148ff3c2cc4a6a7368);
+            marker_2de52d6734d349c589c3ceb9e340683a.setIcon(icon_e7ddbc05d2e0410dbb952607501d9ba8);
         
     
-        var popup_d0f73f9ea2ef43b6bdbd2028954128fb = L.popup({"maxWidth": 300});
+        var popup_0fd82e8b6f9a4db3aa85c6d6363af2d3 = L.popup({"maxWidth": 300});
 
         
-            var html_e4617aafb5b54d3daf89c87a7e099c63 = $(`<div id="html_e4617aafb5b54d3daf89c87a7e099c63" style="width: 100.0%; height: 100.0%;"><b>#11</b>, Jan-29<br><b>Profile:</b> 31, Female, Chinese<br><b>Stay:</b> Village Hotel Sentosa<br><b>Visited:</b> Sengkang General Hospital, Universal Studios Singapore, Vivocity<br><b>Symptom:</b> Jan-27<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-10</div>`)[0];
-            popup_d0f73f9ea2ef43b6bdbd2028954128fb.setContent(html_e4617aafb5b54d3daf89c87a7e099c63);
+            var html_2e7bfddbcb814392aac41ef004d24d17 = $(`<div id="html_2e7bfddbcb814392aac41ef004d24d17" style="width: 100.0%; height: 100.0%;"><b>#11</b>, Jan-29<br>Female 31 Chinese <br><b>Stay:</b> Village Hotel Sentosa<br><b>Visited:</b> Sengkang General Hospital, Universal Studios Singapore, Vivocity<br><b>Symptom:</b> Jan-27<br><b>Status:</b> Discharged on Feb-10</div>`)[0];
+            popup_0fd82e8b6f9a4db3aa85c6d6363af2d3.setContent(html_2e7bfddbcb814392aac41ef004d24d17);
         
 
-        marker_da5814e07e0845ed92cc8e716185b0a3.bindPopup(popup_d0f73f9ea2ef43b6bdbd2028954128fb)
+        marker_2de52d6734d349c589c3ceb9e340683a.bindPopup(popup_0fd82e8b6f9a4db3aa85c6d6363af2d3)
         ;
 
         
     
     
-            var marker_bf0fba2be07540ab908037e56f698d6d = L.marker(
+            var marker_412b5e07859d405ca9bebe1dc144a9de = L.marker(
                 [1.25212715122, 103.819829822],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_a1d135d36b5e41f6aec9d387ca75deaa = L.AwesomeMarkers.icon(
+            var icon_177b0f73cbe5432f95fe891bb9c688af = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_bf0fba2be07540ab908037e56f698d6d.setIcon(icon_a1d135d36b5e41f6aec9d387ca75deaa);
+            marker_412b5e07859d405ca9bebe1dc144a9de.setIcon(icon_177b0f73cbe5432f95fe891bb9c688af);
         
     
-        var popup_238ca8db031e434bbe046e25bd463658 = L.popup({"maxWidth": 300});
+        var popup_d336383bba1d49f6b769222cc13c6d65 = L.popup({"maxWidth": 300});
 
         
-            var html_a26f1d5e0eca4578b181d54a4eef8241 = $(`<div id="html_a26f1d5e0eca4578b181d54a4eef8241" style="width: 100.0%; height: 100.0%;"><b>#12</b>, Jan-29<br><b>Profile:</b> 37, Female, Chinese<br><b>Stay:</b> Village Hotel Sentosa, Hotel 81 Princess, Home Suite View Hotel<br><b>Visited:</b> Orchard Road, Geylang<br><b>Symptom:</b> Jan-26<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-12</div>`)[0];
-            popup_238ca8db031e434bbe046e25bd463658.setContent(html_a26f1d5e0eca4578b181d54a4eef8241);
+            var html_1b708f7cbd6e4a3a9e55240ac15b10c1 = $(`<div id="html_1b708f7cbd6e4a3a9e55240ac15b10c1" style="width: 100.0%; height: 100.0%;"><b>#12</b>, Jan-29<br>Female 37 Chinese <br><b>Stay:</b> Village Hotel Sentosa, Hotel 81 Princess, Home Suite View Hotel<br><b>Visited:</b> Orchard Road, Geylang<br><b>Symptom:</b> Jan-26<br><b>Status:</b> Discharged on Feb-12</div>`)[0];
+            popup_d336383bba1d49f6b769222cc13c6d65.setContent(html_1b708f7cbd6e4a3a9e55240ac15b10c1);
         
 
-        marker_bf0fba2be07540ab908037e56f698d6d.bindPopup(popup_238ca8db031e434bbe046e25bd463658)
+        marker_412b5e07859d405ca9bebe1dc144a9de.bindPopup(popup_d336383bba1d49f6b769222cc13c6d65)
         ;
 
         
     
     
-            var marker_8b12c3d20690426a9d04895c9695b6ce = L.marker(
+            var marker_00f8cb333b164040ba012b12bd56d5d2 = L.marker(
                 [1.28549101288, 103.846496344],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_1332995d0bdc4ae3a4e0443d60741cd9 = L.AwesomeMarkers.icon(
+            var icon_0c5cb8caa64c41eebdb1acc85ed2b17f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_8b12c3d20690426a9d04895c9695b6ce.setIcon(icon_1332995d0bdc4ae3a4e0443d60741cd9);
+            marker_00f8cb333b164040ba012b12bd56d5d2.setIcon(icon_0c5cb8caa64c41eebdb1acc85ed2b17f);
         
     
-        var popup_c6cfa75a17634986863ba126463b1298 = L.popup({"maxWidth": 300});
+        var popup_e5e005f59ebe4378b047731c38372304 = L.popup({"maxWidth": 300});
 
         
-            var html_8d35460d018142c9ab7699bc2df04a9d = $(`<div id="html_8d35460d018142c9ab7699bc2df04a9d" style="width: 100.0%; height: 100.0%;"><b>#13</b>, Jan-30<br><b>Profile:</b> 73, Female, Chinese<br><b>Stay:</b> ParkRoyal Collection Pickering, Oasia Hotel Downtown<br><b>Visited:</b>  Changi Airport, Jewel<br><b>Symptom:</b> Jan-28<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-09</div>`)[0];
-            popup_c6cfa75a17634986863ba126463b1298.setContent(html_8d35460d018142c9ab7699bc2df04a9d);
+            var html_40bc21ca2cfb4e9eb3bc976172ddca3c = $(`<div id="html_40bc21ca2cfb4e9eb3bc976172ddca3c" style="width: 100.0%; height: 100.0%;"><b>#13</b>, Jan-30<br>Female 73 Chinese <br><b>Stay:</b> ParkRoyal Collection Pickering, Oasia Hotel Downtown<br><b>Visited:</b>  Changi Airport, Jewel<br><b>Symptom:</b> Jan-28<br><b>Status:</b> Discharged on Feb-09</div>`)[0];
+            popup_e5e005f59ebe4378b047731c38372304.setContent(html_40bc21ca2cfb4e9eb3bc976172ddca3c);
         
 
-        marker_8b12c3d20690426a9d04895c9695b6ce.bindPopup(popup_c6cfa75a17634986863ba126463b1298)
+        marker_00f8cb333b164040ba012b12bd56d5d2.bindPopup(popup_e5e005f59ebe4378b047731c38372304)
         ;
 
         
     
     
-            var marker_506dabc9d5a944218a7e1a51eb05b9a9 = L.marker(
+            var marker_57915f82b669416d80ebbe71644b25f7 = L.marker(
                 [1.36270727391, 103.991131783],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_28f70d0c9a67452b871519b9afb2c5fa = L.AwesomeMarkers.icon(
+            var icon_871bb54b9a484112906a801fcf794f4b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_506dabc9d5a944218a7e1a51eb05b9a9.setIcon(icon_28f70d0c9a67452b871519b9afb2c5fa);
+            marker_57915f82b669416d80ebbe71644b25f7.setIcon(icon_871bb54b9a484112906a801fcf794f4b);
         
     
-        var popup_553e1f11fe994ae9a541885b03f58ce2 = L.popup({"maxWidth": 300});
+        var popup_3d7efa0d4cfa49dc9070dcd39c67e1a4 = L.popup({"maxWidth": 300});
 
         
-            var html_faffd46242f642adae842d1e8d26f1b3 = $(`<div id="html_faffd46242f642adae842d1e8d26f1b3" style="width: 100.0%; height: 100.0%;"><b>#17</b>, Jan-31<br><b>Profile:</b> 47, Female, Singapore<br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-11</div>`)[0];
-            popup_553e1f11fe994ae9a541885b03f58ce2.setContent(html_faffd46242f642adae842d1e8d26f1b3);
+            var html_8c1f438635114f71b8f681702fa6763b = $(`<div id="html_8c1f438635114f71b8f681702fa6763b" style="width: 100.0%; height: 100.0%;"><b>#17</b>, Jan-31<br>Female 47 Singaporean <br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Linked to:</b> 12<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged on Feb-11</div>`)[0];
+            popup_3d7efa0d4cfa49dc9070dcd39c67e1a4.setContent(html_8c1f438635114f71b8f681702fa6763b);
         
 
-        marker_506dabc9d5a944218a7e1a51eb05b9a9.bindPopup(popup_553e1f11fe994ae9a541885b03f58ce2)
+        marker_57915f82b669416d80ebbe71644b25f7.bindPopup(popup_3d7efa0d4cfa49dc9070dcd39c67e1a4)
         ;
 
         
     
     
-            var marker_5ac038c89e044ae3bfd361fd318ea094 = L.marker(
+            var marker_f46025df5521458487096fe70511069b = L.marker(
                 [1.36292983428, 103.99122566],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_28126bd1d3fd493eae92f4cb9f12a005 = L.AwesomeMarkers.icon(
+            var icon_fcb476d7c6934c8b99c7df1784571618 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_5ac038c89e044ae3bfd361fd318ea094.setIcon(icon_28126bd1d3fd493eae92f4cb9f12a005);
+            marker_f46025df5521458487096fe70511069b.setIcon(icon_fcb476d7c6934c8b99c7df1784571618);
         
     
-        var popup_408caedb645d4d51944000ebc6221c38 = L.popup({"maxWidth": 300});
+        var popup_35113da42d83496ca447b64405de62f7 = L.popup({"maxWidth": 300});
 
         
-            var html_d511f512770248d2b61ae27e06258176 = $(`<div id="html_d511f512770248d2b61ae27e06258176" style="width: 100.0%; height: 100.0%;"><b>#22</b>, Feb-03<br><b>Profile:</b> 41, Male, Singapore<br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-09</div>`)[0];
-            popup_408caedb645d4d51944000ebc6221c38.setContent(html_d511f512770248d2b61ae27e06258176);
+            var html_5665653d0ca545aa8875e24bbec2cb8b = $(`<div id="html_5665653d0ca545aa8875e24bbec2cb8b" style="width: 100.0%; height: 100.0%;"><b>#22</b>, Feb-03<br>Male 41 Singaporean <br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> China, Wuhan<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged on Feb-09</div>`)[0];
+            popup_35113da42d83496ca447b64405de62f7.setContent(html_5665653d0ca545aa8875e24bbec2cb8b);
         
 
-        marker_5ac038c89e044ae3bfd361fd318ea094.bindPopup(popup_408caedb645d4d51944000ebc6221c38)
+        marker_f46025df5521458487096fe70511069b.bindPopup(popup_35113da42d83496ca447b64405de62f7)
         ;
 
         
     
     
-            var marker_158ac8357a9546fbabb00547ebdc9698 = L.marker(
+            var marker_5ee20b69b07143229bd8b3827dd2b533 = L.marker(
+                [1.3793195, 103.8826748],
+                {}
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
+        
+    
+            var icon_dae6ae0f031f443eacb71673ddeb8537 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5ee20b69b07143229bd8b3827dd2b533.setIcon(icon_dae6ae0f031f443eacb71673ddeb8537);
+        
+    
+        var popup_5e0b295d5a904582a7a9a7b0c237e89d = L.popup({"maxWidth": 300});
+
+        
+            var html_532d2bffb0a94a6a86528bd7f82e46e7 = $(`<div id="html_532d2bffb0a94a6a86528bd7f82e46e7" style="width: 100.0%; height: 100.0%;"><b>#24</b>, Feb-04<br>Female 32 Singaporean Tour Guide<br><b>Stay:</b> Buangkok Green<br><b>Visited:</b> Yong Thai Hang, Jalan Besar, Hougang Polyclinic, Diamond Industries Jewellery, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Linked to:</b> 19<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged on Feb-15</div>`)[0];
+            popup_5e0b295d5a904582a7a9a7b0c237e89d.setContent(html_532d2bffb0a94a6a86528bd7f82e46e7);
+        
+
+        marker_5ee20b69b07143229bd8b3827dd2b533.bindPopup(popup_5e0b295d5a904582a7a9a7b0c237e89d)
+        ;
+
+        
+    
+    
+            var marker_b6e6e1fc99b9405fbc7663f5e1e2faf2 = L.marker(
                 [1.37916596021, 103.882692754],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_a59efdfb674642a2a52bb3430d97384f = L.AwesomeMarkers.icon(
+            var icon_d320b81262c84fa4991af6fa48c01db4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_158ac8357a9546fbabb00547ebdc9698.setIcon(icon_a59efdfb674642a2a52bb3430d97384f);
+            marker_b6e6e1fc99b9405fbc7663f5e1e2faf2.setIcon(icon_d320b81262c84fa4991af6fa48c01db4);
         
     
-        var popup_5f6f26bb997b4e10861043e9d7dbf34f = L.popup({"maxWidth": 300});
+        var popup_408ef8f13a3f4e6e9d20e75175a1ad0f = L.popup({"maxWidth": 300});
 
         
-            var html_fe2ec96aa5064fc58504de946d12c759 = $(`<div id="html_fe2ec96aa5064fc58504de946d12c759" style="width: 100.0%; height: 100.0%;"><b>#25</b>, Feb-04<br><b>Profile:</b> 32, Male, Singapore<br><b>Stay:</b> Buangkok Green<br><b>Visited:</b> Hougang Polyclinic, Pasir Panjang Hawker Centre, Diamond Industries Jewellery Company, Yong Thai Hang, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Symptom:</b> Jan-24<br><b>Cluster:</b> Yong Thai Hang<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-12</div>`)[0];
-            popup_5f6f26bb997b4e10861043e9d7dbf34f.setContent(html_fe2ec96aa5064fc58504de946d12c759);
+            var html_33591cdaa7ab4895a8311ef4a1c3c009 = $(`<div id="html_33591cdaa7ab4895a8311ef4a1c3c009" style="width: 100.0%; height: 100.0%;"><b>#25</b>, Feb-04<br>Male 32 Singaporean <br><b>Stay:</b> Buangkok Green<br><b>Visited:</b> Hougang Polyclinic, Pasir Panjang Hawker Centre, Diamond Industries Jewellery Company, Yong Thai Hang, Meeting You Restaurant, Royal Dragon Restaurant, T Galleria by DFS, DResort @ Downtown East<br><b>Linked to:</b> 24<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Jan-24<br><b>Status:</b> Discharged on Feb-12</div>`)[0];
+            popup_408ef8f13a3f4e6e9d20e75175a1ad0f.setContent(html_33591cdaa7ab4895a8311ef4a1c3c009);
         
 
-        marker_158ac8357a9546fbabb00547ebdc9698.bindPopup(popup_5f6f26bb997b4e10861043e9d7dbf34f)
+        marker_b6e6e1fc99b9405fbc7663f5e1e2faf2.bindPopup(popup_408ef8f13a3f4e6e9d20e75175a1ad0f)
         ;
 
         
     
     
-            var marker_aff121330b3c46868933afc95d8f2309 = L.marker(
+            var marker_271c0cc7f2964e85ad383d871da0eea3 = L.marker(
                 [1.32152520963, 103.847638965],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_652f6e9f53b74ad4bba9c8c33b526e28 = L.AwesomeMarkers.icon(
+            var icon_ed0bf9887f9b4ff0aee9ac1618c8cd5f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_aff121330b3c46868933afc95d8f2309.setIcon(icon_652f6e9f53b74ad4bba9c8c33b526e28);
+            marker_271c0cc7f2964e85ad383d871da0eea3.setIcon(icon_ed0bf9887f9b4ff0aee9ac1618c8cd5f);
         
     
-        var popup_432cd3961c844b42b9cc85c830778a6a = L.popup({"maxWidth": 300});
+        var popup_df3787014c7d457c897dc9e0450ef700 = L.popup({"maxWidth": 300});
 
         
-            var html_5995b88a3b6b44d59d5d5d5fc575beee = $(`<div id="html_5995b88a3b6b44d59d5d5d5fc575beee" style="width: 100.0%; height: 100.0%;"><b>#26</b>, Feb-04<br><b>Profile:</b> 42, Female, Chinese<br><b>Stay:</b> ParkRoyal Collection Pickering, Oasia Hotel Downtown<br><b>Visited:</b>  Changi Airport, Jewel<br><b>Symptom:</b> Jan-21<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-09</div>`)[0];
-            popup_432cd3961c844b42b9cc85c830778a6a.setContent(html_5995b88a3b6b44d59d5d5d5fc575beee);
+            var html_8d7371e5af8d4c059bdd53310193f05c = $(`<div id="html_8d7371e5af8d4c059bdd53310193f05c" style="width: 100.0%; height: 100.0%;"><b>#26</b>, Feb-04<br>Female 42 Chinese <br><b>Stay:</b> ParkRoyal Collection Pickering, Oasia Hotel Downtown<br><b>Visited:</b>  Changi Airport, Jewel<br><b>Linked to:</b> 13<br><b>Symptom:</b> Jan-21<br><b>Status:</b> Discharged on Feb-09</div>`)[0];
+            popup_df3787014c7d457c897dc9e0450ef700.setContent(html_8d7371e5af8d4c059bdd53310193f05c);
         
 
-        marker_aff121330b3c46868933afc95d8f2309.bindPopup(popup_432cd3961c844b42b9cc85c830778a6a)
+        marker_271c0cc7f2964e85ad383d871da0eea3.bindPopup(popup_df3787014c7d457c897dc9e0450ef700)
         ;
 
         
     
     
-            var marker_38c88ac2e2f049cc9f4e75a2a500e81c = L.marker(
+            var marker_b85d66b0fb374b60b6ccb153bc6bbb4a = L.marker(
                 [1.322274, 103.844135],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_2e34fba9128841538feef29ad03ea28e = L.AwesomeMarkers.icon(
+            var icon_de47947329b44e0c969a280c1cec8438 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_38c88ac2e2f049cc9f4e75a2a500e81c.setIcon(icon_2e34fba9128841538feef29ad03ea28e);
+            marker_b85d66b0fb374b60b6ccb153bc6bbb4a.setIcon(icon_de47947329b44e0c969a280c1cec8438);
         
     
-        var popup_ac43800a7427429a8c7de30829c0cb78 = L.popup({"maxWidth": 300});
+        var popup_aee87c28a5864527b3a5e990c905ee57 = L.popup({"maxWidth": 300});
 
         
-            var html_23de8c6ba1e1414581ab94399ab085e6 = $(`<div id="html_23de8c6ba1e1414581ab94399ab085e6" style="width: 100.0%; height: 100.0%;"><b>#29</b>, Feb-06<br><b>Profile:</b> 41, Male, Singapore<br><b>Stay:</b> <br><b>Visited:</b> Mount Elizabeth Novena Hospital, GP Clinic<br><b>Symptom:</b> Jan-28<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-12</div>`)[0];
-            popup_ac43800a7427429a8c7de30829c0cb78.setContent(html_23de8c6ba1e1414581ab94399ab085e6);
+            var html_ae7624fe43c74680a90303ec51a17292 = $(`<div id="html_ae7624fe43c74680a90303ec51a17292" style="width: 100.0%; height: 100.0%;"><b>#29</b>, Feb-06<br>Male 41 Singaporean <br><b>Visited:</b> Mount Elizabeth Novena Hospital, GP Clinic<br><b>Symptom:</b> Jan-28<br><b>Status:</b> Discharged on Feb-12</div>`)[0];
+            popup_aee87c28a5864527b3a5e990c905ee57.setContent(html_ae7624fe43c74680a90303ec51a17292);
         
 
-        marker_38c88ac2e2f049cc9f4e75a2a500e81c.bindPopup(popup_ac43800a7427429a8c7de30829c0cb78)
+        marker_b85d66b0fb374b60b6ccb153bc6bbb4a.bindPopup(popup_aee87c28a5864527b3a5e990c905ee57)
         ;
 
         
     
     
-            var marker_cb2b570bda1c4319adaf23649c9561b2 = L.marker(
+            var marker_9801da316a6343f0b75acaa28fcce408 = L.marker(
                 [1.30645, 103.833184],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_f814123c548f4416a89d9297fbd3ab85 = L.AwesomeMarkers.icon(
+            var icon_710233f113bb4df5b41090346a85da21 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_cb2b570bda1c4319adaf23649c9561b2.setIcon(icon_f814123c548f4416a89d9297fbd3ab85);
+            marker_9801da316a6343f0b75acaa28fcce408.setIcon(icon_710233f113bb4df5b41090346a85da21);
         
     
-        var popup_e05618f6e28741488abb27458fba542e = L.popup({"maxWidth": 300});
+        var popup_c2ef51afb0ff46c186ede5a6b2ded71a = L.popup({"maxWidth": 300});
 
         
-            var html_bfa1113bc16a45f7939c3fc7b7958c04 = $(`<div id="html_bfa1113bc16a45f7939c3fc7b7958c04" style="width: 100.0%; height: 100.0%;"><b>#30</b>, Feb-06<br><b>Profile:</b> 27, Male, Singapore<br><b>Stay:</b> <br><b>Visited:</b> Grand Hyatt Singapore Hotel<br><b>Symptom:</b> Jan-20<br><b>Cluster:</b> Grand Hyatt Singapore<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-14</div>`)[0];
-            popup_e05618f6e28741488abb27458fba542e.setContent(html_bfa1113bc16a45f7939c3fc7b7958c04);
+            var html_effd498c6df44660a6f393f3c6397b5e = $(`<div id="html_effd498c6df44660a6f393f3c6397b5e" style="width: 100.0%; height: 100.0%;"><b>#30</b>, Feb-06<br>Male 27 Singaporean <br><b>Visited:</b> Grand Hyatt Singapore Hotel<br><b>Cluster:</b> Grand Hyatt Singapore<br><b>Symptom:</b> Jan-20<br><b>Status:</b> Discharged on Feb-14</div>`)[0];
+            popup_c2ef51afb0ff46c186ede5a6b2ded71a.setContent(html_effd498c6df44660a6f393f3c6397b5e);
         
 
-        marker_cb2b570bda1c4319adaf23649c9561b2.bindPopup(popup_e05618f6e28741488abb27458fba542e)
+        marker_9801da316a6343f0b75acaa28fcce408.bindPopup(popup_c2ef51afb0ff46c186ede5a6b2ded71a)
         ;
 
         
     
     
-            var marker_0a81b00e604b4cd6a6dd375efd181f0f = L.marker(
+            var marker_8fac9f7b054740089a1d70ed373f3116 = L.marker(
                 [1.355904, 103.838301],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_49e1188878024dbdbace6186492d12b0 = L.AwesomeMarkers.icon(
+            var icon_b1173bdbb56545ee9d27c6253a3915db = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_0a81b00e604b4cd6a6dd375efd181f0f.setIcon(icon_49e1188878024dbdbace6186492d12b0);
+            marker_8fac9f7b054740089a1d70ed373f3116.setIcon(icon_b1173bdbb56545ee9d27c6253a3915db);
         
     
-        var popup_192ef34470d54186a18e4960bfc7b667 = L.popup({"maxWidth": 300});
+        var popup_754d09b70d38476a9cfd1473ad60a362 = L.popup({"maxWidth": 300});
 
         
-            var html_c3aff7fb2f4d401897738171babce3eb = $(`<div id="html_c3aff7fb2f4d401897738171babce3eb" style="width: 100.0%; height: 100.0%;"><b>#34</b>, Feb-07<br><b>Profile:</b> 40, Female, Singapore<br><b>Stay:</b> Sin Ming Road<br><b>Visited:</b> Yong Thai Hang, GP Clinic, NCID<br><b>Symptom:</b> Jan-27<br><b>Cluster:</b> Yong Thai Hang<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-12</div>`)[0];
-            popup_192ef34470d54186a18e4960bfc7b667.setContent(html_c3aff7fb2f4d401897738171babce3eb);
+            var html_cfd58069da4d4385b8e86053f845b9e7 = $(`<div id="html_cfd58069da4d4385b8e86053f845b9e7" style="width: 100.0%; height: 100.0%;"><b>#34</b>, Feb-07<br>Female 40 Singaporean <br><b>Stay:</b> Sin Ming Road<br><b>Visited:</b> Yong Thai Hang, GP Clinic, NCID<br><b>Linked to:</b> 19<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Jan-27<br><b>Status:</b> Discharged on Feb-12</div>`)[0];
+            popup_754d09b70d38476a9cfd1473ad60a362.setContent(html_cfd58069da4d4385b8e86053f845b9e7);
         
 
-        marker_0a81b00e604b4cd6a6dd375efd181f0f.bindPopup(popup_192ef34470d54186a18e4960bfc7b667)
+        marker_8fac9f7b054740089a1d70ed373f3116.bindPopup(popup_754d09b70d38476a9cfd1473ad60a362)
         ;
 
         
     
     
-            var marker_a376f1ee41634517b8b4f212e0e74b65 = L.marker(
+            var marker_d29ae014fc28476ca4d0f14968ecd09d = L.marker(
                 [1.359237, 103.751117],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_9de1194cfa7f4cdeb7f75e9809bb6994 = L.AwesomeMarkers.icon(
+            var icon_0f1510158ad94bd2b51c34ac04940ec7 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_a376f1ee41634517b8b4f212e0e74b65.setIcon(icon_9de1194cfa7f4cdeb7f75e9809bb6994);
+            marker_d29ae014fc28476ca4d0f14968ecd09d.setIcon(icon_0f1510158ad94bd2b51c34ac04940ec7);
         
     
-        var popup_f789f61882284101b397886216a3972c = L.popup({"maxWidth": 300});
+        var popup_93648be7bd894602befbdebf6c1288bd = L.popup({"maxWidth": 300});
 
         
-            var html_1d66e7697ec44ace9434f89dd4b9ede4 = $(`<div id="html_1d66e7697ec44ace9434f89dd4b9ede4" style="width: 100.0%; height: 100.0%;"><b>#36</b>, Feb-07<br><b>Profile:</b> 38, Female, PR<br><b>Stay:</b> Bukit Batok Street 31<br><b>Visited:</b> Grand Hyatt Singapore, Johor Bahru, GP clinic, NCID, KK Women’s and Children’s Hospital, Ng Teng Fong General Hospital<br><b>Symptom:</b> Jan-24<br><b>Cluster:</b> Grand Hyatt Singapore<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-11</div>`)[0];
-            popup_f789f61882284101b397886216a3972c.setContent(html_1d66e7697ec44ace9434f89dd4b9ede4);
+            var html_49955e40a70a4da9ba2d328b4a2599c1 = $(`<div id="html_49955e40a70a4da9ba2d328b4a2599c1" style="width: 100.0%; height: 100.0%;"><b>#36</b>, Feb-07<br>Female 38 PR <br><b>Stay:</b> Bukit Batok Street 31<br><b>Visited:</b> Grand Hyatt Singapore, Johor Bahru, GP clinic, NCID, KK Women’s and Children’s Hospital, Ng Teng Fong General Hospital<br><b>Linked to:</b> 30<br><b>Cluster:</b> Grand Hyatt Singapore<br><b>Symptom:</b> Jan-24<br><b>Status:</b> Discharged on Feb-11</div>`)[0];
+            popup_93648be7bd894602befbdebf6c1288bd.setContent(html_49955e40a70a4da9ba2d328b4a2599c1);
         
 
-        marker_a376f1ee41634517b8b4f212e0e74b65.bindPopup(popup_f789f61882284101b397886216a3972c)
+        marker_d29ae014fc28476ca4d0f14968ecd09d.bindPopup(popup_93648be7bd894602befbdebf6c1288bd)
         ;
 
         
     
     
-            var marker_3655ccc28eca435c848acd224f835e3e = L.marker(
+            var marker_dee87310f2dd4ebc80e77eebdfda2143 = L.marker(
                 [1.333001, 103.926856],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_bef8ba53c4574add943202f3cca346c0 = L.AwesomeMarkers.icon(
+            var icon_926d0f9c6d79427e88a3f0b58e86e3fb = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_3655ccc28eca435c848acd224f835e3e.setIcon(icon_bef8ba53c4574add943202f3cca346c0);
+            marker_dee87310f2dd4ebc80e77eebdfda2143.setIcon(icon_926d0f9c6d79427e88a3f0b58e86e3fb);
         
     
-        var popup_1a470519a1fd468b91d63299a69cb8fc = L.popup({"maxWidth": 300});
+        var popup_595bff30b4924d5185edb8fc130cb03c = L.popup({"maxWidth": 300});
 
         
-            var html_3a311fabe865450e8736145b3d2fc1ef = $(`<div id="html_3a311fabe865450e8736145b3d2fc1ef" style="width: 100.0%; height: 100.0%;"><b>#40</b>, Feb-08<br><b>Profile:</b> 36, Male, Singapore<br><b>Stay:</b> Bedok North Street<br><b>Visited:</b> GP clinic, Yong Thai Hang<br><b>Symptom:</b> Jan-30<br><b>Cluster:</b> Yong Thai Hang<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-12</div>`)[0];
-            popup_1a470519a1fd468b91d63299a69cb8fc.setContent(html_3a311fabe865450e8736145b3d2fc1ef);
+            var html_f3746ba265584262b52478b5b08e62e5 = $(`<div id="html_f3746ba265584262b52478b5b08e62e5" style="width: 100.0%; height: 100.0%;"><b>#40</b>, Feb-08<br>Male 36 Singaporean <br><b>Stay:</b> Bedok North Street<br><b>Visited:</b> GP clinic, Yong Thai Hang<br><b>Linked to:</b> 19<br><b>Cluster:</b> Yong Thai Hang<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged on Feb-12</div>`)[0];
+            popup_595bff30b4924d5185edb8fc130cb03c.setContent(html_f3746ba265584262b52478b5b08e62e5);
         
 
-        marker_3655ccc28eca435c848acd224f835e3e.bindPopup(popup_1a470519a1fd468b91d63299a69cb8fc)
+        marker_dee87310f2dd4ebc80e77eebdfda2143.bindPopup(popup_595bff30b4924d5185edb8fc130cb03c)
         ;
 
         
     
     
-            var marker_6eeaa611c2c04abaa53a24a488a7d6b7 = L.marker(
+            var marker_9d6304421c9a4ef3ba4c2aca030f5b05 = L.marker(
                 [1.310545, 103.846838],
                 {}
-            ).addTo(feature_group_ba3a4ec545524670a33ae83bd26850f0);
+            ).addTo(feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0);
         
     
-            var icon_adcb96bf1adc49cab97474f33281ecf6 = L.AwesomeMarkers.icon(
+            var icon_054dd02ca9664809ba7f01752aacaefb = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_6eeaa611c2c04abaa53a24a488a7d6b7.setIcon(icon_adcb96bf1adc49cab97474f33281ecf6);
+            marker_9d6304421c9a4ef3ba4c2aca030f5b05.setIcon(icon_054dd02ca9664809ba7f01752aacaefb);
         
     
-        var popup_bd8ff28c35b44ce2a3d0fe7880b15245 = L.popup({"maxWidth": 300});
+        var popup_c1d3b5d06fba449aa96ce9aba72f0f1c = L.popup({"maxWidth": 300});
 
         
-            var html_f3f1ad95677f4564aa52ed2de47c52e8 = $(`<div id="html_f3f1ad95677f4564aa52ed2de47c52e8" style="width: 100.0%; height: 100.0%;"><b>#45</b>, Feb-10<br><b>Profile:</b> 2, Female, Singapore<br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> KK Women’s and Children’s Hospital<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged<br><b>Discharged:</b> Feb-14</div>`)[0];
-            popup_bd8ff28c35b44ce2a3d0fe7880b15245.setContent(html_f3f1ad95677f4564aa52ed2de47c52e8);
+            var html_f2b8450845dd4771933bd992c3d76c9e = $(`<div id="html_f2b8450845dd4771933bd992c3d76c9e" style="width: 100.0%; height: 100.0%;"><b>#45</b>, Feb-10<br>Female 2 Singaporean <br><b>Stay:</b> Arrived from Wuhan<br><b>Visited:</b> KK Women’s and Children’s Hospital<br><b>Symptom:</b> Jan-30<br><b>Status:</b> Discharged on Feb-14</div>`)[0];
+            popup_c1d3b5d06fba449aa96ce9aba72f0f1c.setContent(html_f2b8450845dd4771933bd992c3d76c9e);
         
 
-        marker_6eeaa611c2c04abaa53a24a488a7d6b7.bindPopup(popup_bd8ff28c35b44ce2a3d0fe7880b15245)
+        marker_9d6304421c9a4ef3ba4c2aca030f5b05.bindPopup(popup_c1d3b5d06fba449aa96ce9aba72f0f1c)
         ;
 
         
     
     
-            var layer_control_357ad0d2310f4ac5908e9b5a9bc02d45 = {
+            var layer_control_96aeba04d7e94b3581658260d4602db8 = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_a71c75cd1620404d815f8478f67e5e81,
+                    "openstreetmap" : tile_layer_f0af4074c5e74f5cb5f40edfdbfebf6b,
                 },
                 overlays :  {
-                    "\u003cspan style=\"color: red;\"\u003e41 infected\u003c/span\u003e" : feature_group_f31313a0f1a0425a985a8d940aebf9b4,
-                    "\u003cspan style=\"color: orange;\"\u003e9 imported\u003c/span\u003e" : feature_group_e6567fa652e0469498274a0a3546b651,
-                    "\u003cspan style=\"color: green;\"\u003e17 recovered\u003c/span\u003e" : feature_group_ba3a4ec545524670a33ae83bd26850f0,
+                    "\u003cspan style=\"color: red;\"\u003e45 infected\u003c/span\u003e" : feature_group_00ed20b08b374854a331bad70d8057b5,
+                    "\u003cspan style=\"color: orange;\"\u003e9 imported\u003c/span\u003e" : feature_group_4d0eaa021a0f4d64b43098ddea03ed97,
+                    "\u003cspan style=\"color: green;\"\u003e18 recovered\u003c/span\u003e" : feature_group_2a24bcbc397f420a9bfbb7f62f4a44c0,
                 },
             };
             L.control.layers(
-                layer_control_357ad0d2310f4ac5908e9b5a9bc02d45.base_layers,
-                layer_control_357ad0d2310f4ac5908e9b5a9bc02d45.overlays,
+                layer_control_96aeba04d7e94b3581658260d4602db8.base_layers,
+                layer_control_96aeba04d7e94b3581658260d4602db8.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_9830f136f33f4a949117f5967538408e);
+            ).addTo(map_a56f36188306447eb1bc73a617663884);
         
 </script>
