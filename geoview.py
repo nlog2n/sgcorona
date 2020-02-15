@@ -138,7 +138,7 @@ def draw_virus_places(m, gdf):
 
         # in html view
         label = "<b>" + caseno + "</b>, " + date \
-                + "<br>" + gender + " " + age + " " + nationality + " " + occupation
+                + "<br>" + age + "yr " + gender + " " + nationality + " " + occupation
         if stay != "" and stay is not None:
             label += "<br>" + "<b>Stay:</b> " + stay
         if visited != "" and visited is not None:
@@ -148,7 +148,7 @@ def draw_virus_places(m, gdf):
         if cluster != "" and cluster is not None:
             label += "<br>" + "<b>Cluster:</b> " + cluster
         if symptom_date != "" and symptom_date is not None:
-            label += "<br>" + "<b>Symptom:</b> " + symptom_date
+            label += "<br>" + "<b>Symptom Start:</b> " + symptom_date
         if status != "" and status is not None:
             label += "<br>" + "<b>Status:</b> " + status
             if status == "Discharged":
